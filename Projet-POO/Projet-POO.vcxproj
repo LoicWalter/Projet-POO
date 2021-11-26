@@ -121,10 +121,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CAD.cpp" />
+    <ClCompile Include="Client_mapTB.cpp" />
     <ClCompile Include="MyForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAD.h" />
+    <ClInclude Include="Client_mapTB.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
