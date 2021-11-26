@@ -1,6 +1,6 @@
 #pragma once
 
-namespace testprsarahlacodeuse {
+namespace ProjetPOO {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -207,494 +207,295 @@ namespace testprsarahlacodeuse {
 			// 
 			// label31
 			// 
-			this->label31->AutoSize = true;
-			this->label31->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label31->Location = System::Drawing::Point(953, 346);
+			resources->ApplyResources(this->label31, L"label31");
 			this->label31->Name = L"label31";
-			this->label31->Size = System::Drawing::Size(127, 17);
-			this->label31->TabIndex = 57;
-			this->label31->Text = L"Date d\'embauche :";
 			// 
 			// act_personnel
 			// 
-			this->act_personnel->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_personnel->Location = System::Drawing::Point(611, 49);
+			resources->ApplyResources(this->act_personnel, L"act_personnel");
 			this->act_personnel->Name = L"act_personnel";
-			this->act_personnel->Size = System::Drawing::Size(264, 70);
-			this->act_personnel->TabIndex = 55;
-			this->act_personnel->Text = L"Actualiser";
 			this->act_personnel->UseVisualStyleBackColor = true;
 			// 
 			// label33
 			// 
-			this->label33->AutoSize = true;
-			this->label33->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
+			resources->ApplyResources(this->label33, L"label33");
 			this->label33->ForeColor = System::Drawing::Color::DimGray;
-			this->label33->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label33->Location = System::Drawing::Point(24, 430);
 			this->label33->Name = L"label33";
-			this->label33->Size = System::Drawing::Size(195, 24);
-			this->label33->TabIndex = 53;
-			this->label33->Text = L"Adresse habitation :";
 			// 
 			// label13
 			// 
-			this->label13->AutoSize = true;
-			this->label13->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label13->Location = System::Drawing::Point(668, 598);
+			resources->ApplyResources(this->label13, L"label13");
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(204, 17);
-			this->label13->TabIndex = 41;
-			this->label13->Text = L"Informations complémentaires :";
 			// 
 			// infoComp_facturation
 			// 
-			this->infoComp_facturation->Location = System::Drawing::Point(671, 620);
+			resources->ApplyResources(this->infoComp_facturation, L"infoComp_facturation");
 			this->infoComp_facturation->Name = L"infoComp_facturation";
-			this->infoComp_facturation->Size = System::Drawing::Size(374, 22);
-			this->infoComp_facturation->TabIndex = 40;
 			// 
 			// label14
 			// 
-			this->label14->AutoSize = true;
-			this->label14->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label14->Location = System::Drawing::Point(1065, 526);
+			resources->ApplyResources(this->label14, L"label14");
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(111, 17);
-			this->label14->TabIndex = 39;
-			this->label14->Text = L"Numéro de rue :";
 			// 
 			// numRue_facturation
 			// 
-			this->numRue_facturation->Location = System::Drawing::Point(1068, 549);
+			resources->ApplyResources(this->numRue_facturation, L"numRue_facturation");
 			this->numRue_facturation->Name = L"numRue_facturation";
-			this->numRue_facturation->Size = System::Drawing::Size(195, 22);
-			this->numRue_facturation->TabIndex = 38;
 			// 
 			// label15
 			// 
-			this->label15->AutoSize = true;
-			this->label15->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label15->Location = System::Drawing::Point(1065, 466);
+			resources->ApplyResources(this->label15, L"label15");
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(95, 17);
-			this->label15->TabIndex = 37;
-			this->label15->Text = L"Code postal : ";
 			// 
 			// CP_facturation
 			// 
-			this->CP_facturation->Location = System::Drawing::Point(1068, 490);
+			resources->ApplyResources(this->CP_facturation, L"CP_facturation");
 			this->CP_facturation->Name = L"CP_facturation";
-			this->CP_facturation->Size = System::Drawing::Size(195, 22);
-			this->CP_facturation->TabIndex = 36;
 			// 
 			// label16
 			// 
-			this->label16->AutoSize = true;
-			this->label16->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label16->Location = System::Drawing::Point(668, 527);
+			resources->ApplyResources(this->label16, L"label16");
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(105, 17);
-			this->label16->TabIndex = 35;
-			this->label16->Text = L"Nom de la rue :";
 			// 
 			// label17
 			// 
-			this->label17->AutoSize = true;
-			this->label17->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label17->Location = System::Drawing::Point(846, 466);
+			resources->ApplyResources(this->label17, L"label17");
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(42, 17);
-			this->label17->TabIndex = 34;
-			this->label17->Text = L"Ville :";
 			// 
 			// label18
 			// 
-			this->label18->AutoSize = true;
-			this->label18->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label18->Location = System::Drawing::Point(668, 467);
+			resources->ApplyResources(this->label18, L"label18");
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(51, 17);
-			this->label18->TabIndex = 33;
-			this->label18->Text = L"Pays : ";
 			// 
 			// label34
 			// 
-			this->label34->AutoSize = true;
-			this->label34->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label34->Location = System::Drawing::Point(953, 187);
+			resources->ApplyResources(this->label34, L"label34");
 			this->label34->Name = L"label34";
-			this->label34->Size = System::Drawing::Size(65, 17);
-			this->label34->TabIndex = 52;
-			this->label34->Text = L"Prénom :";
 			// 
 			// label35
 			// 
-			this->label35->AutoSize = true;
-			this->label35->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label35->Location = System::Drawing::Point(953, 117);
+			resources->ApplyResources(this->label35, L"label35");
 			this->label35->Name = L"label35";
-			this->label35->Size = System::Drawing::Size(45, 17);
-			this->label35->TabIndex = 51;
-			this->label35->Text = L"Nom :";
 			// 
 			// label36
 			// 
-			this->label36->AutoSize = true;
-			this->label36->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label36->Location = System::Drawing::Point(953, 49);
+			resources->ApplyResources(this->label36, L"label36");
 			this->label36->Name = L"label36";
-			this->label36->Size = System::Drawing::Size(29, 17);
-			this->label36->TabIndex = 50;
-			this->label36->Text = L"ID :";
 			// 
 			// ID_personnel
 			// 
-			this->ID_personnel->Location = System::Drawing::Point(953, 71);
+			resources->ApplyResources(this->ID_personnel, L"ID_personnel");
 			this->ID_personnel->Name = L"ID_personnel";
-			this->ID_personnel->Size = System::Drawing::Size(403, 22);
-			this->ID_personnel->TabIndex = 49;
 			// 
 			// ville_facturation
 			// 
-			this->ville_facturation->Location = System::Drawing::Point(850, 490);
+			resources->ApplyResources(this->ville_facturation, L"ville_facturation");
 			this->ville_facturation->Name = L"ville_facturation";
-			this->ville_facturation->Size = System::Drawing::Size(195, 22);
-			this->ville_facturation->TabIndex = 32;
 			// 
 			// nomRue_facturation
 			// 
-			this->nomRue_facturation->Location = System::Drawing::Point(671, 549);
+			resources->ApplyResources(this->nomRue_facturation, L"nomRue_facturation");
 			this->nomRue_facturation->Name = L"nomRue_facturation";
-			this->nomRue_facturation->Size = System::Drawing::Size(374, 22);
-			this->nomRue_facturation->TabIndex = 31;
 			// 
 			// pays_facturation
 			// 
-			this->pays_facturation->Location = System::Drawing::Point(671, 490);
+			resources->ApplyResources(this->pays_facturation, L"pays_facturation");
 			this->pays_facturation->Name = L"pays_facturation";
-			this->pays_facturation->Size = System::Drawing::Size(159, 22);
-			this->pays_facturation->TabIndex = 30;
 			// 
 			// label12
 			// 
-			this->label12->AutoSize = true;
-			this->label12->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label12->Location = System::Drawing::Point(23, 598);
+			resources->ApplyResources(this->label12, L"label12");
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(204, 17);
-			this->label12->TabIndex = 29;
-			this->label12->Text = L"Informations complémentaires :";
 			// 
 			// label11
 			// 
-			this->label11->AutoSize = true;
-			this->label11->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label11->Location = System::Drawing::Point(420, 526);
+			resources->ApplyResources(this->label11, L"label11");
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(111, 17);
-			this->label11->TabIndex = 27;
-			this->label11->Text = L"Numéro de rue :";
 			// 
 			// dateEmbauche
 			// 
-			this->dateEmbauche->Location = System::Drawing::Point(953, 377);
+			resources->ApplyResources(this->dateEmbauche, L"dateEmbauche");
 			this->dateEmbauche->Name = L"dateEmbauche";
-			this->dateEmbauche->Size = System::Drawing::Size(224, 22);
-			this->dateEmbauche->TabIndex = 56;
 			// 
 			// prenom_personnel
 			// 
-			this->prenom_personnel->Location = System::Drawing::Point(953, 210);
+			resources->ApplyResources(this->prenom_personnel, L"prenom_personnel");
 			this->prenom_personnel->Name = L"prenom_personnel";
-			this->prenom_personnel->Size = System::Drawing::Size(403, 22);
-			this->prenom_personnel->TabIndex = 48;
 			// 
 			// nom_personnel
 			// 
-			this->nom_personnel->Location = System::Drawing::Point(953, 140);
+			resources->ApplyResources(this->nom_personnel, L"nom_personnel");
 			this->nom_personnel->Name = L"nom_personnel";
-			this->nom_personnel->Size = System::Drawing::Size(403, 22);
-			this->nom_personnel->TabIndex = 47;
 			// 
 			// infoComp_livraison
 			// 
-			this->infoComp_livraison->Location = System::Drawing::Point(26, 620);
+			resources->ApplyResources(this->infoComp_livraison, L"infoComp_livraison");
 			this->infoComp_livraison->Name = L"infoComp_livraison";
-			this->infoComp_livraison->Size = System::Drawing::Size(374, 22);
-			this->infoComp_livraison->TabIndex = 28;
 			// 
 			// ins_personnel
 			// 
-			this->ins_personnel->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->ins_personnel->Location = System::Drawing::Point(755, 162);
+			resources->ApplyResources(this->ins_personnel, L"ins_personnel");
 			this->ins_personnel->Name = L"ins_personnel";
-			this->ins_personnel->Size = System::Drawing::Size(120, 69);
-			this->ins_personnel->TabIndex = 45;
-			this->ins_personnel->Text = L"Insertion";
 			this->ins_personnel->UseVisualStyleBackColor = true;
 			// 
 			// numRue_livraison
 			// 
-			this->numRue_livraison->Location = System::Drawing::Point(424, 549);
+			resources->ApplyResources(this->numRue_livraison, L"numRue_livraison");
 			this->numRue_livraison->Name = L"numRue_livraison";
-			this->numRue_livraison->Size = System::Drawing::Size(195, 22);
-			this->numRue_livraison->TabIndex = 26;
 			// 
 			// label10
 			// 
-			this->label10->AutoSize = true;
-			this->label10->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label10->Location = System::Drawing::Point(420, 466);
+			resources->ApplyResources(this->label10, L"label10");
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(95, 17);
-			this->label10->TabIndex = 25;
-			this->label10->Text = L"Code postal : ";
 			// 
 			// CP_livraison
 			// 
-			this->CP_livraison->Location = System::Drawing::Point(424, 490);
+			resources->ApplyResources(this->CP_livraison, L"CP_livraison");
 			this->CP_livraison->Name = L"CP_livraison";
-			this->CP_livraison->Size = System::Drawing::Size(195, 22);
-			this->CP_livraison->TabIndex = 24;
 			// 
 			// label9
 			// 
-			this->label9->AutoSize = true;
-			this->label9->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label9->Location = System::Drawing::Point(23, 527);
+			resources->ApplyResources(this->label9, L"label9");
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(105, 17);
-			this->label9->TabIndex = 23;
-			this->label9->Text = L"Nom de la rue :";
 			// 
 			// label8
 			// 
-			this->label8->AutoSize = true;
-			this->label8->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label8->Location = System::Drawing::Point(202, 466);
+			resources->ApplyResources(this->label8, L"label8");
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(42, 17);
-			this->label8->TabIndex = 22;
-			this->label8->Text = L"Ville :";
 			// 
 			// label7
 			// 
-			this->label7->AutoSize = true;
-			this->label7->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label7->Location = System::Drawing::Point(23, 467);
+			resources->ApplyResources(this->label7, L"label7");
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(51, 17);
-			this->label7->TabIndex = 21;
-			this->label7->Text = L"Pays : ";
 			// 
 			// ville_livraison
 			// 
-			this->ville_livraison->Location = System::Drawing::Point(205, 490);
+			resources->ApplyResources(this->ville_livraison, L"ville_livraison");
 			this->ville_livraison->Name = L"ville_livraison";
-			this->ville_livraison->Size = System::Drawing::Size(195, 22);
-			this->ville_livraison->TabIndex = 20;
 			// 
 			// nomRue_habitation
 			// 
-			this->nomRue_habitation->Location = System::Drawing::Point(28, 549);
+			resources->ApplyResources(this->nomRue_habitation, L"nomRue_habitation");
 			this->nomRue_habitation->Name = L"nomRue_habitation";
-			this->nomRue_habitation->Size = System::Drawing::Size(374, 22);
-			this->nomRue_habitation->TabIndex = 59;
 			// 
 			// pays_habitation
 			// 
-			this->pays_habitation->Location = System::Drawing::Point(28, 490);
+			resources->ApplyResources(this->pays_habitation, L"pays_habitation");
 			this->pays_habitation->Name = L"pays_habitation";
-			this->pays_habitation->Size = System::Drawing::Size(159, 22);
-			this->pays_habitation->TabIndex = 58;
 			// 
 			// mod_personnel
 			// 
-			this->mod_personnel->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->mod_personnel->Location = System::Drawing::Point(611, 251);
+			resources->ApplyResources(this->mod_personnel, L"mod_personnel");
 			this->mod_personnel->Name = L"mod_personnel";
-			this->mod_personnel->Size = System::Drawing::Size(120, 69);
-			this->mod_personnel->TabIndex = 46;
-			this->mod_personnel->Text = L"Modification";
 			this->mod_personnel->UseVisualStyleBackColor = true;
 			// 
 			// nomRue_livraison
 			// 
-			this->nomRue_livraison->Location = System::Drawing::Point(26, 549);
+			resources->ApplyResources(this->nomRue_livraison, L"nomRue_livraison");
 			this->nomRue_livraison->Name = L"nomRue_livraison";
-			this->nomRue_livraison->Size = System::Drawing::Size(374, 22);
-			this->nomRue_livraison->TabIndex = 19;
 			// 
 			// label30
 			// 
-			this->label30->AutoSize = true;
-			this->label30->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label30->Location = System::Drawing::Point(25, 467);
+			resources->ApplyResources(this->label30, L"label30");
 			this->label30->Name = L"label30";
-			this->label30->Size = System::Drawing::Size(51, 17);
-			this->label30->TabIndex = 61;
-			this->label30->Text = L"Pays : ";
 			// 
 			// pays_livraison
 			// 
-			this->pays_livraison->Location = System::Drawing::Point(26, 490);
+			resources->ApplyResources(this->pays_livraison, L"pays_livraison");
 			this->pays_livraison->Name = L"pays_livraison";
-			this->pays_livraison->Size = System::Drawing::Size(159, 22);
-			this->pays_livraison->TabIndex = 18;
 			// 
 			// label6
 			// 
-			this->label6->AutoSize = true;
-			this->label6->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label6->Location = System::Drawing::Point(951, 260);
+			resources->ApplyResources(this->label6, L"label6");
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(134, 17);
-			this->label6->TabIndex = 17;
-			this->label6->Text = L"Date de naissance :";
 			// 
 			// dateNaissance_Client
 			// 
-			this->dateNaissance_Client->Location = System::Drawing::Point(951, 295);
+			resources->ApplyResources(this->dateNaissance_Client, L"dateNaissance_Client");
 			this->dateNaissance_Client->Name = L"dateNaissance_Client";
-			this->dateNaissance_Client->Size = System::Drawing::Size(224, 22);
-			this->dateNaissance_Client->TabIndex = 16;
 			// 
 			// act_client
 			// 
-			this->act_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_client->Location = System::Drawing::Point(609, 49);
+			resources->ApplyResources(this->act_client, L"act_client");
 			this->act_client->Name = L"act_client";
-			this->act_client->Size = System::Drawing::Size(264, 70);
-			this->act_client->TabIndex = 15;
-			this->act_client->Text = L"Actualiser";
 			this->act_client->UseVisualStyleBackColor = true;
 			this->act_client->Click += gcnew System::EventHandler(this, &MyForm::act_client_Click);
 			// 
 			// label5
 			// 
-			this->label5->AutoSize = true;
-			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
+			resources->ApplyResources(this->label5, L"label5");
 			this->label5->ForeColor = System::Drawing::Color::DimGray;
-			this->label5->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label5->Location = System::Drawing::Point(664, 430);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(209, 24);
-			this->label5->TabIndex = 14;
-			this->label5->Text = L"Adresse Facturation :";
 			// 
 			// label4
 			// 
-			this->label4->AutoSize = true;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
+			resources->ApplyResources(this->label4, L"label4");
 			this->label4->ForeColor = System::Drawing::Color::DimGray;
-			this->label4->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label4->Location = System::Drawing::Point(22, 430);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(188, 24);
-			this->label4->TabIndex = 12;
-			this->label4->Text = L"Adresse Livraison :";
 			// 
 			// label3
 			// 
-			this->label3->AutoSize = true;
-			this->label3->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label3->Location = System::Drawing::Point(951, 187);
+			resources->ApplyResources(this->label3, L"label3");
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(65, 17);
-			this->label3->TabIndex = 11;
-			this->label3->Text = L"Prénom :";
 			// 
 			// label2
 			// 
-			this->label2->AutoSize = true;
-			this->label2->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label2->Location = System::Drawing::Point(951, 117);
+			resources->ApplyResources(this->label2, L"label2");
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(45, 17);
-			this->label2->TabIndex = 10;
-			this->label2->Text = L"Nom :";
 			// 
 			// label1
 			// 
-			this->label1->AutoSize = true;
-			this->label1->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label1->Location = System::Drawing::Point(951, 49);
+			resources->ApplyResources(this->label1, L"label1");
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(29, 17);
-			this->label1->TabIndex = 9;
-			this->label1->Text = L"ID :";
 			// 
 			// ID_Client
 			// 
-			this->ID_Client->Location = System::Drawing::Point(951, 71);
+			resources->ApplyResources(this->ID_Client, L"ID_Client");
 			this->ID_Client->Name = L"ID_Client";
-			this->ID_Client->Size = System::Drawing::Size(403, 22);
-			this->ID_Client->TabIndex = 8;
 			// 
 			// Prenom_Client
 			// 
-			this->Prenom_Client->Location = System::Drawing::Point(951, 210);
+			resources->ApplyResources(this->Prenom_Client, L"Prenom_Client");
 			this->Prenom_Client->Name = L"Prenom_Client";
-			this->Prenom_Client->Size = System::Drawing::Size(403, 22);
-			this->Prenom_Client->TabIndex = 6;
 			// 
 			// ville_habitation
 			// 
-			this->ville_habitation->Location = System::Drawing::Point(207, 490);
+			resources->ApplyResources(this->ville_habitation, L"ville_habitation");
 			this->ville_habitation->Name = L"ville_habitation";
-			this->ville_habitation->Size = System::Drawing::Size(195, 22);
-			this->ville_habitation->TabIndex = 60;
 			// 
 			// sup_personnel
 			// 
-			this->sup_personnel->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sup_personnel->Location = System::Drawing::Point(755, 251);
+			resources->ApplyResources(this->sup_personnel, L"sup_personnel");
 			this->sup_personnel->Name = L"sup_personnel";
-			this->sup_personnel->Size = System::Drawing::Size(120, 69);
-			this->sup_personnel->TabIndex = 44;
-			this->sup_personnel->Text = L"Suppression";
 			this->sup_personnel->UseVisualStyleBackColor = true;
 			// 
 			// sel_personnel
 			// 
-			this->sel_personnel->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sel_personnel->Location = System::Drawing::Point(611, 162);
+			resources->ApplyResources(this->sel_personnel, L"sel_personnel");
 			this->sel_personnel->Name = L"sel_personnel";
-			this->sel_personnel->Size = System::Drawing::Size(120, 69);
-			this->sel_personnel->TabIndex = 43;
-			this->sel_personnel->Text = L"Sélection";
 			this->sel_personnel->UseVisualStyleBackColor = true;
 			// 
 			// dataBasePersonnel
 			// 
+			resources->ApplyResources(this->dataBasePersonnel, L"dataBasePersonnel");
 			this->dataBasePersonnel->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBasePersonnel->Location = System::Drawing::Point(8, 6);
 			this->dataBasePersonnel->Name = L"dataBasePersonnel";
-			this->dataBasePersonnel->RowHeadersWidth = 51;
 			this->dataBasePersonnel->RowTemplate->Height = 24;
-			this->dataBasePersonnel->Size = System::Drawing::Size(530, 395);
-			this->dataBasePersonnel->TabIndex = 42;
 			// 
 			// tabPage4
 			// 
-			this->tabPage4->Location = System::Drawing::Point(4, 25);
+			resources->ApplyResources(this->tabPage4, L"tabPage4");
 			this->tabPage4->Name = L"tabPage4";
-			this->tabPage4->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage4->Size = System::Drawing::Size(1382, 727);
-			this->tabPage4->TabIndex = 3;
-			this->tabPage4->Text = L"Stats";
 			this->tabPage4->UseVisualStyleBackColor = true;
 			// 
 			// Nom_Client
 			// 
-			this->Nom_Client->Location = System::Drawing::Point(951, 140);
+			resources->ApplyResources(this->Nom_Client, L"Nom_Client");
 			this->Nom_Client->Name = L"Nom_Client";
-			this->Nom_Client->Size = System::Drawing::Size(403, 22);
-			this->Nom_Client->TabIndex = 5;
 			// 
 			// tabPage1
 			// 
+			resources->ApplyResources(this->tabPage1, L"tabPage1");
 			this->tabPage1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(198)), static_cast<System::Int32>(static_cast<System::Byte>(186)),
 				static_cast<System::Int32>(static_cast<System::Byte>(168)));
 			this->tabPage1->Controls->Add(this->label13);
@@ -737,78 +538,52 @@ namespace testprsarahlacodeuse {
 			this->tabPage1->Controls->Add(this->sup_client);
 			this->tabPage1->Controls->Add(this->sel_client);
 			this->tabPage1->Controls->Add(this->dataBaseClient);
-			this->tabPage1->Location = System::Drawing::Point(4, 25);
 			this->tabPage1->Name = L"tabPage1";
-			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(1382, 727);
-			this->tabPage1->TabIndex = 0;
-			this->tabPage1->Text = L"Client";
 			// 
 			// mod_client
 			// 
-			this->mod_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->mod_client->Location = System::Drawing::Point(609, 251);
+			resources->ApplyResources(this->mod_client, L"mod_client");
 			this->mod_client->Name = L"mod_client";
-			this->mod_client->Size = System::Drawing::Size(120, 69);
-			this->mod_client->TabIndex = 4;
-			this->mod_client->Text = L"Modification";
 			this->mod_client->UseVisualStyleBackColor = true;
 			// 
 			// ins_client
 			// 
-			this->ins_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->ins_client->Location = System::Drawing::Point(753, 165);
+			resources->ApplyResources(this->ins_client, L"ins_client");
 			this->ins_client->Name = L"ins_client";
-			this->ins_client->Size = System::Drawing::Size(120, 69);
-			this->ins_client->TabIndex = 3;
-			this->ins_client->Text = L"Insertion";
 			this->ins_client->UseVisualStyleBackColor = true;
 			// 
 			// sup_client
 			// 
-			this->sup_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sup_client->Location = System::Drawing::Point(753, 251);
+			resources->ApplyResources(this->sup_client, L"sup_client");
 			this->sup_client->Name = L"sup_client";
-			this->sup_client->Size = System::Drawing::Size(120, 69);
-			this->sup_client->TabIndex = 2;
-			this->sup_client->Text = L"Suppression";
 			this->sup_client->UseVisualStyleBackColor = true;
 			// 
 			// sel_client
 			// 
-			this->sel_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sel_client->Location = System::Drawing::Point(609, 165);
+			resources->ApplyResources(this->sel_client, L"sel_client");
 			this->sel_client->Name = L"sel_client";
-			this->sel_client->Size = System::Drawing::Size(120, 69);
-			this->sel_client->TabIndex = 1;
-			this->sel_client->Text = L"Sélection";
 			this->sel_client->UseVisualStyleBackColor = true;
 			// 
 			// dataBaseClient
 			// 
+			resources->ApplyResources(this->dataBaseClient, L"dataBaseClient");
 			this->dataBaseClient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseClient->Location = System::Drawing::Point(6, 6);
 			this->dataBaseClient->Name = L"dataBaseClient";
-			this->dataBaseClient->RowHeadersWidth = 51;
 			this->dataBaseClient->RowTemplate->Height = 24;
-			this->dataBaseClient->Size = System::Drawing::Size(530, 395);
-			this->dataBaseClient->TabIndex = 0;
 			// 
 			// tabControl1
 			// 
+			resources->ApplyResources(this->tabControl1, L"tabControl1");
 			this->tabControl1->Controls->Add(this->tabPage1);
 			this->tabControl1->Controls->Add(this->tabPage2);
 			this->tabControl1->Controls->Add(this->tabPage3);
 			this->tabControl1->Controls->Add(this->tabPage4);
-			this->tabControl1->Location = System::Drawing::Point(0, 1);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(1390, 756);
-			this->tabControl1->TabIndex = 5;
 			// 
 			// tabPage2
 			// 
-			this->tabPage2->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"tabPage2.BackgroundImage")));
+			resources->ApplyResources(this->tabPage2, L"tabPage2");
 			this->tabPage2->Controls->Add(this->label20);
 			this->tabPage2->Controls->Add(this->superieur);
 			this->tabPage2->Controls->Add(this->label25);
@@ -838,120 +613,71 @@ namespace testprsarahlacodeuse {
 			this->tabPage2->Controls->Add(this->sup_personnel);
 			this->tabPage2->Controls->Add(this->sel_personnel);
 			this->tabPage2->Controls->Add(this->dataBasePersonnel);
-			this->tabPage2->Location = System::Drawing::Point(4, 25);
 			this->tabPage2->Name = L"tabPage2";
-			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(1382, 727);
-			this->tabPage2->TabIndex = 1;
-			this->tabPage2->Text = L"Personnel";
 			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// label20
 			// 
-			this->label20->AutoSize = true;
-			this->label20->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label20->Location = System::Drawing::Point(953, 260);
+			resources->ApplyResources(this->label20, L"label20");
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(78, 17);
-			this->label20->TabIndex = 71;
-			this->label20->Text = L"Supérieur :";
 			// 
 			// superieur
 			// 
-			this->superieur->Location = System::Drawing::Point(953, 283);
+			resources->ApplyResources(this->superieur, L"superieur");
 			this->superieur->Name = L"superieur";
-			this->superieur->Size = System::Drawing::Size(403, 22);
-			this->superieur->TabIndex = 70;
 			// 
 			// label25
 			// 
-			this->label25->AutoSize = true;
-			this->label25->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label25->Location = System::Drawing::Point(25, 598);
+			resources->ApplyResources(this->label25, L"label25");
 			this->label25->Name = L"label25";
-			this->label25->Size = System::Drawing::Size(204, 17);
-			this->label25->TabIndex = 69;
-			this->label25->Text = L"Informations complémentaires :";
 			// 
 			// infoComp_habitation
 			// 
-			this->infoComp_habitation->Location = System::Drawing::Point(28, 620);
+			resources->ApplyResources(this->infoComp_habitation, L"infoComp_habitation");
 			this->infoComp_habitation->Name = L"infoComp_habitation";
-			this->infoComp_habitation->Size = System::Drawing::Size(374, 22);
-			this->infoComp_habitation->TabIndex = 68;
 			// 
 			// label26
 			// 
-			this->label26->AutoSize = true;
-			this->label26->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label26->Location = System::Drawing::Point(422, 526);
+			resources->ApplyResources(this->label26, L"label26");
 			this->label26->Name = L"label26";
-			this->label26->Size = System::Drawing::Size(111, 17);
-			this->label26->TabIndex = 67;
-			this->label26->Text = L"Numéro de rue :";
 			// 
 			// numRue_habitation
 			// 
-			this->numRue_habitation->Location = System::Drawing::Point(426, 549);
+			resources->ApplyResources(this->numRue_habitation, L"numRue_habitation");
 			this->numRue_habitation->Name = L"numRue_habitation";
-			this->numRue_habitation->Size = System::Drawing::Size(195, 22);
-			this->numRue_habitation->TabIndex = 66;
 			// 
 			// label27
 			// 
-			this->label27->AutoSize = true;
-			this->label27->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label27->Location = System::Drawing::Point(422, 466);
+			resources->ApplyResources(this->label27, L"label27");
 			this->label27->Name = L"label27";
-			this->label27->Size = System::Drawing::Size(95, 17);
-			this->label27->TabIndex = 65;
-			this->label27->Text = L"Code postal : ";
 			// 
 			// CP_habitation
 			// 
-			this->CP_habitation->Location = System::Drawing::Point(426, 490);
+			resources->ApplyResources(this->CP_habitation, L"CP_habitation");
 			this->CP_habitation->Name = L"CP_habitation";
-			this->CP_habitation->Size = System::Drawing::Size(195, 22);
-			this->CP_habitation->TabIndex = 64;
 			// 
 			// label28
 			// 
-			this->label28->AutoSize = true;
-			this->label28->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label28->Location = System::Drawing::Point(25, 527);
+			resources->ApplyResources(this->label28, L"label28");
 			this->label28->Name = L"label28";
-			this->label28->Size = System::Drawing::Size(105, 17);
-			this->label28->TabIndex = 63;
-			this->label28->Text = L"Nom de la rue :";
 			// 
 			// label29
 			// 
-			this->label29->AutoSize = true;
-			this->label29->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label29->Location = System::Drawing::Point(204, 466);
+			resources->ApplyResources(this->label29, L"label29");
 			this->label29->Name = L"label29";
-			this->label29->Size = System::Drawing::Size(42, 17);
-			this->label29->TabIndex = 62;
-			this->label29->Text = L"Ville :";
 			// 
 			// tabPage3
 			// 
-			this->tabPage3->Location = System::Drawing::Point(4, 25);
+			resources->ApplyResources(this->tabPage3, L"tabPage3");
 			this->tabPage3->Name = L"tabPage3";
-			this->tabPage3->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage3->Size = System::Drawing::Size(1382, 727);
-			this->tabPage3->TabIndex = 2;
-			this->tabPage3->Text = L"Commande";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1578, 917);
 			this->Controls->Add(this->tabControl1);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBasePersonnel))->EndInit();
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();

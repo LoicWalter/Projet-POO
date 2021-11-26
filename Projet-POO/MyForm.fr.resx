@@ -117,87 +117,332 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1745, 24</value>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>953, 346</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 17</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Date d'embauche :</value>
+  </data>
+  <data name="act_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="act_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 70</value>
+  </data>
+  <data name="act_personnel.Text" xml:space="preserve">
+    <value>Actualiser</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label33.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10.8pt, style=Bold, Underline</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 24</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Adresse habitation :</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>668, 598</value>
   </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 17</value>
+  </data>
   <data name="infoComp_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>671, 620</value>
+  </data>
+  <data name="infoComp_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 22</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
     <value>1065, 526</value>
   </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
   <data name="numRue_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>1068, 549</value>
+  </data>
+  <data name="numRue_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
     <value>1065, 466</value>
   </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
   <data name="CP_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>1068, 490</value>
+  </data>
+  <data name="CP_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
     <value>668, 527</value>
   </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 17</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
     <value>846, 466</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>668, 467</value>
   </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Prénom :</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Nom :</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 17</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>ID :</value>
+  </data>
+  <data name="ID_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 22</value>
+  </data>
   <data name="ville_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>850, 490</value>
+  </data>
+  <data name="ville_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
   </data>
   <data name="nomRue_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>671, 549</value>
   </data>
+  <data name="nomRue_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 22</value>
+  </data>
   <data name="pays_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>671, 490</value>
+  </data>
+  <data name="pays_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 598</value>
   </data>
-  <data name="infoComp_livraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 620</value>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 17</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 526</value>
   </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="dateEmbauche.Location" type="System.Drawing.Point, System.Drawing">
+    <value>953, 377</value>
+  </data>
+  <data name="dateEmbauche.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="prenom_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 22</value>
+  </data>
+  <data name="nom_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 22</value>
+  </data>
+  <data name="infoComp_livraison.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 620</value>
+  </data>
+  <data name="infoComp_livraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 22</value>
+  </data>
+  <data name="ins_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ins_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 69</value>
+  </data>
+  <data name="ins_personnel.Text" xml:space="preserve">
+    <value>Insertion</value>
+  </data>
   <data name="numRue_livraison.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 549</value>
+  </data>
+  <data name="numRue_livraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 466</value>
   </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
   <data name="CP_livraison.Location" type="System.Drawing.Point, System.Drawing">
     <value>424, 490</value>
+  </data>
+  <data name="CP_livraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 527</value>
   </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 17</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>202, 466</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>23, 467</value>
   </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
   <data name="ville_livraison.Location" type="System.Drawing.Point, System.Drawing">
     <value>205, 490</value>
+  </data>
+  <data name="ville_livraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="nomRue_habitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 22</value>
+  </data>
+  <data name="pays_habitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="mod_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mod_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 69</value>
+  </data>
+  <data name="mod_personnel.Text" xml:space="preserve">
+    <value>Modification</value>
   </data>
   <data name="nomRue_livraison.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 549</value>
   </data>
+  <data name="nomRue_livraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>374, 22</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Pays : </value>
+  </data>
   <data name="pays_livraison.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 490</value>
+  </data>
+  <data name="pays_livraison.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 260</value>
   </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 17</value>
+  </data>
   <data name="dateNaissance_Client.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 295</value>
+  </data>
+  <data name="dateNaissance_Client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="act_client.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="act_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 49</value>
@@ -207,6 +452,9 @@
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt, style=Bold, Underline</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>664, 430</value>
@@ -220,6 +468,9 @@
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.8pt, style=Bold, Underline</value>
   </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>22, 430</value>
   </data>
@@ -229,38 +480,113 @@
   <data name="label4.Text" xml:space="preserve">
     <value>Adresse Livraison :</value>
   </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 187</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 117</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 49</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 17</value>
   </data>
   <data name="ID_Client.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 71</value>
   </data>
+  <data name="ID_Client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 22</value>
+  </data>
   <data name="Prenom_Client.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 210</value>
+  </data>
+  <data name="Prenom_Client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 22</value>
+  </data>
+  <data name="ville_habitation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 22</value>
+  </data>
+  <data name="sup_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sup_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 69</value>
+  </data>
+  <data name="sup_personnel.Text" xml:space="preserve">
+    <value>Suppression</value>
+  </data>
+  <data name="sel_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sel_personnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 69</value>
+  </data>
+  <data name="sel_personnel.Text" xml:space="preserve">
+    <value>Sélection</value>
+  </data>
+  <data name="dataBasePersonnel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 395</value>
+  </data>
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1382, 727</value>
   </data>
   <data name="Nom_Client.Location" type="System.Drawing.Point, System.Drawing">
     <value>951, 140</value>
   </data>
+  <data name="Nom_Client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>403, 22</value>
+  </data>
+  <data name="mod_client.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="mod_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 251</value>
+  </data>
+  <data name="ins_client.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="ins_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>753, 165</value>
   </data>
+  <data name="sup_client.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="sup_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>753, 251</value>
+  </data>
+  <data name="sel_client.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="sel_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 165</value>
   </data>
   <data name="dataBaseClient.Size" type="System.Drawing.Size, System.Drawing">
     <value>530, 395</value>
+  </data>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1382, 727</value>
   </data>
   <data name="tabPage2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -6245,11 +6571,9 @@
         ITHKUPr+6NSEy//v7v8fla9KFX4jxz8AAAAASUVORK5CYII=
 </value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -6257,7 +6581,7 @@
     <value>953, 260</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 18</value>
+    <value>78, 17</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -6266,7 +6590,7 @@
     <value>Supérieur :</value>
   </data>
   <data name="superieur.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 24</value>
+    <value>403, 22</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6275,13 +6599,13 @@
     <value>NoControl</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 18</value>
+    <value>204, 17</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
     <value>Informations complémentaires :</value>
   </data>
   <data name="infoComp_habitation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 24</value>
+    <value>374, 22</value>
   </data>
   <data name="label26.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6290,13 +6614,13 @@
     <value>NoControl</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 18</value>
+    <value>111, 17</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
     <value>Numéro de rue :</value>
   </data>
   <data name="numRue_habitation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 24</value>
+    <value>195, 22</value>
   </data>
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6304,11 +6628,14 @@
   <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 17</value>
+  </data>
   <data name="label27.Text" xml:space="preserve">
     <value>Code postal : </value>
   </data>
   <data name="CP_habitation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 24</value>
+    <value>195, 22</value>
   </data>
   <data name="label28.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -6317,7 +6644,7 @@
     <value>NoControl</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 18</value>
+    <value>105, 17</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
     <value>Nom de la rue :</value>
@@ -6329,186 +6656,42 @@
     <value>NoControl</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 18</value>
+    <value>42, 17</value>
   </data>
   <data name="label29.Text" xml:space="preserve">
     <value>Ville :</value>
   </data>
-  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1382, 727</value>
   </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 18</value>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>Pays : </value>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1382, 727</value>
   </data>
-  <data name="ville_habitation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 24</value>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
   </data>
-  <data name="nomRue_habitation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>374, 24</value>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="pays_habitation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 24</value>
-  </data>
-  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 346</value>
-  </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 18</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>Date d'embauche :</value>
-  </data>
-  <data name="dateEmbauche.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 377</value>
-  </data>
-  <data name="dateEmbauche.Size" type="System.Drawing.Size, System.Drawing">
-    <value>224, 24</value>
-  </data>
-  <data name="act_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="act_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 70</value>
-  </data>
-  <data name="act_personnel.Text" xml:space="preserve">
-    <value>Actualiser</value>
-  </data>
-  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label33.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10.8pt, style=Bold, Underline</value>
-  </data>
-  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 24</value>
-  </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>Adresse habitation :</value>
-  </data>
-  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 18</value>
-  </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>Prénom :</value>
-  </data>
-  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 18</value>
-  </data>
-  <data name="label35.Text" xml:space="preserve">
-    <value>Nom :</value>
-  </data>
-  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 18</value>
-  </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>ID :</value>
-  </data>
-  <data name="ID_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 24</value>
-  </data>
-  <data name="prenom_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 24</value>
-  </data>
-  <data name="nom_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>403, 24</value>
-  </data>
-  <data name="mod_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mod_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 69</value>
-  </data>
-  <data name="mod_personnel.Text" xml:space="preserve">
-    <value>Modification</value>
-  </data>
-  <data name="ins_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ins_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 69</value>
-  </data>
-  <data name="ins_personnel.Text" xml:space="preserve">
-    <value>Insertion</value>
-  </data>
-  <data name="sup_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="sup_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 69</value>
-  </data>
-  <data name="sup_personnel.Text" xml:space="preserve">
-    <value>Suppression</value>
-  </data>
-  <data name="sel_personnel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="sel_personnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 69</value>
-  </data>
-  <data name="sel_personnel.Text" xml:space="preserve">
-    <value>Sélection</value>
-  </data>
-  <data name="dataBasePersonnel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>530, 395</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1745, 867</value>
+    <value>1578, 917</value>
   </data>
-  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAA
-        AADsty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty7/7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcu/+y2
-        LP/tuTX/7bs8/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcu/+27
-        O//yzW//+ei9//jjr//suTT/7Lcv/+y3L//sty//7Lcv/+y3L//sty7/7Lcv/+y3L//sty//7LYt//DF
-        V//67cv//v34///////668T/7bo4/+y3Lv/sty//7LYt//DGW//34q3/8MVZ/+y2Lf/stzD/7Lcw/+y2
-        K//z0Hn///////z04P/1143/7sBJ/+y3L//sty//7Lcv/+y2LP/yzGz///79//bcmv/sti3/9NWF//fh
-        qv/tvD3/8clj///++//34Kb/7LYr/+y2Lf/sty//7Lcv/+y3L//stiz/8MVY//789f/45LL/7Lct//fi
-        qv/+/fn/8Mdc/+/CTf/++vH/+ee7/+y4Mf/sty//7Lcv/+y3L//sty//7Lcu/+6+RP/89eL/+/HY/+/B
-        Tf/34qv///////TXjP/wxlv//vnv//rty//tuTb/7Lcv/+y3L//sty//7Lcv/+y3L//stzD/9t2c///+
-        /P/99uX//vv0///////++/P//fbm///////44q3/7Lcw/+y3L//sty//7Lcv/+y3L//sty//7Lcu/+28
-        Pf/23Z3//PXi//zz3f/336P/+uvG//336P/56sH/78NQ/+y2Lf/sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty7/7Lcw/+6+Q//uvUL/7Lcv/+26OP/uv0f/7bo4/+y3Lv/sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty//7Lcv/+y3L//sti7/7Lcu/+y3L//sty7/7LYt/+y3Lv/sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
-        L//sty//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAA==
-</value>
+  <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MyForm</value>
   </data>
 </root>

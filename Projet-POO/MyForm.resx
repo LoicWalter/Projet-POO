@@ -206,6 +206,9 @@
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
   <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
     <value>textBox8</value>
   </data>
@@ -313,9 +316,6 @@
   </data>
   <data name="mod_personnel.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
   </data>
   <data name="&gt;&gt;label23.Name" xml:space="preserve">
     <value>label23</value>
@@ -519,8 +519,8 @@
   <data name="label13.Text" xml:space="preserve">
     <value>Informations complémentaires :</value>
   </data>
-  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
-    <value>26</value>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="dateNaissance_Client.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -603,8 +603,8 @@
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 8</value>
@@ -678,8 +678,8 @@
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="label35.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="act_client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 70</value>
   </data>
   <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1437,6 +1437,9 @@
   <data name="&gt;&gt;dataBasePersonnel.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
   <data name="ins_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>757, 253</value>
   </data>
@@ -1596,8 +1599,8 @@
   <data name="&gt;&gt;act_personnel.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;ID_personnel.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -1619,6 +1622,9 @@
   </data>
   <data name="&gt;&gt;button3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
   </data>
   <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -1748,9 +1754,6 @@
   </data>
   <data name="&gt;&gt;label18.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="act_client.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 70</value>
   </data>
   <data name="dataBasePersonnel.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
@@ -2043,9 +2046,6 @@
   <data name="&gt;&gt;label23.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
@@ -2211,8 +2211,8 @@
   <data name="pays_livraison.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
