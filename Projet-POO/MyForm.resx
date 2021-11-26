@@ -152,6 +152,9 @@
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 430</value>
   </data>
+  <data name="&gt;&gt;Prenom_Client.Name" xml:space="preserve">
+    <value>Prenom_Client</value>
+  </data>
   <data name="dateNaissance_Client.Location" type="System.Drawing.Point, System.Drawing">
     <value>955, 297</value>
   </data>
@@ -206,14 +209,8 @@
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
   <data name="&gt;&gt;textBox8.Name" xml:space="preserve">
     <value>textBox8</value>
-  </data>
-  <data name="label28.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
   </data>
   <data name="&gt;&gt;infoComp_livraison.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -254,9 +251,6 @@
   <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -287,14 +281,14 @@
   <data name="&gt;&gt;Nom_Client.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;label30.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 117</value>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="sup_personnel.Location" type="System.Drawing.Point, System.Drawing">
     <value>755, 251</value>
@@ -311,11 +305,11 @@
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt</value>
   </data>
-  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="dataBasePersonnel.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
-  <data name="mod_personnel.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
   </data>
   <data name="&gt;&gt;label23.Name" xml:space="preserve">
     <value>label23</value>
@@ -349,6 +343,9 @@
   </data>
   <data name="&gt;&gt;numRue_habitation.Name" xml:space="preserve">
     <value>numRue_habitation</value>
+  </data>
+  <data name="&gt;&gt;ins_personnel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -398,14 +395,14 @@
   <data name="mod_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>613, 253</value>
   </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>670, 527</value>
+  </data>
   <data name="&gt;&gt;label21.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>12</value>
   </data>
   <data name="infoComp_habitation.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -424,6 +421,12 @@
   </data>
   <data name="&gt;&gt;textBox12.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="pays_facturation.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 24</value>
@@ -453,8 +456,8 @@
   <data name="&gt;&gt;label14.Name" xml:space="preserve">
     <value>label14</value>
   </data>
-  <data name="&gt;&gt;label35.Name" xml:space="preserve">
-    <value>label35</value>
+  <data name="&gt;&gt;aff_client.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1070, 549</value>
@@ -479,9 +482,6 @@
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 18</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;ins_client.Name" xml:space="preserve">
     <value>ins_client</value>
@@ -510,6 +510,9 @@
   <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
+  <data name="&gt;&gt;ID_Client.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;textBox5.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
@@ -519,14 +522,11 @@
   <data name="label13.Text" xml:space="preserve">
     <value>Informations complémentaires :</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
+    <value>26</value>
   </data>
   <data name="dateNaissance_Client.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>7</value>
   </data>
   <data name="&gt;&gt;textBox4.Name" xml:space="preserve">
     <value>textBox4</value>
@@ -576,6 +576,9 @@
   <data name="&gt;&gt;textBox12.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="dataGridView4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 8</value>
+  </data>
   <data name="Prenom_Client.Location" type="System.Drawing.Point, System.Drawing">
     <value>955, 212</value>
   </data>
@@ -603,8 +606,8 @@
   <data name="&gt;&gt;label22.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
   </data>
   <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 8</value>
@@ -642,8 +645,8 @@
   <data name="label30.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -653,6 +656,9 @@
   </data>
   <data name="&gt;&gt;ville_livraison.ZOrder" xml:space="preserve">
     <value>21</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -669,17 +675,14 @@
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 18</value>
-  </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="act_client.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 70</value>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
   </data>
   <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -708,8 +711,8 @@
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
     <value>422, 466</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 18</value>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label15.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -732,11 +735,8 @@
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;CP_habitation.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
-    <value>textBox5</value>
+  <data name="&gt;&gt;dateEmbauche.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -753,17 +753,11 @@
   <data name="&gt;&gt;textBox3.Name" xml:space="preserve">
     <value>textBox3</value>
   </data>
-  <data name="&gt;&gt;sel_client.ZOrder" xml:space="preserve">
-    <value>38</value>
-  </data>
   <data name="&gt;&gt;dateTimePicker1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
-  </data>
-  <data name="&gt;&gt;label34.Name" xml:space="preserve">
-    <value>label34</value>
   </data>
   <data name="&gt;&gt;aff_client.ZOrder" xml:space="preserve">
     <value>38</value>
@@ -813,6 +807,9 @@
   <data name="&gt;&gt;nomRue_livraison.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
+  <data name="&gt;&gt;infoComp_livraison.Name" xml:space="preserve">
+    <value>infoComp_livraison</value>
+  </data>
   <data name="mod_client.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -855,29 +852,23 @@
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
   </data>
-  <data name="CP_facturation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 24</value>
-  </data>
   <data name="&gt;&gt;CP_facturation.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;button4.Name" xml:space="preserve">
     <value>button4</value>
   </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;sup_personnel.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>Code postal : </value>
+  <data name="&gt;&gt;textBox7.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -939,9 +930,6 @@
   <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;aff_client.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;textBox7.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -959,6 +947,9 @@
   </data>
   <data name="&gt;&gt;pays_livraison.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CP_facturation.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
   </data>
   <data name="label14.Text" xml:space="preserve">
     <value>Numéro de rue :</value>
@@ -984,8 +975,8 @@
   <data name="pays_livraison.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 24</value>
   </data>
-  <data name="&gt;&gt;ins_personnel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>218, 20</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>14</value>
@@ -1004,9 +995,6 @@
   </data>
   <data name="&gt;&gt;textBox13.ZOrder" xml:space="preserve">
     <value>19</value>
-  </data>
-  <data name="&gt;&gt;dateEmbauche.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataGridView4.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -1056,9 +1044,6 @@
   <data name="aff_client.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
@@ -1095,9 +1080,6 @@
   <data name="&gt;&gt;sup_personnel.Name" xml:space="preserve">
     <value>sup_personnel</value>
   </data>
-  <data name="nom_personnel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>953, 140</value>
-  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 469</value>
   </data>
@@ -1113,6 +1095,9 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
+  <data name="&gt;&gt;ville_habitation.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -1121,9 +1106,6 @@
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
     <value>25, 527</value>
-  </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;button3.Name" xml:space="preserve">
     <value>button3</value>
@@ -1139,6 +1121,9 @@
   </data>
   <data name="ID_Client.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;Prenom_Client.ZOrder" xml:space="preserve">
     <value>33</value>
@@ -1188,9 +1173,6 @@
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
-  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="&gt;&gt;textBox6.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1224,11 +1206,11 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 18</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>218, 20</value>
-  </data>
   <data name="&gt;&gt;label23.Parent" xml:space="preserve">
     <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1239,17 +1221,11 @@
   <data name="dataBaseClient.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
-  <data name="&gt;&gt;CP_livraison.Name" xml:space="preserve">
-    <value>CP_livraison</value>
-  </data>
   <data name="&gt;&gt;nomRue_habitation.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ID_personnel.Location" type="System.Drawing.Point, System.Drawing">
     <value>953, 71</value>
-  </data>
-  <data name="label26.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>31</value>
@@ -1259,6 +1235,9 @@
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>202, 20</value>
+  </data>
+  <data name="&gt;&gt;dateEmbauche.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;infoComp_habitation.Name" xml:space="preserve">
     <value>infoComp_habitation</value>
@@ -1272,14 +1251,14 @@
   <data name="&gt;&gt;mod_client.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
-  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;textBox5.Name" xml:space="preserve">
+    <value>textBox5</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 18</value>
   </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="mod_personnel.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
   </data>
   <data name="&gt;&gt;textBox15.ZOrder" xml:space="preserve">
     <value>21</value>
@@ -1383,8 +1362,8 @@
   <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;sel_client.ZOrder" xml:space="preserve">
+    <value>38</value>
   </data>
   <data name="&gt;&gt;ville_habitation.ZOrder" xml:space="preserve">
     <value>11</value>
@@ -1428,7 +1407,13 @@
   <data name="&gt;&gt;textBox6.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Code postal : </value>
+  </data>
   <data name="&gt;&gt;dataGridView2.Parent" xml:space="preserve">
+    <value>tabPage2</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
@@ -1436,9 +1421,6 @@
   </data>
   <data name="&gt;&gt;dataBasePersonnel.Parent" xml:space="preserve">
     <value>tabPage2</value>
-  </data>
-  <data name="label35.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
   </data>
   <data name="ins_client.Location" type="System.Drawing.Point, System.Drawing">
     <value>757, 253</value>
@@ -1461,23 +1443,23 @@
   <data name="ville_livraison.Location" type="System.Drawing.Point, System.Drawing">
     <value>209, 492</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 18</value>
-  </data>
-  <data name="dataBasePersonnel.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
   <data name="&gt;&gt;dataGridView4.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="mod_personnel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>611, 251</value>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="textBox7.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 27</value>
+  </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CP_livraison.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 492</value>
   </data>
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -1560,9 +1542,6 @@
   <data name="&gt;&gt;infoComp_livraison.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numRue_facturation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
@@ -1574,9 +1553,6 @@
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
-  </data>
-  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1070, 490</value>
   </data>
   <data name="&gt;&gt;textBox14.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1599,8 +1575,8 @@
   <data name="&gt;&gt;act_personnel.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;ID_personnel.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -1622,9 +1598,6 @@
   </data>
   <data name="&gt;&gt;button3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
   </data>
   <data name="textBox14.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -1650,9 +1623,6 @@
   <data name="&gt;&gt;label31.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;infoComp_facturation.Name" xml:space="preserve">
-    <value>infoComp_facturation</value>
-  </data>
   <data name="&gt;&gt;ins_personnel.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
@@ -1677,8 +1647,14 @@
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
+  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
   <data name="&gt;&gt;label36.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="textBox12.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 490</value>
@@ -1695,8 +1671,11 @@
   <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 27</value>
   </data>
-  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 18</value>
+  </data>
+  <data name="&gt;&gt;sup_client.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
@@ -1704,7 +1683,7 @@
   <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;ID_Client.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBox11.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ins_client.Size" type="System.Drawing.Size, System.Drawing">
@@ -1740,8 +1719,8 @@
   <data name="textBox9.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 27</value>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 18</value>
   </data>
   <data name="sel_client.Text" xml:space="preserve">
     <value>Sélection</value>
@@ -1752,14 +1731,17 @@
   <data name="label17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1070, 490</value>
   </data>
   <data name="dataBasePersonnel.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
+  </data>
+  <data name="&gt;&gt;button5.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="ins_personnel.Location" type="System.Drawing.Point, System.Drawing">
     <value>755, 162</value>
@@ -1779,6 +1761,9 @@
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 529</value>
   </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
   <data name="numRue_facturation.Location" type="System.Drawing.Point, System.Drawing">
     <value>1072, 551</value>
   </data>
@@ -1793,6 +1778,9 @@
   </data>
   <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
     <value>tabPage1</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
   </data>
   <data name="&gt;&gt;numRue_habitation.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1832,6 +1820,9 @@
   </data>
   <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;mod_client.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1875,6 +1866,9 @@
   <data name="&gt;&gt;superieur.Name" xml:space="preserve">
     <value>superieur</value>
   </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
   <data name="&gt;&gt;ID_personnel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1899,8 +1893,8 @@
   <data name="&gt;&gt;pays_facturation.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sup_client.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -1929,11 +1923,11 @@
   <data name="sel_personnel.Location" type="System.Drawing.Point, System.Drawing">
     <value>611, 162</value>
   </data>
+  <data name="&gt;&gt;infoComp_facturation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;numRue_facturation.Name" xml:space="preserve">
     <value>numRue_facturation</value>
-  </data>
-  <data name="CP_habitation.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
   </data>
   <data name="textBox14.Location" type="System.Drawing.Point, System.Drawing">
     <value>953, 210</value>
@@ -1982,6 +1976,9 @@
   </data>
   <data name="&gt;&gt;textBox14.Name" xml:space="preserve">
     <value>textBox14</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>953, 117</value>
   </data>
   <data name="&gt;&gt;nomRue_habitation.Name" xml:space="preserve">
     <value>nomRue_habitation</value>
@@ -2043,8 +2040,8 @@
   <data name="&gt;&gt;dateEmbauche.Name" xml:space="preserve">
     <value>dateEmbauche</value>
   </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -2085,11 +2082,8 @@
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10.2pt</value>
   </data>
-  <data name="&gt;&gt;infoComp_facturation.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>530, 395</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>9, 18</value>
   </data>
   <data name="&gt;&gt;infoComp_facturation.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2130,14 +2124,14 @@
   <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
     <value>1069, 468</value>
   </data>
-  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>670, 527</value>
+  <data name="&gt;&gt;CP_habitation.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;CP_livraison.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;infoComp_livraison.Name" xml:space="preserve">
-    <value>infoComp_livraison</value>
+  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>530, 395</value>
   </data>
   <data name="&gt;&gt;textBox10.Name" xml:space="preserve">
     <value>textBox10</value>
@@ -2148,11 +2142,11 @@
   <data name="mod_client.Text" xml:space="preserve">
     <value>Modification</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 18</value>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="dataGridView4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 8</value>
+  <data name="&gt;&gt;CP_livraison.Name" xml:space="preserve">
+    <value>CP_livraison</value>
   </data>
   <data name="&gt;&gt;dataBasePersonnel.Name" xml:space="preserve">
     <value>dataBasePersonnel</value>
@@ -2169,14 +2163,14 @@
   <data name="textBox10.TabIndex" type="System.Int32, mscorlib">
     <value>60</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="nom_personnel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>953, 140</value>
   </data>
   <data name="dataGridView3.Size" type="System.Drawing.Size, System.Drawing">
     <value>530, 395</value>
   </data>
-  <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>72</value>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
     <value>textBox1</value>
@@ -2187,8 +2181,8 @@
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
     <value>852, 490</value>
   </data>
-  <data name="label33.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;act_client.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2205,14 +2199,17 @@
   <data name="&gt;&gt;ins_client.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Prenom_Client.Name" xml:space="preserve">
-    <value>Prenom_Client</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 18</value>
   </data>
   <data name="pays_livraison.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -2226,8 +2223,8 @@
   <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ville_habitation.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;textBox12.Parent" xml:space="preserve">
     <value>tabPage2</value>
@@ -2268,11 +2265,14 @@
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
   </data>
   <data name="&gt;&gt;prenom_personnel.Parent" xml:space="preserve">
     <value>tabPage2</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>670, 467</value>
   </data>
   <data name="label29.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
@@ -2289,8 +2289,8 @@
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>673, 620</value>
   </data>
-  <data name="&gt;&gt;mod_client.Parent" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;numRue_facturation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
     <value>672, 600</value>
@@ -2313,8 +2313,8 @@
   <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
     <value>426, 490</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -2322,8 +2322,8 @@
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
   </data>
   <data name="ID_Client.Size" type="System.Drawing.Size, System.Drawing">
     <value>403, 24</value>
@@ -2334,17 +2334,17 @@
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>670, 467</value>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
   </data>
   <data name="&gt;&gt;dataBasePersonnel.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
-  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
+  <data name="CP_habitation.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
   </data>
-  <data name="CP_livraison.Location" type="System.Drawing.Point, System.Drawing">
-    <value>428, 492</value>
+  <data name="mod_personnel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>611, 251</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2355,14 +2355,14 @@
   <data name="label12.Text" xml:space="preserve">
     <value>Informations complémentaires :</value>
   </data>
-  <data name="&gt;&gt;label16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="act_client.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 70</value>
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>
   </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="CP_facturation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 24</value>
   </data>
   <data name="dataGridView4.Size" type="System.Drawing.Size, System.Drawing">
     <value>530, 395</value>
@@ -2394,8 +2394,8 @@
   <data name="&gt;&gt;label17.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dateEmbauche.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
   </data>
   <data name="textBox11.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
@@ -2412,8 +2412,8 @@
   <data name="&gt;&gt;prenom_personnel.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="CP_facturation.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
+  <data name="&gt;&gt;infoComp_facturation.Name" xml:space="preserve">
+    <value>infoComp_facturation</value>
   </data>
   <data name="&gt;&gt;nom_personnel.ZOrder" xml:space="preserve">
     <value>23</value>

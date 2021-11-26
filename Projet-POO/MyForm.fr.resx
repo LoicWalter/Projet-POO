@@ -6688,10 +6688,28 @@
   <data name="$this.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="$this.Icon" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>MyForm</value>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAMMOAADDDgAAAAAAAAAA
+        AADsty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty7/7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcu/+y2
+        LP/tuTX/7bs8/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcu/+27
+        O//yzW//+ei9//jjr//suTT/7Lcv/+y3L//sty//7Lcv/+y3L//sty7/7Lcv/+y3L//sty//7LYt//DF
+        V//67cv//v34///////668T/7bo4/+y3Lv/sty//7LYt//DGW//34q3/8MVZ/+y2Lf/stzD/7Lcw/+y2
+        K//z0Hn///////z04P/1143/7sBJ/+y3L//sty//7Lcv/+y2LP/yzGz///79//bcmv/sti3/9NWF//fh
+        qv/tvD3/8clj///++//34Kb/7LYr/+y2Lf/sty//7Lcv/+y3L//stiz/8MVY//789f/45LL/7Lct//fi
+        qv/+/fn/8Mdc/+/CTf/++vH/+ee7/+y4Mf/sty//7Lcv/+y3L//sty//7Lcu/+6+RP/89eL/+/HY/+/B
+        Tf/34qv///////TXjP/wxlv//vnv//rty//tuTb/7Lcv/+y3L//sty//7Lcv/+y3L//stzD/9t2c///+
+        /P/99uX//vv0///////++/P//fbm///////44q3/7Lcw/+y3L//sty//7Lcv/+y3L//sty//7Lcu/+28
+        Pf/23Z3//PXi//zz3f/336P/+uvG//336P/56sH/78NQ/+y2Lf/sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty7/7Lcw/+6+Q//uvUL/7Lcv/+26OP/uv0f/7bo4/+y3Lv/sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty//7Lcv/+y3L//sti7/7Lcu/+y3L//sty7/7LYt/+y3Lv/sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3L//sty//7Lcv/+y3
+        L//sty//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAA==
+</value>
   </data>
 </root>
