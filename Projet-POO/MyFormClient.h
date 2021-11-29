@@ -1,5 +1,6 @@
 #pragma once
 
+
 namespace ProjetPOO {
 
 	using namespace System;
@@ -75,6 +76,9 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ sup_client;
 	private: System::Windows::Forms::Button^ sel_client;
 	private: System::Windows::Forms::DataGridView^ dataBaseClient;
+	private: System::Windows::Forms::Button^ retourMenu;
+	private: System::Windows::Forms::Button^ boutonAnnulerClient;
+	private: System::Windows::Forms::Button^ boutonValiderClient;
 
 	protected:
 
@@ -130,6 +134,7 @@ namespace ProjetPOO {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyFormClient::typeid));
 			this->label13 = (gcnew System::Windows::Forms::Label());
 			this->infoComp_facturation = (gcnew System::Windows::Forms::TextBox());
 			this->label14 = (gcnew System::Windows::Forms::Label());
@@ -170,6 +175,9 @@ namespace ProjetPOO {
 			this->sup_client = (gcnew System::Windows::Forms::Button());
 			this->sel_client = (gcnew System::Windows::Forms::Button());
 			this->dataBaseClient = (gcnew System::Windows::Forms::DataGridView());
+			this->retourMenu = (gcnew System::Windows::Forms::Button());
+			this->boutonAnnulerClient = (gcnew System::Windows::Forms::Button());
+			this->boutonValiderClient = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -410,7 +418,7 @@ namespace ProjetPOO {
 			// act_client
 			// 
 			this->act_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_client->Location = System::Drawing::Point(616, 54);
+			this->act_client->Location = System::Drawing::Point(616, 76);
 			this->act_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->act_client->Name = L"act_client";
 			this->act_client->Size = System::Drawing::Size(264, 70);
@@ -551,11 +559,43 @@ namespace ProjetPOO {
 			this->dataBaseClient->Size = System::Drawing::Size(531, 395);
 			this->dataBaseClient->TabIndex = 42;
 			// 
+			// retourMenu
+			// 
+			this->retourMenu->Location = System::Drawing::Point(32, 722);
+			this->retourMenu->Name = L"retourMenu";
+			this->retourMenu->Size = System::Drawing::Size(278, 69);
+			this->retourMenu->TabIndex = 82;
+			this->retourMenu->Text = L"Retour au menu";
+			this->retourMenu->UseVisualStyleBackColor = true;
+			this->retourMenu->Click += gcnew System::EventHandler(this, &MyFormClient::retourMenu_Click);
+			// 
+			// boutonAnnulerClient
+			// 
+			this->boutonAnnulerClient->Location = System::Drawing::Point(678, 722);
+			this->boutonAnnulerClient->Name = L"boutonAnnulerClient";
+			this->boutonAnnulerClient->Size = System::Drawing::Size(278, 69);
+			this->boutonAnnulerClient->TabIndex = 83;
+			this->boutonAnnulerClient->Text = L"Annuler";
+			this->boutonAnnulerClient->UseVisualStyleBackColor = true;
+			this->boutonAnnulerClient->Click += gcnew System::EventHandler(this, &MyFormClient::boutonAnnulerClient_Click);
+			// 
+			// boutonValiderClient
+			// 
+			this->boutonValiderClient->Location = System::Drawing::Point(992, 722);
+			this->boutonValiderClient->Name = L"boutonValiderClient";
+			this->boutonValiderClient->Size = System::Drawing::Size(278, 69);
+			this->boutonValiderClient->TabIndex = 84;
+			this->boutonValiderClient->Text = L"Valider";
+			this->boutonValiderClient->UseVisualStyleBackColor = true;
+			// 
 			// MyFormClient
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1691, 898);
+			this->Controls->Add(this->boutonValiderClient);
+			this->Controls->Add(this->boutonAnnulerClient);
+			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->label13);
 			this->Controls->Add(this->infoComp_facturation);
 			this->Controls->Add(this->label14);
@@ -596,8 +636,9 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sup_client);
 			this->Controls->Add(this->sel_client);
 			this->Controls->Add(this->dataBaseClient);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyFormClient";
-			this->Text = L"MyFormClient";
+			this->Text = L"Mish";
 			this->Load += gcnew System::EventHandler(this, &MyFormClient::MyFormClient_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->EndInit();
 			this->ResumeLayout(false);
@@ -607,5 +648,12 @@ namespace ProjetPOO {
 #pragma endregion
 	private: System::Void MyFormClient_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+
+}
+private: System::Void boutonAnnulerClient_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
 };
 }

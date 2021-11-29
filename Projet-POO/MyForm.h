@@ -1,5 +1,6 @@
 #pragma once
 #include "MyFormClient.h"
+#include "MyFormPersonnel.h"
 
 namespace ProjetPOO {
 
@@ -35,11 +36,15 @@ namespace ProjetPOO {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ boutonClientMenu;
+	private: System::Windows::Forms::Button^ boutonPersonnelMenu;
 	protected:
-	private: System::Windows::Forms::Button^ button2;
+
+	protected:
+
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button1;
 
 	private:
 		/// <summary>
@@ -54,60 +59,77 @@ namespace ProjetPOO {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
+			this->boutonClientMenu = (gcnew System::Windows::Forms::Button());
+			this->boutonPersonnelMenu = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// button1
+			// boutonClientMenu
 			// 
-			this->button1->Location = System::Drawing::Point(120, 175);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
-			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			this->boutonClientMenu->Location = System::Drawing::Point(128, 372);
+			this->boutonClientMenu->Name = L"boutonClientMenu";
+			this->boutonClientMenu->Size = System::Drawing::Size(137, 32);
+			this->boutonClientMenu->TabIndex = 0;
+			this->boutonClientMenu->Text = L"Client";
+			this->boutonClientMenu->UseVisualStyleBackColor = true;
+			this->boutonClientMenu->Click += gcnew System::EventHandler(this, &MyForm::buttonClient_Click);
 			// 
-			// button2
+			// boutonPersonnelMenu
 			// 
-			this->button2->Location = System::Drawing::Point(120, 236);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(75, 23);
-			this->button2->TabIndex = 1;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = true;
+			this->boutonPersonnelMenu->Location = System::Drawing::Point(128, 410);
+			this->boutonPersonnelMenu->Name = L"boutonPersonnelMenu";
+			this->boutonPersonnelMenu->Size = System::Drawing::Size(137, 32);
+			this->boutonPersonnelMenu->TabIndex = 1;
+			this->boutonPersonnelMenu->Text = L"Personnel";
+			this->boutonPersonnelMenu->UseVisualStyleBackColor = true;
+			this->boutonPersonnelMenu->Click += gcnew System::EventHandler(this, &MyForm::boutonPersonnelMenu_Click);
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(120, 301);
+			this->button3->Location = System::Drawing::Point(128, 448);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(75, 23);
+			this->button3->Size = System::Drawing::Size(137, 32);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"button3";
 			this->button3->UseVisualStyleBackColor = true;
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(120, 355);
+			this->button4->Location = System::Drawing::Point(128, 486);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(75, 23);
+			this->button4->Size = System::Drawing::Size(137, 32);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"button4";
 			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(12, 638);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(137, 32);
+			this->button1->TabIndex = 4;
+			this->button1->Text = L"Quitter";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::buttonQuitter_Click);
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(315, 624);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+			this->ClientSize = System::Drawing::Size(385, 686);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
-			this->Controls->Add(this->button2);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->boutonPersonnelMenu);
+			this->Controls->Add(this->boutonClientMenu);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Mish";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 
@@ -115,11 +137,18 @@ namespace ProjetPOO {
 #pragma endregion
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Hide();
+	private: System::Void buttonClient_Click(System::Object^ sender, System::EventArgs^ e) {
+		
 		Form^ FormMenuClient = gcnew MyFormClient();
 		FormMenuClient->Show();
 
 	}
-	};
+	private: System::Void buttonQuitter_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Close();
+	}
+private: System::Void boutonPersonnelMenu_Click(System::Object^ sender, System::EventArgs^ e) {
+	Form^ FormMenuPersonnel = gcnew MyFormPersonnel();
+	FormMenuPersonnel->Show();
+}
+};
 }
