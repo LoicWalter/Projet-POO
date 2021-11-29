@@ -18,27 +18,27 @@ namespace NS_Comp_Mappage {
 	}
 
 
-	void Client_mapTB::setId(int Id)
+	void Client_mapTB::setId_Client(int Id)
 	{
 		this->Id = Id;
 	}
-	void Client_mapTB::setNom(String^ nom)
+	void Client_mapTB::setNom_Client(String^ nom)
 	{
 		this->nom = nom;
 	}
-	void Client_mapTB::setPrenom(String^ prenom)
+	void Client_mapTB::setPrenom_Client(String^ prenom)
 	{
 		this->prenom = prenom;
 	}
-	void Client_mapTB::setDateNaissance(String^ DateNaissance)
+	void Client_mapTB::setDateNaissance_Client(String^ DateNaissance)
 	{
 		this->prenom = prenom;
 	}
 
 
-	int Client_mapTB::getId(void) { return this->Id; }
-	String^ Client_mapTB::getNom(void) { return this->nom; }
-	String^ Client_mapTB::getPrenom(void) { return this->prenom; }
-	String^ Client_mapTB::getDateNaissance(void) { return this->prenom; }
-
+	int Client_mapTB::getId_Client(void) { return this->Id; }
+	String^ Client_mapTB::getNom_Client(void) { return this->nom; }
+	String^ Client_mapTB::getPrenom_Client(void) { return this->prenom; }
+	String^ Client_mapTB::getDateNaissance_Client(void) { return this->prenom; }
+	//rajouter date premier achat
 }

@@ -69,9 +69,10 @@ namespace ProjetPOO {
 			// 
 			// boutonClientMenu
 			// 
-			this->boutonClientMenu->Location = System::Drawing::Point(128, 372);
+			this->boutonClientMenu->Location = System::Drawing::Point(96, 302);
+			this->boutonClientMenu->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->boutonClientMenu->Name = L"boutonClientMenu";
-			this->boutonClientMenu->Size = System::Drawing::Size(137, 32);
+			this->boutonClientMenu->Size = System::Drawing::Size(103, 26);
 			this->boutonClientMenu->TabIndex = 0;
 			this->boutonClientMenu->Text = L"Client";
 			this->boutonClientMenu->UseVisualStyleBackColor = true;
@@ -79,9 +80,10 @@ namespace ProjetPOO {
 			// 
 			// boutonPersonnelMenu
 			// 
-			this->boutonPersonnelMenu->Location = System::Drawing::Point(128, 410);
+			this->boutonPersonnelMenu->Location = System::Drawing::Point(96, 333);
+			this->boutonPersonnelMenu->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->boutonPersonnelMenu->Name = L"boutonPersonnelMenu";
-			this->boutonPersonnelMenu->Size = System::Drawing::Size(137, 32);
+			this->boutonPersonnelMenu->Size = System::Drawing::Size(103, 26);
 			this->boutonPersonnelMenu->TabIndex = 1;
 			this->boutonPersonnelMenu->Text = L"Personnel";
 			this->boutonPersonnelMenu->UseVisualStyleBackColor = true;
@@ -89,27 +91,30 @@ namespace ProjetPOO {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(128, 448);
+			this->button3->Location = System::Drawing::Point(96, 364);
+			this->button3->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(137, 32);
+			this->button3->Size = System::Drawing::Size(103, 26);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"button3";
 			this->button3->UseVisualStyleBackColor = true;
 			// 
 			// button4
 			// 
-			this->button4->Location = System::Drawing::Point(128, 486);
+			this->button4->Location = System::Drawing::Point(96, 395);
+			this->button4->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(137, 32);
+			this->button4->Size = System::Drawing::Size(103, 26);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"button4";
 			this->button4->UseVisualStyleBackColor = true;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(12, 638);
+			this->button1->Location = System::Drawing::Point(9, 518);
+			this->button1->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(137, 32);
+			this->button1->Size = System::Drawing::Size(103, 26);
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Quitter";
 			this->button1->UseVisualStyleBackColor = true;
@@ -117,17 +122,18 @@ namespace ProjetPOO {
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-			this->ClientSize = System::Drawing::Size(385, 686);
+			this->ClientSize = System::Drawing::Size(289, 557);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->boutonPersonnelMenu);
 			this->Controls->Add(this->boutonClientMenu);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"MyForm";
 			this->Text = L"Mish";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);

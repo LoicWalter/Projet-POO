@@ -1,1 +1,42 @@
 #include "Client_service.h"
+#include "CAD.h"
+#include "Client_mapTB.h"
+
+using namespace NS_Comp_Data;
+using namespace NS_Comp_Mappage;
+
+namespace NS_Comp_Svc {
+	Client_service::Client_service(void) {
+		this->Cad = gcnew CAD();
+		this->ClientMappTB = gcnew Client_mapTB();
+		this->dataSetClient = gcnew DataSet();
+	}
+	DataSet^ Client_service::List(String^ dataTableName) {
+		dataSetClient = Cad->getRows(ClientMappTB->Select(), dataTableName);
+		return dataSetClient;
+	}
+	void Client_service::AddClient(String^ nom, String^ prenom, String^ DateNaissance, String^ /*DatePremierAchat*/) {
+		ClientMappTB->setNom_Client(nom);
+		ClientMappTB->setPrenom_Client(prenom);
+		ClientMappTB->setDateNaissance_Client(DateNaissance);
+		//ClientMappTB->setDatePremierAchat_Client(DatePremierAchat);
+
+		this->Cad->actionRows(this->ClientMappTB->Insert());
+		//peut etre un return si ça marche po
+	}
+	void Client_service::DeleteClient(int id_client) {
+		this->ClientMappTB->setId_Client(id_client);
+		this->Cad->actionRows(this->ClientMappTB->Delete());
+	}
+	void Client_service::UpdateClient(int id_client, String^ nom, String^ prenom, String^ DateNaissance, String^ /*DatePremierAchat*/) {
+		ClientMappTB->setId_Client(id_client);
+		ClientMappTB->setNom_Client(nom);
+		ClientMappTB->setPrenom_Client(prenom);
+		ClientMappTB->setDateNaissance_Client(DateNaissance);
+		//ClientMappTB->setDatePremierAchat_Client(DatePremierAchat);
+		this->Cad->actionRows(this->ClientMappTB->Update());
+
+	}
+}
+//Reste a rajouter les click boutons de la page client dans le form.cpp, PAS OUBLIER DE CONVERT id en int des le debut !
+//Rajouter Date de premier achat
