@@ -1,7 +1,7 @@
 #pragma once
 using namespace System;
 
-
+namespace NS_Comp_Mappage {
 	ref class Client_mapTB
 	{
 	private:
@@ -19,14 +19,11 @@ using namespace System;
 		void setPrenom(String^);
 		void setDateNaissance(String^);
 
-
-
-
 		int getId(void);
 		String^ getNom(void);
 		String^ getPrenom(void);
 		String^ getDateNaissance(void);
 
 	};
-
+}
 
