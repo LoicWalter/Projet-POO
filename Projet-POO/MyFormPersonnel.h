@@ -1,4 +1,5 @@
 #pragma once
+//#include "affichageForms.h"
 
 namespace ProjetPOO {
 
@@ -81,6 +82,7 @@ namespace ProjetPOO {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyFormPersonnel::typeid));
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->superieur = (gcnew System::Windows::Forms::TextBox());
 			this->label25 = (gcnew System::Windows::Forms::Label());
@@ -425,7 +427,8 @@ namespace ProjetPOO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1425, 846);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->ClientSize = System::Drawing::Size(1540, 846);
 			this->Controls->Add(this->boutonValiderPersonnel);
 			this->Controls->Add(this->boutonAnnulerPersonnel);
 			this->Controls->Add(this->retourMenu);
@@ -467,6 +470,9 @@ namespace ProjetPOO {
 		}
 #pragma endregion
 	private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
+		//affichageForms affiche;
+		//affiche.afficherForms();
+
 	this->Close();
 	}
 
