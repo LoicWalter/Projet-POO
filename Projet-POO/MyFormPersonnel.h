@@ -64,6 +64,9 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ sup_personnel;
 	private: System::Windows::Forms::Button^ sel_personnel;
 	private: System::Windows::Forms::DataGridView^ dataBasePersonnel;
+	private: System::Windows::Forms::Button^ boutonValiderPersonnel;
+	private: System::Windows::Forms::Button^ boutonAnnulerPersonnel;
+	private: System::Windows::Forms::Button^ retourMenu;
 
 	private:
 		/// <summary>
@@ -107,6 +110,9 @@ namespace ProjetPOO {
 			this->sup_personnel = (gcnew System::Windows::Forms::Button());
 			this->sel_personnel = (gcnew System::Windows::Forms::Button());
 			this->dataBasePersonnel = (gcnew System::Windows::Forms::DataGridView());
+			this->boutonValiderPersonnel = (gcnew System::Windows::Forms::Button());
+			this->boutonAnnulerPersonnel = (gcnew System::Windows::Forms::Button());
+			this->retourMenu = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBasePersonnel))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -386,11 +392,43 @@ namespace ProjetPOO {
 			this->dataBasePersonnel->Size = System::Drawing::Size(531, 395);
 			this->dataBasePersonnel->TabIndex = 72;
 			// 
+			// boutonValiderPersonnel
+			// 
+			this->boutonValiderPersonnel->Location = System::Drawing::Point(992, 710);
+			this->boutonValiderPersonnel->Name = L"boutonValiderPersonnel";
+			this->boutonValiderPersonnel->Size = System::Drawing::Size(278, 69);
+			this->boutonValiderPersonnel->TabIndex = 103;
+			this->boutonValiderPersonnel->Text = L"Valider";
+			this->boutonValiderPersonnel->UseVisualStyleBackColor = true;
+			// 
+			// boutonAnnulerPersonnel
+			// 
+			this->boutonAnnulerPersonnel->Location = System::Drawing::Point(678, 710);
+			this->boutonAnnulerPersonnel->Name = L"boutonAnnulerPersonnel";
+			this->boutonAnnulerPersonnel->Size = System::Drawing::Size(278, 69);
+			this->boutonAnnulerPersonnel->TabIndex = 102;
+			this->boutonAnnulerPersonnel->Text = L"Annuler";
+			this->boutonAnnulerPersonnel->UseVisualStyleBackColor = true;
+			this->boutonAnnulerPersonnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::boutonAnnulerPersonnel_Click);
+			// 
+			// retourMenu
+			// 
+			this->retourMenu->Location = System::Drawing::Point(32, 710);
+			this->retourMenu->Name = L"retourMenu";
+			this->retourMenu->Size = System::Drawing::Size(278, 69);
+			this->retourMenu->TabIndex = 101;
+			this->retourMenu->Text = L"Retour au menu";
+			this->retourMenu->UseVisualStyleBackColor = true;
+			this->retourMenu->Click += gcnew System::EventHandler(this, &MyFormPersonnel::retourMenu_Click);
+			// 
 			// MyFormPersonnel
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1425, 846);
+			this->Controls->Add(this->boutonValiderPersonnel);
+			this->Controls->Add(this->boutonAnnulerPersonnel);
+			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->label20);
 			this->Controls->Add(this->superieur);
 			this->Controls->Add(this->label25);
@@ -428,5 +466,12 @@ namespace ProjetPOO {
 
 		}
 #pragma endregion
-	};
+	private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+	}
+
+private: System::Void boutonAnnulerPersonnel_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
+};
 }
