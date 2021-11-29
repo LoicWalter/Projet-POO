@@ -122,6 +122,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="affichageForms.cpp" />
     <ClCompile Include="CAD.cpp" />
     <ClCompile Include="Client_mapTB.cpp" />
     <ClCompile Include="Client_service.cpp" />
@@ -130,6 +131,7 @@
     <ClCompile Include="MyFormPersonnel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="affichageForms.h" />
     <ClInclude Include="CAD.h" />
     <ClInclude Include="Client_mapTB.h" />
     <ClInclude Include="Client_service.h" />
