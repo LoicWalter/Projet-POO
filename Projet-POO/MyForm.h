@@ -95,6 +95,7 @@ namespace ProjetPOO {
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"button3";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
 			// 
@@ -149,6 +150,9 @@ namespace ProjetPOO {
 private: System::Void boutonPersonnelMenu_Click(System::Object^ sender, System::EventArgs^ e) {
 	Form^ FormMenuPersonnel = gcnew MyFormPersonnel();
 	FormMenuPersonnel->Show();
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+
 }
 };
 }
