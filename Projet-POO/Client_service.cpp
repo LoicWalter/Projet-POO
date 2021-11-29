@@ -11,7 +11,7 @@ namespace NS_Comp_Svc {
 		this->ClientMappTB = gcnew Client_mapTB();
 		this->dataSetClient = gcnew DataSet();
 	}
-	DataSet^ Client_service::List(String^ dataTableName) {
+	DataSet^ Client_service::Clients(String^ dataTableName) {
 		dataSetClient = Cad->getRows(ClientMappTB->Select(), dataTableName);
 		return dataSetClient;
 	}

@@ -9,6 +9,7 @@ namespace NS_Comp_Mappage {
 		int Id;
 		String^ nom;
 		String^ prenom;
+		String^ date_naissance;
 	public:
 		String^ Select(void);
 		String^ Insert(void);

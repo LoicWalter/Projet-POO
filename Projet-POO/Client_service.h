@@ -2,8 +2,6 @@
 #include "Client_mapTB.h"
 #include "CAD.h"
 
-using namespace System::Data;
-using namespace System;
 using namespace NS_Comp_Data;
 using namespace NS_Comp_Mappage;
 
@@ -17,7 +15,7 @@ namespace NS_Comp_Svc
 		DataSet^ dataSetClient;
 	public:
 		Client_service(void);
-		DataSet^ List(String^);
+		DataSet^ Clients(String^);
 		void AddClient(String^, String^ , String^, String^);
 		void DeleteClient(int);
 		void UpdateClient(int, String^, String^, String^ ,String^);

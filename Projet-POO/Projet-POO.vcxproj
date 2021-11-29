@@ -129,6 +129,8 @@
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="MyFormClient.cpp" />
     <ClCompile Include="MyFormPersonnel.cpp" />
+    <ClCompile Include="Personnel_mapTB.cpp" />
+    <ClCompile Include="Personnel_service.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="affichageForms.h" />
@@ -144,6 +146,8 @@
     <ClInclude Include="MyFormPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Personnel_mapTB.h" />
+    <ClInclude Include="Personnel_service.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">

@@ -31,4 +31,5 @@ classe:
 
 plutard:
 - click bouton pour les autres 
-- fermer fenetre et retour au menu*/
+- fermer fenetre et retour au menu
+- requetes*/
