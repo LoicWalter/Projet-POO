@@ -1,4 +1,5 @@
 #include "MyForm.h"
+
 using namespace System;
 using namespace System::Windows::Forms;
 
@@ -11,5 +12,3 @@ int __clrcall WinMain(array<String^>^ args)
 	ProjetPOO::MyForm Form;
 	Application::Run(% Form);
 }
-
-

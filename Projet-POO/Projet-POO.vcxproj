@@ -123,6 +123,8 @@
     <ClCompile Include="CAD.cpp" />
     <ClCompile Include="Client_mapTB.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyFormClient.cpp" />
+    <ClCompile Include="MyFormPersonnel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CAD.h" />
@@ -130,13 +132,22 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MyFormClient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyFormPersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MyForm.fr.resx">
-      <DependentUpon>MyForm.h</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormClient.resx">
+      <DependentUpon>MyFormClient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormPersonnel.resx">
+      <DependentUpon>MyFormPersonnel.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

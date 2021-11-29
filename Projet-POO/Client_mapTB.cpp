@@ -6,15 +6,15 @@ String^ Client_mapTB::Select() {
 }
 
 String^ Client_mapTB::Delete() {
-
+	return "";
 }
 
 String^ Client_mapTB::Insert() {
-
+	return "";
 }
 
 String^ Client_mapTB::Update() {
-
+	return "";
 }
 
 
