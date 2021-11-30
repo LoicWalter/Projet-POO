@@ -42,7 +42,10 @@
     <ClCompile Include="Personnel_service.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Adresse_mapTB.cpp">
+    <ClCompile Include="MyFormStats.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormCommande.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Adresse_service.cpp">
@@ -77,7 +80,10 @@
     <ClInclude Include="Personnel_service.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Adresse_mapTB.h">
+    <ClInclude Include="MyFormStats.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="MyFormCommande.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Adresse_service.h">

@@ -1,15 +1,16 @@
 #include "Personnel_service.h"
+#include "Personnel_mapTB.h"
 
 namespace NS_Comp_Svc {
 	Personnel_service::Personnel_service(void) {
 		this->Cad = gcnew CAD();
 		this->PersonnelMappTB = gcnew Personnel_mapTB();
-		this->dataSetPersonnel = gcnew DataSet();
+		
 	}
 
 	DataSet^ Personnel_service::Personnels(String^ dataTableName) {
-		dataSetPersonnel = Cad->getRows(PersonnelMappTB->Select(), dataTableName);
-		return dataSetPersonnel;
+		
+		return this->Cad->getRows(this->PersonnelMappTB->Select(), dataTableName);
 	}
 
 	void Personnel_service::AddPersonnel(String^ nom_personnel, String^ prenom_personnel, String^ dateEmbauche) {
@@ -31,5 +32,9 @@ namespace NS_Comp_Svc {
 		PersonnelMappTB->setDateEmbauche(dateEmbauche);
 
 		this->Cad->actionRows(this->PersonnelMappTB->Update());
+	}
+	DataSet^ Personnel_service::SelectPersonnel(int id_personnel, String^ dataTableName) {
+		this->PersonnelMappTB->setId_personnel(id_personnel);
+		return this->Cad->getRows(this->PersonnelMappTB->SelectParticulier(), dataTableName);
 	}
 }

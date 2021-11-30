@@ -14,10 +14,12 @@ namespace NS_Comp_Mappage {
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);
+		String^ SelectParticulier(void);
 		void setId_personnel(int);
 		void setNom_personnel(String^);
 		void setPrenom_personnel(String^);
 		void setDateEmbauche(String^);
+
 
 		int getId_personnel(void);
 		String^ getNom_personnel(void);

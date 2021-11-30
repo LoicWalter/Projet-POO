@@ -11,13 +11,14 @@ namespace NS_Comp_Svc {
 	private:
 		CAD^ Cad;
 		Personnel_mapTB^ PersonnelMappTB;
-		DataSet^ dataSetPersonnel;
 	public:
 		Personnel_service(void);
 		DataSet^ Personnels(String^);
+		DataSet^ SelectPersonnel(int id_client, String^ dataTableName);
 		void AddPersonnel(String^, String^, String^);
 		void DeletePersonnel(int);
 		void UpdatePersonnel(int, String^, String^, String^);
+		
 	};
 }
 
