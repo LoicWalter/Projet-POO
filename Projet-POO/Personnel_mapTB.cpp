@@ -3,16 +3,19 @@
 namespace NS_Comp_Mappage {
 
 	String^ Personnel_mapTB::Select() {
-		return "";
+		return "SELECT [id_personnel], [nom], [prenom], [date_embauche] FROM [Projet].[dbo].[personnel]";
+	}
+	String^ Personnel_mapTB::SelectParticulier() {
+		return "SELECT [id_personnel], [nom], [prenom], [date_embauche] FROM [Projet].[dbo].[personnel]  WHERE (id_client='" + this->id_personnel + "');";
 	}
 	String^ Personnel_mapTB::Delete() {
-		return "";
+		return "DELETE FROM [Projet].[dbo].[personnel] WHERE (id_personnel ='" + this->id_personnel + "');";
 	}
 	String^ Personnel_mapTB::Insert() {
-		return "";
+		return "INSERT INTO personnel (nom, prenom, date_embauche) VALUES('" + this->nom_personnel + "','" + this->prenom_personnel + "','" + this->date_embauche + "');";
 	}
 	String^ Personnel_mapTB::Update() {
-		return "";
+		return "UPDATE [Projet].[dbo].[personnel] SET nom = '" + this->nom_personnel + "', prenom = '" + this->prenom_personnel + "', date_naissance = '" + this->date_embauche + "' WHERE (id_personnel='" + this->id_personnel + "');";
 	}
 
 	void Personnel_mapTB::setId_personnel(int Id) { this->id_personnel = Id; }

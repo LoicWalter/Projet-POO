@@ -128,7 +128,9 @@
     <ClCompile Include="Client_service.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="MyFormClient.cpp" />
+    <ClCompile Include="MyFormCommande.cpp" />
     <ClCompile Include="MyFormPersonnel.cpp" />
+    <ClCompile Include="MyFormStats.cpp" />
     <ClCompile Include="Personnel_mapTB.cpp" />
     <ClCompile Include="Personnel_service.cpp" />
   </ItemGroup>
@@ -143,7 +145,13 @@
     <ClInclude Include="MyFormClient.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MyFormCommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MyFormPersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyFormStats.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Personnel_mapTB.h" />
@@ -156,8 +164,14 @@
     <EmbeddedResource Include="MyFormClient.resx">
       <DependentUpon>MyFormClient.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MyFormCommande.resx">
+      <DependentUpon>MyFormCommande.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyFormPersonnel.resx">
       <DependentUpon>MyFormPersonnel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormStats.resx">
+      <DependentUpon>MyFormStats.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

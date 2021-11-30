@@ -1,5 +1,6 @@
 #pragma once
 //#include "affichageForms.h"
+#include "Personnel_service.h"
 
 namespace ProjetPOO {
 
@@ -65,8 +66,9 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ sup_personnel;
 	private: System::Windows::Forms::Button^ sel_personnel;
 	private: System::Windows::Forms::DataGridView^ dataBasePersonnel;
-	private: System::Windows::Forms::Button^ boutonValiderPersonnel;
-	private: System::Windows::Forms::Button^ boutonAnnulerPersonnel;
+	private: NS_Comp_Svc::Personnel_service^ Svc;
+	private: System::Data::DataSet^ Ds;
+
 	private: System::Windows::Forms::Button^ retourMenu;
 
 	private:
@@ -112,8 +114,6 @@ namespace ProjetPOO {
 			this->sup_personnel = (gcnew System::Windows::Forms::Button());
 			this->sel_personnel = (gcnew System::Windows::Forms::Button());
 			this->dataBasePersonnel = (gcnew System::Windows::Forms::DataGridView());
-			this->boutonValiderPersonnel = (gcnew System::Windows::Forms::Button());
-			this->boutonAnnulerPersonnel = (gcnew System::Windows::Forms::Button());
 			this->retourMenu = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBasePersonnel))->BeginInit();
 			this->SuspendLayout();
@@ -256,6 +256,8 @@ namespace ProjetPOO {
 			// 
 			// dateEmbauche
 			// 
+			this->dateEmbauche->CustomFormat = L"dd/MM/yyyy";
+			this->dateEmbauche->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateEmbauche->Location = System::Drawing::Point(957, 382);
 			this->dateEmbauche->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dateEmbauche->Name = L"dateEmbauche";
@@ -272,6 +274,7 @@ namespace ProjetPOO {
 			this->act_personnel->TabIndex = 84;
 			this->act_personnel->Text = L"Actualiser";
 			this->act_personnel->UseVisualStyleBackColor = true;
+			this->act_personnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::act_personnel_Click);
 			// 
 			// label33
 			// 
@@ -349,6 +352,7 @@ namespace ProjetPOO {
 			this->mod_personnel->TabIndex = 76;
 			this->mod_personnel->Text = L"Modification";
 			this->mod_personnel->UseVisualStyleBackColor = true;
+			this->mod_personnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::mod_personnel_Click);
 			// 
 			// ins_personnel
 			// 
@@ -360,6 +364,7 @@ namespace ProjetPOO {
 			this->ins_personnel->TabIndex = 75;
 			this->ins_personnel->Text = L"Insertion";
 			this->ins_personnel->UseVisualStyleBackColor = true;
+			this->ins_personnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::ins_personnel_Click);
 			// 
 			// sup_personnel
 			// 
@@ -371,6 +376,7 @@ namespace ProjetPOO {
 			this->sup_personnel->TabIndex = 74;
 			this->sup_personnel->Text = L"Suppression";
 			this->sup_personnel->UseVisualStyleBackColor = true;
+			this->sup_personnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::sup_personnel_Click);
 			// 
 			// sel_personnel
 			// 
@@ -382,6 +388,7 @@ namespace ProjetPOO {
 			this->sel_personnel->TabIndex = 73;
 			this->sel_personnel->Text = L"Sélection";
 			this->sel_personnel->UseVisualStyleBackColor = true;
+			this->sel_personnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::sel_personnel_Click);
 			// 
 			// dataBasePersonnel
 			// 
@@ -393,25 +400,6 @@ namespace ProjetPOO {
 			this->dataBasePersonnel->RowTemplate->Height = 24;
 			this->dataBasePersonnel->Size = System::Drawing::Size(531, 395);
 			this->dataBasePersonnel->TabIndex = 72;
-			// 
-			// boutonValiderPersonnel
-			// 
-			this->boutonValiderPersonnel->Location = System::Drawing::Point(992, 710);
-			this->boutonValiderPersonnel->Name = L"boutonValiderPersonnel";
-			this->boutonValiderPersonnel->Size = System::Drawing::Size(278, 69);
-			this->boutonValiderPersonnel->TabIndex = 103;
-			this->boutonValiderPersonnel->Text = L"Valider";
-			this->boutonValiderPersonnel->UseVisualStyleBackColor = true;
-			// 
-			// boutonAnnulerPersonnel
-			// 
-			this->boutonAnnulerPersonnel->Location = System::Drawing::Point(678, 710);
-			this->boutonAnnulerPersonnel->Name = L"boutonAnnulerPersonnel";
-			this->boutonAnnulerPersonnel->Size = System::Drawing::Size(278, 69);
-			this->boutonAnnulerPersonnel->TabIndex = 102;
-			this->boutonAnnulerPersonnel->Text = L"Annuler";
-			this->boutonAnnulerPersonnel->UseVisualStyleBackColor = true;
-			this->boutonAnnulerPersonnel->Click += gcnew System::EventHandler(this, &MyFormPersonnel::boutonAnnulerPersonnel_Click);
 			// 
 			// retourMenu
 			// 
@@ -427,10 +415,7 @@ namespace ProjetPOO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(1540, 846);
-			this->Controls->Add(this->boutonValiderPersonnel);
-			this->Controls->Add(this->boutonAnnulerPersonnel);
 			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->label20);
 			this->Controls->Add(this->superieur);
@@ -461,23 +446,48 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sup_personnel);
 			this->Controls->Add(this->sel_personnel);
 			this->Controls->Add(this->dataBasePersonnel);
+			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyFormPersonnel";
 			this->Text = L"MyFormPersonnel";
+			this->Load += gcnew System::EventHandler(this, &MyFormPersonnel::MyFormPersonnel_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBasePersonnel))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
 		}
 #pragma endregion
-	private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
-		//affichageForms affiche;
-		//affiche.afficherForms();
 
+
+	private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
 	}
 
 private: System::Void boutonAnnulerPersonnel_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void act_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->dataBasePersonnel->Refresh();
+	this->Ds = this->Svc->Personnels("Rsl");
+	this->dataBasePersonnel->DataSource = this->Ds;
+	this->dataBasePersonnel->DataMember = "Rsl";
+}
+private: System::Void sel_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->dataBasePersonnel->Refresh();
+	this->Ds = this->Svc->SelectPersonnel(int::Parse(this->ID_personnel->Text), "Rsl");
+	this->dataBasePersonnel->DataSource = this->Ds;
+	this->dataBasePersonnel->DataMember = "Rsl";
+}
+private: System::Void ins_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Svc->AddPersonnel(this->nom_personnel->Text, this->prenom_personnel->Text, this->dateEmbauche->Text);
+}
+private: System::Void mod_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Svc->UpdatePersonnel(int::Parse(this->ID_personnel->Text), this->nom_personnel->Text, this->prenom_personnel->Text, this->dateEmbauche->Text);
+}
+private: System::Void sup_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Svc->DeletePersonnel(int::Parse(this->ID_personnel->Text));
+}
+private: System::Void MyFormPersonnel_Load(System::Object^ sender, System::EventArgs^ e) {
+	this->Svc = gcnew NS_Comp_Svc::Personnel_service();
 }
 };
 }
