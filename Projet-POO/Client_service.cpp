@@ -36,6 +36,10 @@ namespace NS_Comp_Svc {
 		this->Cad->actionRows(this->ClientMappTB->Update());
 
 	}
+	DataSet^ Client_service::SelectClient(int id_client, String^ dataTableName) {
+		this->ClientMappTB->setId_Client(id_client);
+		return this->Cad->getRows(this->ClientMappTB->SelectParticulier(), dataTableName);
+	}
 }
 //Reste a rajouter les click boutons de la page client dans le form.cpp, PAS OUBLIER DE CONVERT id en int des le debut !
 //Rajouter Date de premier achat

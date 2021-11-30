@@ -19,6 +19,7 @@ namespace NS_Comp_Svc
 		void AddClient(String^, String^ , String^/*, String^*/);
 		void DeleteClient(int);
 		void UpdateClient(int, String^, String^, String^ /*, String^*/);
+		DataSet^ SelectClient(int, String^ dataTableName);
 	};
 }
 

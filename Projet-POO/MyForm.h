@@ -39,14 +39,18 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ boutonClientMenu;
 	private: System::Windows::Forms::Button^ boutonPersonnelMenu;
 	private: System::Windows::Forms::Button^ buttonStats;
+	private: System::Windows::Forms::Button^ boutonCommandeMenu;
 	protected:
 
 	protected:
 
 
-	private: System::Windows::Forms::Button^ button4;
+
 	private: System::Windows::Forms::Button^ button1;
-	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Button^ boutonArticleMenu;
+
+
+
 
 	private:
 		/// <summary>
@@ -65,9 +69,9 @@ namespace ProjetPOO {
 			this->boutonClientMenu = (gcnew System::Windows::Forms::Button());
 			this->boutonPersonnelMenu = (gcnew System::Windows::Forms::Button());
 			this->buttonStats = (gcnew System::Windows::Forms::Button());
-			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->boutonCommandeMenu = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->boutonArticleMenu = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// boutonClientMenu
@@ -81,9 +85,10 @@ namespace ProjetPOO {
 			this->boutonClientMenu->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->boutonClientMenu->ForeColor = System::Drawing::Color::Black;
 			this->boutonClientMenu->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boutonClientMenu.Image")));
-			this->boutonClientMenu->Location = System::Drawing::Point(122, 305);
+			this->boutonClientMenu->Location = System::Drawing::Point(163, 375);
+			this->boutonClientMenu->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->boutonClientMenu->Name = L"boutonClientMenu";
-			this->boutonClientMenu->Size = System::Drawing::Size(146, 46);
+			this->boutonClientMenu->Size = System::Drawing::Size(195, 57);
 			this->boutonClientMenu->TabIndex = 0;
 			this->boutonClientMenu->TabStop = false;
 			this->boutonClientMenu->Text = L"Client";
@@ -99,9 +104,10 @@ namespace ProjetPOO {
 			this->boutonPersonnelMenu->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->boutonPersonnelMenu->ForeColor = System::Drawing::Color::Black;
 			this->boutonPersonnelMenu->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boutonPersonnelMenu.Image")));
-			this->boutonPersonnelMenu->Location = System::Drawing::Point(120, 357);
+			this->boutonPersonnelMenu->Location = System::Drawing::Point(160, 439);
+			this->boutonPersonnelMenu->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->boutonPersonnelMenu->Name = L"boutonPersonnelMenu";
-			this->boutonPersonnelMenu->Size = System::Drawing::Size(148, 48);
+			this->boutonPersonnelMenu->Size = System::Drawing::Size(197, 59);
 			this->boutonPersonnelMenu->TabIndex = 1;
 			this->boutonPersonnelMenu->Text = L"Personnel";
 			this->boutonPersonnelMenu->UseVisualStyleBackColor = false;
@@ -116,29 +122,31 @@ namespace ProjetPOO {
 			this->buttonStats->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->buttonStats->ForeColor = System::Drawing::Color::Black;
 			this->buttonStats->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"buttonStats.Image")));
-			this->buttonStats->Location = System::Drawing::Point(120, 411);
+			this->buttonStats->Location = System::Drawing::Point(160, 506);
+			this->buttonStats->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->buttonStats->Name = L"buttonStats";
-			this->buttonStats->Size = System::Drawing::Size(148, 48);
+			this->buttonStats->Size = System::Drawing::Size(197, 59);
 			this->buttonStats->TabIndex = 2;
 			this->buttonStats->Text = L"Statistiques";
 			this->buttonStats->UseVisualStyleBackColor = false;
 			this->buttonStats->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
-			// button4
+			// boutonCommandeMenu
 			// 
-			this->button4->AutoSize = true;
-			this->button4->BackColor = System::Drawing::Color::Transparent;
-			this->button4->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->button4->FlatAppearance->BorderSize = 0;
-			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button4->ForeColor = System::Drawing::Color::Black;
-			this->button4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button4.Image")));
-			this->button4->Location = System::Drawing::Point(120, 465);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(148, 48);
-			this->button4->TabIndex = 3;
-			this->button4->Text = L"button4";
-			this->button4->UseVisualStyleBackColor = false;
+			this->boutonCommandeMenu->AutoSize = true;
+			this->boutonCommandeMenu->BackColor = System::Drawing::Color::Transparent;
+			this->boutonCommandeMenu->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->boutonCommandeMenu->FlatAppearance->BorderSize = 0;
+			this->boutonCommandeMenu->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->boutonCommandeMenu->ForeColor = System::Drawing::Color::Black;
+			this->boutonCommandeMenu->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boutonCommandeMenu.Image")));
+			this->boutonCommandeMenu->Location = System::Drawing::Point(160, 572);
+			this->boutonCommandeMenu->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->boutonCommandeMenu->Name = L"boutonCommandeMenu";
+			this->boutonCommandeMenu->Size = System::Drawing::Size(197, 59);
+			this->boutonCommandeMenu->TabIndex = 3;
+			this->boutonCommandeMenu->Text = L"Commande";
+			this->boutonCommandeMenu->UseVisualStyleBackColor = false;
 			// 
 			// button1
 			// 
@@ -149,43 +157,45 @@ namespace ProjetPOO {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->ForeColor = System::Drawing::Color::Black;
 			this->button1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button1.Image")));
-			this->button1->Location = System::Drawing::Point(12, 600);
+			this->button1->Location = System::Drawing::Point(16, 738);
+			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(148, 48);
+			this->button1->Size = System::Drawing::Size(197, 59);
 			this->button1->TabIndex = 4;
 			this->button1->Text = L"Quitter";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::buttonQuitter_Click);
 			// 
-			// button2
+			// boutonArticleMenu
 			// 
-			this->button2->AutoSize = true;
-			this->button2->BackColor = System::Drawing::Color::Transparent;
-			this->button2->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->button2->FlatAppearance->BorderSize = 0;
-			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button2->ForeColor = System::Drawing::Color::Black;
-			this->button2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button2.Image")));
-			this->button2->Location = System::Drawing::Point(120, 519);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(148, 48);
-			this->button2->TabIndex = 5;
-			this->button2->Text = L"button2";
-			this->button2->UseVisualStyleBackColor = false;
-			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			this->boutonArticleMenu->AutoSize = true;
+			this->boutonArticleMenu->BackColor = System::Drawing::Color::Transparent;
+			this->boutonArticleMenu->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
+			this->boutonArticleMenu->FlatAppearance->BorderSize = 0;
+			this->boutonArticleMenu->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->boutonArticleMenu->ForeColor = System::Drawing::Color::Black;
+			this->boutonArticleMenu->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"boutonArticleMenu.Image")));
+			this->boutonArticleMenu->Location = System::Drawing::Point(160, 639);
+			this->boutonArticleMenu->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->boutonArticleMenu->Name = L"boutonArticleMenu";
+			this->boutonArticleMenu->Size = System::Drawing::Size(197, 59);
+			this->boutonArticleMenu->TabIndex = 5;
+			this->boutonArticleMenu->Text = L"Article";
+			this->boutonArticleMenu->UseVisualStyleBackColor = false;
+			this->boutonArticleMenu->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSize = true;
 			this->BackColor = System::Drawing::Color::Black;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Zoom;
-			this->ClientSize = System::Drawing::Size(368, 655);
-			this->Controls->Add(this->button2);
+			this->ClientSize = System::Drawing::Size(491, 806);
+			this->Controls->Add(this->boutonArticleMenu);
 			this->Controls->Add(this->button1);
-			this->Controls->Add(this->button4);
+			this->Controls->Add(this->boutonCommandeMenu);
 			this->Controls->Add(this->buttonStats);
 			this->Controls->Add(this->boutonPersonnelMenu);
 			this->Controls->Add(this->boutonClientMenu);
@@ -193,6 +203,7 @@ namespace ProjetPOO {
 			this->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->MaximizeBox = false;
 			this->MinimizeBox = false;
 			this->Name = L"MyForm";

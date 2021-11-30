@@ -12,6 +12,7 @@ namespace NS_Comp_Mappage {
 		String^ date_naissance;
 	public:
 		String^ Select(void);
+		String^ SelectParticulier(void);
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);

@@ -217,7 +217,7 @@
         XpHefotNhMeuvmcMj129GvxktHzs6tTUv9MkFWt5cE54AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="boutonCommandeMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIwAAAAoCAYAAAAsTRLGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAABl9JREFUeF7tnLmOHUUUhifwBDizZAe2HPkJCAmJLb8CwgEBISEhkgkcWoLACasQ
@@ -283,7 +283,7 @@
         XpHefotNhMeuvmcMj129GvxktHzs6tTUv9MkFWt5cE54AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="boutonArticleMenu.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIwAAAAoCAYAAAAsTRLGAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EwAACxMBAJqcGAAABl9JREFUeF7tnLmOHUUUhifwBDizZAe2HPkJCAmJLb8CwgEBISEhkgkcWoLACasQ

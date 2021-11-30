@@ -1,20 +1,26 @@
 #include "Client_mapTB.h"
+#include <iostream>
+using namespace std;
 
 namespace NS_Comp_Mappage {
 	String^ Client_mapTB::Select() {
-		return "SELECT [id], [nom], [prenom] FROM [DB_P6].[dbo].[Clients]";
+		return "SELECT [id_client], [nom], [prenom], [date_naissance] FROM [Projet].[dbo].[client]";
+	}
+
+	String^ Client_mapTB::SelectParticulier() {
+		return "SELECT [id_client], [nom], [prenom], [date_naissance] FROM [Projet].[dbo].[client]  WHERE (id_client='" + this->Id + "');";
 	}
 
 	String^ Client_mapTB::Delete() {
-		return "";
+		return "DELETE FROM [Projet].[dbo].[client] WHERE (id_client ='" + this->Id + "');";
 	}
 
 	String^ Client_mapTB::Insert() {
-		return "";
+		return "INSERT INTO client (nom, prenom, date_naissance) VALUES('" + this->nom + "','" + this->prenom + "','" + this->date_naissance + "');";
 	}
 
 	String^ Client_mapTB::Update() {
-		return "";
+		return "UPDATE [Projet].[dbo].[client] SET nom = '" + this->nom + "', prenom = '" + this->prenom + "', date_naissance = '" + this->date_naissance + "' WHERE (id_client='" + this->Id + "');";
 	}
 
 
