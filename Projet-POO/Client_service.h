@@ -16,9 +16,9 @@ namespace NS_Comp_Svc
 	public:
 		Client_service(void);
 		DataSet^ Clients(String^);
-		void AddClient(String^, String^ , String^, String^);
+		void AddClient(String^, String^ , String^/*, String^*/);
 		void DeleteClient(int);
-		void UpdateClient(int, String^, String^, String^ ,String^);
+		void UpdateClient(int, String^, String^, String^ /*, String^*/);
 	};
 }
 
