@@ -2,7 +2,7 @@
 
 namespace NS_Comp_Mappage {
 	String^ Client_mapTB::Select() {
-		return "SELECT [id], [nom], [prenom] FROM [Projet].[dbo].[Client]";
+		return "SELECT [id], [nom], [prenom] FROM [DB_P6].[dbo].[Clients]";
 	}
 
 	String^ Client_mapTB::Delete() {

@@ -9,13 +9,12 @@ namespace NS_Comp_Svc {
 	Client_service::Client_service(void) {
 		this->Cad = gcnew CAD();
 		this->ClientMappTB = gcnew Client_mapTB();
-		this->dataSetClient = gcnew DataSet();
+		//this->dataSetClient = gcnew DataSet();
 	}
 	DataSet^ Client_service::Clients(String^ dataTableName) {
-		dataSetClient = Cad->getRows(ClientMappTB->Select(), dataTableName);
-		return dataSetClient;
+		return this->Cad->getRows(this->ClientMappTB->Select(), dataTableName);
 	}
-	void Client_service::AddClient(String^ nom, String^ prenom, String^ DateNaissance, String^ /*DatePremierAchat*/) {
+	void Client_service::AddClient(String^ nom, String^ prenom, String^ DateNaissance/*, String^ DatePremierAchat*/) {
 		ClientMappTB->setNom_Client(nom);
 		ClientMappTB->setPrenom_Client(prenom);
 		ClientMappTB->setDateNaissance_Client(DateNaissance);
@@ -28,7 +27,7 @@ namespace NS_Comp_Svc {
 		this->ClientMappTB->setId_Client(id_client);
 		this->Cad->actionRows(this->ClientMappTB->Delete());
 	}
-	void Client_service::UpdateClient(int id_client, String^ nom, String^ prenom, String^ DateNaissance, String^ /*DatePremierAchat*/) {
+	void Client_service::UpdateClient(int id_client, String^ nom, String^ prenom, String^ DateNaissance/*, String^ DatePremierAchat*/ ) {
 		ClientMappTB->setId_Client(id_client);
 		ClientMappTB->setNom_Client(nom);
 		ClientMappTB->setPrenom_Client(prenom);
