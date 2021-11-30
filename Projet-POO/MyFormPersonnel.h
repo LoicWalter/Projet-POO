@@ -478,10 +478,10 @@ private: System::Void sel_personnel_Click(System::Object^ sender, System::EventA
 	this->dataBasePersonnel->DataMember = "Rsl";
 }
 private: System::Void ins_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Svc->AddPersonnel(this->nom_personnel->Text, this->prenom_personnel->Text, this->dateEmbauche->Text);
+	this->Svc->AddPersonnel(this->nom_personnel->Text, this->prenom_personnel->Text, this->superieur->Text, this->dateEmbauche->Text);
 }
 private: System::Void mod_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Svc->UpdatePersonnel(int::Parse(this->ID_personnel->Text), this->nom_personnel->Text, this->prenom_personnel->Text, this->dateEmbauche->Text);
+	this->Svc->UpdatePersonnel(int::Parse(this->ID_personnel->Text), this->nom_personnel->Text, this->prenom_personnel->Text, this->superieur->Text, this->dateEmbauche->Text);
 }
 private: System::Void sup_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc->DeletePersonnel(int::Parse(this->ID_personnel->Text));
