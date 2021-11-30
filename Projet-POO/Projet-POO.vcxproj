@@ -133,6 +133,7 @@
     <ClCompile Include="MyFormCommande.cpp" />
     <ClCompile Include="MyFormPersonnel.cpp" />
     <ClCompile Include="MyFormStats.cpp" />
+    <ClCompile Include="Payement_mapTB.cpp" />
     <ClCompile Include="Personnel_mapTB.cpp" />
     <ClCompile Include="Personnel_service.cpp" />
   </ItemGroup>
@@ -158,6 +159,7 @@
     <ClInclude Include="MyFormStats.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Payement_mapTB.h" />
     <ClInclude Include="Personnel_mapTB.h" />
     <ClInclude Include="Personnel_service.h" />
   </ItemGroup>
