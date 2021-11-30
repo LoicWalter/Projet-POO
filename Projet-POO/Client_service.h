@@ -12,7 +12,7 @@ namespace NS_Comp_Svc
 	private:
 		CAD^ Cad;
 		Client_mapTB^ ClientMappTB;
-		DataSet^ dataSetClient;
+		//DataSet^ dataSetClient;
 	public:
 		Client_service(void);
 		DataSet^ Clients(String^);

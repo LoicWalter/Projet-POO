@@ -17,6 +17,7 @@ namespace NS_Comp_Data
 	public:
 		CAD(void);
 		void actionRows(String^);
+		int getID_Rows(String^);
 		DataSet^ getRows(String^, String^);
 	};
 }

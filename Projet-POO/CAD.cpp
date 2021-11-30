@@ -30,5 +30,17 @@ namespace NS_Comp_Data {
 
 		return this->Ds;
 	}
+
+	int CAD::getID_Rows(String^ req_sql) {
+		int id;
+		this->req_sql = req_sql;
+		this->Cmd->CommandText = this->req_sql;
+		this->Da->SelectCommand = this->Cmd;
+		this->Cnx->Open();
+		id = Convert::ToInt32(this->Cmd->ExecuteScalar());
+		this->Cnx->Close();
+		return id;
+		//a tester
+	}
 }
 

@@ -5,7 +5,7 @@ namespace NS_Comp_Mappage {
 	ref class Adresse_mapTB
 	{
 	private:
-		int id;
+		int id_adress;
 		String^ type_adress;
 		String^ adress;
 		String^ ville;
@@ -22,7 +22,7 @@ namespace NS_Comp_Mappage {
 		void setCP(int);
 		void setNum_Adress(int);
 		void setType_Adress(String^);
-		void setAdresse(String^);
+		void setAdress(String^);
 		void setVille(String^);
 		void setComplement(String^);
 		void setPays(String^);

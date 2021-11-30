@@ -21,7 +21,6 @@ namespace NS_Comp_Svc {
 		//ClientMappTB->setDatePremierAchat_Client(DatePremierAchat);
 
 		this->Cad->actionRows(this->ClientMappTB->Insert());
-		//peut etre un return si ça marche po
 	}
 	void Client_service::DeleteClient(int id_client) {
 		this->ClientMappTB->setId_Client(id_client);
