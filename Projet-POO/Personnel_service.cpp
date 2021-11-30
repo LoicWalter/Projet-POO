@@ -13,9 +13,10 @@ namespace NS_Comp_Svc {
 		return this->Cad->getRows(this->PersonnelMappTB->Select(), dataTableName);
 	}
 
-	void Personnel_service::AddPersonnel(String^ nom_personnel, String^ prenom_personnel, String^ dateEmbauche) {
+	void Personnel_service::AddPersonnel(String^ nom_personnel, String^ prenom_personnel,String^ superieur, String^ dateEmbauche) {
 		PersonnelMappTB->setNom_personnel(nom_personnel);
 		PersonnelMappTB->setPrenom_personnel(prenom_personnel);
+		PersonnelMappTB->setSuperieur(superieur);
 		PersonnelMappTB->setDateEmbauche(dateEmbauche);
 
 		this->Cad->actionRows(this->PersonnelMappTB->Insert());
@@ -25,16 +26,17 @@ namespace NS_Comp_Svc {
 		PersonnelMappTB->setId_personnel(id_personnel);
 		this->Cad->actionRows(this->PersonnelMappTB->Delete());
 	}
-	void Personnel_service::UpdatePersonnel(int id_personnel, String^ nom_personnel, String^ prenom_personnel, String^ dateEmbauche) {
+	void Personnel_service::UpdatePersonnel(int id_personnel, String^ nom_personnel, String^ prenom_personnel, String^ superieur, String^ dateEmbauche) {
 		PersonnelMappTB->setId_personnel(id_personnel);
 		PersonnelMappTB->setNom_personnel(nom_personnel);
 		PersonnelMappTB->setPrenom_personnel(prenom_personnel);
+		PersonnelMappTB->setSuperieur(superieur);
 		PersonnelMappTB->setDateEmbauche(dateEmbauche);
 
 		this->Cad->actionRows(this->PersonnelMappTB->Update());
 	}
 	DataSet^ Personnel_service::SelectPersonnel(int id_personnel, String^ dataTableName) {
 		this->PersonnelMappTB->setId_personnel(id_personnel);
-		return this->Cad->getRows(this->PersonnelMappTB->SelectParticulier(), dataTableName);
+		return this->Cad->getRows(this->PersonnelMappTB->SelectParticulierPersonnel(), dataTableName);
 	}
 }

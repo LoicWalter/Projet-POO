@@ -15,9 +15,9 @@ namespace NS_Comp_Svc {
 		Personnel_service(void);
 		DataSet^ Personnels(String^);
 		DataSet^ SelectPersonnel(int id_client, String^ dataTableName);
-		void AddPersonnel(String^, String^, String^);
+		void AddPersonnel(String^, String^, String^, String^);
 		void DeletePersonnel(int);
-		void UpdatePersonnel(int, String^, String^, String^);
+		void UpdatePersonnel(int, String^, String^, String^, String^);
 		
 	};
 }
