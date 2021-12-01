@@ -130,6 +130,7 @@
     <ClCompile Include="Client_mapTB.cpp" />
     <ClCompile Include="Client_service.cpp" />
     <ClCompile Include="Commande_mapTB.cpp" />
+    <ClCompile Include="Commande_service.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="MyFormArticle.cpp" />
     <ClCompile Include="MyFormClient.cpp" />
@@ -151,6 +152,7 @@
     <ClInclude Include="Client_mapTB.h" />
     <ClInclude Include="Client_service.h" />
     <ClInclude Include="Commande_mapTB.h" />
+    <ClInclude Include="Commande_service.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
