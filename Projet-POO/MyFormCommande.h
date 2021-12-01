@@ -53,7 +53,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Label^ label11;
 	private: System::Windows::Forms::TextBox^ numRue_livraison;
 	private: System::Windows::Forms::Label^ label10;
-	private: System::Windows::Forms::TextBox^ CP_livraison;
+
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Label^ label7;
@@ -79,6 +79,9 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::DataGridView^ dataBaseClient;
 	private: System::Windows::Forms::Label^ label19;
 	private: System::Windows::Forms::DateTimePicker^ dateLivraison_Commande;
+	private: System::Windows::Forms::Label^ label20;
+	private: System::Windows::Forms::DateTimePicker^ datePaiement_Commande;
+	private: System::Windows::Forms::ComboBox^ MoyenPaiementcombo;
 
 
 	protected:
@@ -115,7 +118,6 @@ namespace ProjetPOO {
 			this->label11 = (gcnew System::Windows::Forms::Label());
 			this->numRue_livraison = (gcnew System::Windows::Forms::TextBox());
 			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->CP_livraison = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
@@ -140,25 +142,29 @@ namespace ProjetPOO {
 			this->dataBaseClient = (gcnew System::Windows::Forms::DataGridView());
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->dateLivraison_Commande = (gcnew System::Windows::Forms::DateTimePicker());
+			this->label20 = (gcnew System::Windows::Forms::Label());
+			this->datePaiement_Commande = (gcnew System::Windows::Forms::DateTimePicker());
+			this->MoyenPaiementcombo = (gcnew System::Windows::Forms::ComboBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// retourMenu
 			// 
-			this->retourMenu->Location = System::Drawing::Point(41, 719);
+			this->retourMenu->Location = System::Drawing::Point(12, 964);
 			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->retourMenu->Name = L"retourMenu";
 			this->retourMenu->Size = System::Drawing::Size(277, 69);
 			this->retourMenu->TabIndex = 123;
 			this->retourMenu->Text = L"Retour au menu";
 			this->retourMenu->UseVisualStyleBackColor = true;
+			this->retourMenu->Click += gcnew System::EventHandler(this, &MyFormCommande::retourMenu_Click);
 			// 
 			// label13
 			// 
 			this->label13->AutoSize = true;
 			this->label13->BackColor = System::Drawing::Color::Transparent;
 			this->label13->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label13->Location = System::Drawing::Point(684, 600);
+			this->label13->Location = System::Drawing::Point(41, 838);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(204, 17);
 			this->label13->TabIndex = 122;
@@ -166,7 +172,7 @@ namespace ProjetPOO {
 			// 
 			// infoComp_facturation
 			// 
-			this->infoComp_facturation->Location = System::Drawing::Point(686, 622);
+			this->infoComp_facturation->Location = System::Drawing::Point(43, 860);
 			this->infoComp_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->infoComp_facturation->Name = L"infoComp_facturation";
 			this->infoComp_facturation->Size = System::Drawing::Size(375, 22);
@@ -177,7 +183,7 @@ namespace ProjetPOO {
 			this->label14->AutoSize = true;
 			this->label14->BackColor = System::Drawing::Color::Transparent;
 			this->label14->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label14->Location = System::Drawing::Point(1081, 527);
+			this->label14->Location = System::Drawing::Point(438, 765);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(111, 17);
 			this->label14->TabIndex = 120;
@@ -185,7 +191,7 @@ namespace ProjetPOO {
 			// 
 			// numRue_facturation
 			// 
-			this->numRue_facturation->Location = System::Drawing::Point(1084, 551);
+			this->numRue_facturation->Location = System::Drawing::Point(441, 789);
 			this->numRue_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->numRue_facturation->Name = L"numRue_facturation";
 			this->numRue_facturation->Size = System::Drawing::Size(195, 22);
@@ -196,7 +202,7 @@ namespace ProjetPOO {
 			this->label15->AutoSize = true;
 			this->label15->BackColor = System::Drawing::Color::Transparent;
 			this->label15->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label15->Location = System::Drawing::Point(1081, 468);
+			this->label15->Location = System::Drawing::Point(438, 706);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(95, 17);
 			this->label15->TabIndex = 118;
@@ -204,7 +210,7 @@ namespace ProjetPOO {
 			// 
 			// CP_facturation
 			// 
-			this->CP_facturation->Location = System::Drawing::Point(1084, 492);
+			this->CP_facturation->Location = System::Drawing::Point(441, 730);
 			this->CP_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->CP_facturation->Name = L"CP_facturation";
 			this->CP_facturation->Size = System::Drawing::Size(195, 22);
@@ -215,7 +221,7 @@ namespace ProjetPOO {
 			this->label16->AutoSize = true;
 			this->label16->BackColor = System::Drawing::Color::Transparent;
 			this->label16->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label16->Location = System::Drawing::Point(684, 529);
+			this->label16->Location = System::Drawing::Point(41, 767);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(105, 17);
 			this->label16->TabIndex = 116;
@@ -226,7 +232,7 @@ namespace ProjetPOO {
 			this->label17->AutoSize = true;
 			this->label17->BackColor = System::Drawing::Color::Transparent;
 			this->label17->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label17->Location = System::Drawing::Point(861, 468);
+			this->label17->Location = System::Drawing::Point(218, 706);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(42, 17);
 			this->label17->TabIndex = 115;
@@ -237,7 +243,7 @@ namespace ProjetPOO {
 			this->label18->AutoSize = true;
 			this->label18->BackColor = System::Drawing::Color::Transparent;
 			this->label18->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label18->Location = System::Drawing::Point(684, 468);
+			this->label18->Location = System::Drawing::Point(41, 706);
 			this->label18->Name = L"label18";
 			this->label18->Size = System::Drawing::Size(51, 17);
 			this->label18->TabIndex = 114;
@@ -245,7 +251,7 @@ namespace ProjetPOO {
 			// 
 			// ville_facturation
 			// 
-			this->ville_facturation->Location = System::Drawing::Point(868, 492);
+			this->ville_facturation->Location = System::Drawing::Point(225, 730);
 			this->ville_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->ville_facturation->Name = L"ville_facturation";
 			this->ville_facturation->Size = System::Drawing::Size(195, 22);
@@ -253,7 +259,7 @@ namespace ProjetPOO {
 			// 
 			// nomRue_facturation
 			// 
-			this->nomRue_facturation->Location = System::Drawing::Point(686, 551);
+			this->nomRue_facturation->Location = System::Drawing::Point(43, 789);
 			this->nomRue_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->nomRue_facturation->Name = L"nomRue_facturation";
 			this->nomRue_facturation->Size = System::Drawing::Size(375, 22);
@@ -261,7 +267,7 @@ namespace ProjetPOO {
 			// 
 			// pays_facturation
 			// 
-			this->pays_facturation->Location = System::Drawing::Point(686, 492);
+			this->pays_facturation->Location = System::Drawing::Point(43, 730);
 			this->pays_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->pays_facturation->Name = L"pays_facturation";
 			this->pays_facturation->Size = System::Drawing::Size(159, 22);
@@ -310,19 +316,11 @@ namespace ProjetPOO {
 			this->label10->AutoSize = true;
 			this->label10->BackColor = System::Drawing::Color::Transparent;
 			this->label10->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label10->Location = System::Drawing::Point(436, 468);
+			this->label10->Location = System::Drawing::Point(1171, 438);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(95, 17);
+			this->label10->Size = System::Drawing::Size(125, 17);
 			this->label10->TabIndex = 106;
-			this->label10->Text = L"Code postal : ";
-			// 
-			// CP_livraison
-			// 
-			this->CP_livraison->Location = System::Drawing::Point(440, 492);
-			this->CP_livraison->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
-			this->CP_livraison->Name = L"CP_livraison";
-			this->CP_livraison->Size = System::Drawing::Size(195, 22);
-			this->CP_livraison->TabIndex = 105;
+			this->label10->Text = L"Moyen Paiement : ";
 			// 
 			// label9
 			// 
@@ -421,7 +419,7 @@ namespace ProjetPOO {
 				static_cast<System::Byte>(0)));
 			this->label5->ForeColor = System::Drawing::Color::Black;
 			this->label5->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label5->Location = System::Drawing::Point(680, 431);
+			this->label5->Location = System::Drawing::Point(37, 669);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(188, 24);
 			this->label5->TabIndex = 95;
@@ -575,11 +573,45 @@ namespace ProjetPOO {
 			this->dateLivraison_Commande->Size = System::Drawing::Size(134, 22);
 			this->dateLivraison_Commande->TabIndex = 124;
 			// 
+			// label20
+			// 
+			this->label20->AutoSize = true;
+			this->label20->BackColor = System::Drawing::Color::Transparent;
+			this->label20->ImeMode = System::Windows::Forms::ImeMode::NoControl;
+			this->label20->Location = System::Drawing::Point(966, 438);
+			this->label20->Name = L"label20";
+			this->label20->Size = System::Drawing::Size(128, 17);
+			this->label20->TabIndex = 127;
+			this->label20->Text = L"Date de paiement :";
+			// 
+			// datePaiement_Commande
+			// 
+			this->datePaiement_Commande->CustomFormat = L"dd/MM/yyyy";
+			this->datePaiement_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
+			this->datePaiement_Commande->Location = System::Drawing::Point(966, 473);
+			this->datePaiement_Commande->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->datePaiement_Commande->Name = L"datePaiement_Commande";
+			this->datePaiement_Commande->Size = System::Drawing::Size(134, 22);
+			this->datePaiement_Commande->TabIndex = 126;
+			// 
+			// MoyenPaiementcombo
+			// 
+			this->MoyenPaiementcombo->FormattingEnabled = true;
+			this->MoyenPaiementcombo->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"Paypal", L"CB", L"Virement", L"Paysafecard" });
+			this->MoyenPaiementcombo->Location = System::Drawing::Point(1174, 469);
+			this->MoyenPaiementcombo->Name = L"MoyenPaiementcombo";
+			this->MoyenPaiementcombo->Size = System::Drawing::Size(121, 24);
+			this->MoyenPaiementcombo->TabIndex = 128;
+			// 
 			// MyFormCommande
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1390, 797);
+			this->AutoScroll = true;
+			this->ClientSize = System::Drawing::Size(1390, 1044);
+			this->Controls->Add(this->MoyenPaiementcombo);
+			this->Controls->Add(this->label20);
+			this->Controls->Add(this->datePaiement_Commande);
 			this->Controls->Add(this->label19);
 			this->Controls->Add(this->dateLivraison_Commande);
 			this->Controls->Add(this->retourMenu);
@@ -600,7 +632,6 @@ namespace ProjetPOO {
 			this->Controls->Add(this->label11);
 			this->Controls->Add(this->numRue_livraison);
 			this->Controls->Add(this->label10);
-			this->Controls->Add(this->CP_livraison);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->label8);
 			this->Controls->Add(this->label7);
@@ -637,5 +668,8 @@ namespace ProjetPOO {
 	}
 	private: System::Void label19_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
+}
 };
 }

@@ -119,6 +119,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +134,7 @@
     <ClCompile Include="MyFormCommande.cpp" />
     <ClCompile Include="MyFormPersonnel.cpp" />
     <ClCompile Include="MyFormStats.cpp" />
+    <ClCompile Include="MyFormVariation.cpp" />
     <ClCompile Include="Payement_mapTB.cpp" />
     <ClCompile Include="Personnel_mapTB.cpp" />
     <ClCompile Include="Personnel_service.cpp" />
@@ -160,6 +162,9 @@
     <ClInclude Include="MyFormStats.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MyFormVariation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Payement_mapTB.h" />
     <ClInclude Include="Personnel_mapTB.h" />
     <ClInclude Include="Personnel_service.h" />
@@ -180,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyFormStats.resx">
       <DependentUpon>MyFormStats.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormVariation.resx">
+      <DependentUpon>MyFormVariation.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

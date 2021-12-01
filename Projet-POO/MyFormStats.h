@@ -1,5 +1,5 @@
 #pragma once
-
+#include "MyFormVariation.h"
 namespace ProjetPOO {
 
 	using namespace System;
@@ -163,6 +163,7 @@ namespace ProjetPOO {
 			this->button9->TabIndex = 9;
 			this->button9->Text = L"simuler les variations";
 			this->button9->UseVisualStyleBackColor = true;
+			this->button9->Click += gcnew System::EventHandler(this, &MyFormStats::button9_Click);
 			// 
 			// MyFormStats
 			// 
@@ -182,11 +183,19 @@ namespace ProjetPOO {
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Name = L"MyFormStats";
 			this->Text = L"MyFormStats";
+			this->Load += gcnew System::EventHandler(this, &MyFormStats::MyFormStats_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 
+private: System::Void MyFormStats_Load(System::Object^ sender, System::EventArgs^ e) {
+
+}
+private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
+	Form^ FormMenuVariation = gcnew MyFormVariation();
+	FormMenuVariation->Show();
+}
 };
 }
