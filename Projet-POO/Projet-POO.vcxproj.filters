@@ -1,43 +1,142 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Adresse_mapTB.cpp" />
-    <ClCompile Include="Adresse_service.cpp" />
-    <ClCompile Include="affichageForms.cpp" />
-    <ClCompile Include="CAD.cpp" />
-    <ClCompile Include="Client_mapTB.cpp" />
-    <ClCompile Include="Client_service.cpp" />
-    <ClCompile Include="MyForm.cpp" />
-    <ClCompile Include="MyFormClient.cpp" />
-    <ClCompile Include="MyFormCommande.cpp" />
-    <ClCompile Include="MyFormPersonnel.cpp" />
-    <ClCompile Include="MyFormStats.cpp" />
-    <ClCompile Include="MyFormVariation.cpp" />
-    <ClCompile Include="Payement_mapTB.cpp" />
-    <ClCompile Include="Personnel_mapTB.cpp" />
-    <ClCompile Include="Personnel_service.cpp" />
-    <ClCompile Include="Stock_mapTB.cpp" />
-    <ClCompile Include="Stock_service.cpp" />
-    <ClCompile Include="MyFormArticle.cpp" />
+    <ClCompile Include="affichageForms.cpp">
+      <Filter>Fichier sources</Filter>
+    </ClCompile>
+    <ClCompile Include="CAD.cpp">
+      <Filter>Fichier sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Commande_mapTB.cpp">
+      <Filter>Fichier sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Payement_mapTB.cpp">
+      <Filter>Fichier sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Adresse_service.cpp">
+      <Filter>Fichier sources\Adresse</Filter>
+    </ClCompile>
+    <ClCompile Include="Adresse_mapTB.cpp">
+      <Filter>Fichier sources\Adresse</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormArticle.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormClient.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormCommande.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormPersonnel.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormStats.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="MyFormVariation.cpp">
+      <Filter>Fichier sources\MyForm</Filter>
+    </ClCompile>
+    <ClCompile Include="Client_mapTB.cpp">
+      <Filter>Fichier sources\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client_service.cpp">
+      <Filter>Fichier sources\Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Personnel_mapTB.cpp">
+      <Filter>Fichier sources\Personnel</Filter>
+    </ClCompile>
+    <ClCompile Include="Personnel_service.cpp">
+      <Filter>Fichier sources\Personnel</Filter>
+    </ClCompile>
+    <ClCompile Include="Stock_service.cpp">
+      <Filter>Fichier sources\Personnel</Filter>
+    </ClCompile>
+    <ClCompile Include="Stock_mapTB.cpp">
+      <Filter>Fichier sources\Personnel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Adresse_mapTB.h" />
-    <ClInclude Include="Adresse_service.h" />
-    <ClInclude Include="affichageForms.h" />
-    <ClInclude Include="CAD.h" />
-    <ClInclude Include="Client_mapTB.h" />
-    <ClInclude Include="Client_service.h" />
     <ClInclude Include="MyForm.h" />
+    <ClInclude Include="MyFormArticle.h" />
     <ClInclude Include="MyFormClient.h" />
     <ClInclude Include="MyFormCommande.h" />
     <ClInclude Include="MyFormPersonnel.h" />
     <ClInclude Include="MyFormStats.h" />
     <ClInclude Include="MyFormVariation.h" />
-    <ClInclude Include="Payement_mapTB.h" />
-    <ClInclude Include="Personnel_mapTB.h" />
-    <ClInclude Include="Personnel_service.h" />
-    <ClInclude Include="Stock_mapTB.h" />
-    <ClInclude Include="Stock_service.h" />
-    <ClInclude Include="MyFormArticle.h" />
+    <ClInclude Include="affichageForms.h">
+      <Filter>Fichier d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="CAD.h">
+      <Filter>Fichier d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Commande_mapTB.h">
+      <Filter>Fichier d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Payement_mapTB.h">
+      <Filter>Fichier d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Adresse_mapTB.h">
+      <Filter>Fichier d%27en-tête\Adresse</Filter>
+    </ClInclude>
+    <ClInclude Include="Adresse_service.h">
+      <Filter>Fichier d%27en-tête\Adresse</Filter>
+    </ClInclude>
+    <ClInclude Include="Client_mapTB.h">
+      <Filter>Fichier d%27en-tête\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Client_service.h">
+      <Filter>Fichier d%27en-tête\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Personnel_service.h">
+      <Filter>Fichier d%27en-tête\Personnel</Filter>
+    </ClInclude>
+    <ClInclude Include="Personnel_mapTB.h">
+      <Filter>Fichier d%27en-tête\Personnel</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock_mapTB.h">
+      <Filter>Fichier d%27en-tête\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock_service.h">
+      <Filter>Fichier d%27en-tête\Stock</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Fichier d%27en-tête">
+      <UniqueIdentifier>{5608f1cb-b1a7-4580-a76a-f37646cdf134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources">
+      <UniqueIdentifier>{78dd5689-117a-4ffc-b607-d879dab94340}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier d%27en-tête\Adresse">
+      <UniqueIdentifier>{c554517e-4b71-4c57-8424-a91c3bd8c3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier d%27en-tête\Client">
+      <UniqueIdentifier>{7480ac26-34ed-4993-9b88-d906b3da42a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier d%27en-tête\Personnel">
+      <UniqueIdentifier>{cd926f12-8202-4c0f-93a0-4282c5941e06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier d%27en-tête\Stock">
+      <UniqueIdentifier>{7668cef6-6fc0-498c-b2b8-1e09b3414533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources\Adresse">
+      <UniqueIdentifier>{bf120723-5325-4900-be0c-6806b624bfec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources\MyForm">
+      <UniqueIdentifier>{53fd2d75-9fd6-4e35-ad51-ac0c9128baed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources\Client">
+      <UniqueIdentifier>{ebe45be7-b1f4-4af2-98df-bff86c01e175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources\Personnel">
+      <UniqueIdentifier>{dfb93b68-ba54-4822-9cc7-fd969905fc01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources\Stock">
+      <UniqueIdentifier>{df1c15e1-4e50-4da4-b33a-c713ceefd9c0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
