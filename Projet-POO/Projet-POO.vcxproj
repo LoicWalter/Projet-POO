@@ -130,6 +130,7 @@
     <ClCompile Include="Client_mapTB.cpp" />
     <ClCompile Include="Client_service.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyFormArticle.cpp" />
     <ClCompile Include="MyFormClient.cpp" />
     <ClCompile Include="MyFormCommande.cpp" />
     <ClCompile Include="MyFormPersonnel.cpp" />
@@ -149,6 +150,9 @@
     <ClInclude Include="Client_mapTB.h" />
     <ClInclude Include="Client_service.h" />
     <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyFormArticle.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyFormClient.h">
@@ -175,6 +179,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormArticle.resx">
+      <DependentUpon>MyFormArticle.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyFormClient.resx">
       <DependentUpon>MyFormClient.h</DependentUpon>

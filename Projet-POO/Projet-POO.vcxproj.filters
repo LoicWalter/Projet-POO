@@ -1,156 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Fichiers sources">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Fichiers de ressources">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Personnel">
-      <UniqueIdentifier>{64972fc0-eb5d-4672-8c31-b3d318a6376b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Adresse">
-      <UniqueIdentifier>{348ee003-6eee-4f77-961a-faeb5e8c632d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers d%27en-tête\Client">
-      <UniqueIdentifier>{eb8ab713-0531-4e1a-970b-e61285bb37b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Adresse">
-      <UniqueIdentifier>{18cec954-f9ab-49c5-88d1-a4985a3e2cc0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\client">
-      <UniqueIdentifier>{6b8238da-104b-41ce-86ab-df1c57d60a6a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\personnel">
-      <UniqueIdentifier>{39e356e3-ff77-4d26-bf4f-4ed30754f3d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\stats">
-      <UniqueIdentifier>{bb267fb5-e3d7-4771-aab2-5d4bd35b4d9c}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="Adresse_mapTB.cpp" />
+    <ClCompile Include="Adresse_service.cpp" />
+    <ClCompile Include="affichageForms.cpp" />
+    <ClCompile Include="CAD.cpp" />
+    <ClCompile Include="Client_mapTB.cpp" />
+    <ClCompile Include="Client_service.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyFormClient.cpp" />
+    <ClCompile Include="MyFormCommande.cpp" />
+    <ClCompile Include="MyFormPersonnel.cpp" />
+    <ClCompile Include="MyFormStats.cpp" />
+    <ClCompile Include="MyFormVariation.cpp" />
+    <ClCompile Include="Payement_mapTB.cpp" />
+    <ClCompile Include="Personnel_mapTB.cpp" />
+    <ClCompile Include="Personnel_service.cpp" />
+    <ClCompile Include="Stock_mapTB.cpp" />
+    <ClCompile Include="Stock_service.cpp" />
+    <ClCompile Include="MyFormArticle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CAD.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="MyForm.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="affichageForms.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="MyFormCommande.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Adresse_mapTB.cpp">
-      <Filter>Fichiers sources\Adresse</Filter>
-    </ClCompile>
-    <ClCompile Include="Adresse_service.cpp">
-      <Filter>Fichiers sources\Adresse</Filter>
-    </ClCompile>
-    <ClCompile Include="Client_mapTB.cpp">
-      <Filter>Fichiers sources\client</Filter>
-    </ClCompile>
-    <ClCompile Include="Client_service.cpp">
-      <Filter>Fichiers sources\client</Filter>
-    </ClCompile>
-    <ClCompile Include="MyFormClient.cpp">
-      <Filter>Fichiers sources\client</Filter>
-    </ClCompile>
-    <ClCompile Include="MyFormPersonnel.cpp">
-      <Filter>Fichiers sources\personnel</Filter>
-    </ClCompile>
-    <ClCompile Include="Personnel_mapTB.cpp">
-      <Filter>Fichiers sources\personnel</Filter>
-    </ClCompile>
-    <ClCompile Include="Personnel_service.cpp">
-      <Filter>Fichiers sources\personnel</Filter>
-    </ClCompile>
-    <ClCompile Include="Adresse_mapTB.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Payement_mapTB.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="MyFormStats.cpp">
-      <Filter>Fichiers sources\stats</Filter>
-    </ClCompile>
-    <ClCompile Include="Stock_mapTB.cpp">
-      <Filter>Fichiers sources\stats</Filter>
-    </ClCompile>
-    <ClCompile Include="MyFormVariation.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Stock_service.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CAD.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyFormClient.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyFormPersonnel.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyForm.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="affichageForms.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyFormStats.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyFormCommande.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Personnel_mapTB.h">
-      <Filter>Fichiers d%27en-tête\Personnel</Filter>
-    </ClInclude>
-    <ClInclude Include="Personnel_service.h">
-      <Filter>Fichiers d%27en-tête\Personnel</Filter>
-    </ClInclude>
-    <ClInclude Include="Adresse_mapTB.h">
-      <Filter>Fichiers d%27en-tête\Adresse</Filter>
-    </ClInclude>
-    <ClInclude Include="Adresse_service.h">
-      <Filter>Fichiers d%27en-tête\Adresse</Filter>
-    </ClInclude>
-    <ClInclude Include="Client_mapTB.h">
-      <Filter>Fichiers d%27en-tête\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="Client_service.h">
-      <Filter>Fichiers d%27en-tête\Client</Filter>
-    </ClInclude>
-    <ClInclude Include="Adresse_mapTB.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Payement_mapTB.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Stock_mapTB.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-        <ClInclude Include="Stock_service.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyFormVariation.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Stock_service.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="MyFormVariation.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
+    <ClInclude Include="Adresse_mapTB.h" />
+    <ClInclude Include="Adresse_service.h" />
+    <ClInclude Include="affichageForms.h" />
+    <ClInclude Include="CAD.h" />
+    <ClInclude Include="Client_mapTB.h" />
+    <ClInclude Include="Client_service.h" />
+    <ClInclude Include="MyForm.h" />
+    <ClInclude Include="MyFormClient.h" />
+    <ClInclude Include="MyFormCommande.h" />
+    <ClInclude Include="MyFormPersonnel.h" />
+    <ClInclude Include="MyFormStats.h" />
+    <ClInclude Include="MyFormVariation.h" />
+    <ClInclude Include="Payement_mapTB.h" />
+    <ClInclude Include="Personnel_mapTB.h" />
+    <ClInclude Include="Personnel_service.h" />
+    <ClInclude Include="Stock_mapTB.h" />
+    <ClInclude Include="Stock_service.h" />
+    <ClInclude Include="MyFormArticle.h" />
   </ItemGroup>
 </Project>
