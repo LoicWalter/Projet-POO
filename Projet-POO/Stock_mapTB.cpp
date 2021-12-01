@@ -2,25 +2,25 @@
 
 namespace NS_Comp_Mappage{
 	String^ Stock_mapTB::Select(void) {
-		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (disponible = 1);";
+		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [prixAchat], [MargeCommerciale], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (disponible = 1);";
 	}
 	String^ Stock_mapTB::SelectParticulier(void) {
-		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (id_article='" + this->id_stock + "' AND disponible = 1);";
+		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [prixAchat], [MargeCommerciale], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (id_article='" + this->id_stock + "' AND disponible = 1);";
 	}
 	String^ Stock_mapTB::Insert(void) {
-		return "INSERT INTO article (nom_article, couleur, nature, quantite, prix_HT_,prix_TTC_, TVA, seuil_reappro, disponible) SELECT '" + this->nom + "', '" + this->couleur + "', '" + this->nature + "', '" + this->nbr_exemplaire + "', '" + this->prixHT + "', '" + this->prixTTC + "', '" + this->TVA + "', '" + this->seuil + "', '1' WHERE NOT EXISTS (SELECT * FROM [Projet].[dbo].[article] WHERE nom_article = '" + this->nom + "' AND couleur = '" + this->couleur + "' AND nature = '" + this->nature + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "'); UPDATE [Projet].[dbo].[article] SET disponible='1'  WHERE (nom_article = '" + this->nom + "' AND nature = '" + this->nature + "' AND couleur = '" + this->couleur + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "');";
+		return "INSERT INTO article (nom_article, couleur, nature, quantite, prix_HT_,prix_TTC_, prixAchat, MargeCommerciale, TVA, seuil_reappro, disponible) SELECT '" + this->nom + "', '" + this->couleur + "', '" + this->nature + "', '" + this->nbr_exemplaire + "', '" + this->prixHT + "', '" + this->prixTTC + "', '" + this->prixAchat + "', '" + this->Marge + "', '" + this->TVA + "', '" + this->seuil + "', '1' WHERE NOT EXISTS (SELECT * FROM [Projet].[dbo].[article] WHERE nom_article = '" + this->nom + "' AND couleur = '" + this->couleur + "' AND nature = '" + this->nature + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND prixAchat = '" + this->prixAchat + "' AND MargeCommerciale = '" + this->Marge + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "'); UPDATE [Projet].[dbo].[article] SET disponible='1'  WHERE (nom_article = '" + this->nom + "' AND nature = '" + this->nature + "' AND couleur = '" + this->couleur + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND prixAchat = '" + this->prixAchat + "' AND MargeCommerciale = '" + this->Marge + "'  AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "');";
 	}
 	String^ Stock_mapTB::Delete(void) {
 		return "UPDATE [Projet].[dbo].[article] SET disponible='0'  WHERE (id_article='" + this->id_stock + "');";
 	}
 	String^ Stock_mapTB::Update(void) {
-		return "UPDATE [Projet].[dbo].[article] SET nom_article = '" + this->nom + "', couleur = '" + this->couleur + "', nature = '" + this->nature + "', quantite = '" + this->nbr_exemplaire + "', prix_HT_ = '" + this->prixHT + "',prix_TTC_ = '" + this->prixTTC + "', TVA = '" + this->TVA + "', seuil_reappro = '" + this->seuil + "' WHERE (id_article='" + this->id_stock + "');";
+		return "UPDATE [Projet].[dbo].[article] SET nom_article = '" + this->nom + "', couleur = '" + this->couleur + "', nature = '" + this->nature + "', quantite = '" + this->nbr_exemplaire + "', prix_HT_ = '" + this->prixHT + "',prix_TTC_ = '" + this->prixTTC + "', prixAchat = '" + this->prixAchat + "', MargeCommerciale = '" + this->Marge + "', TVA = '" + this->TVA + "', seuil_reappro = '" + this->seuil + "' WHERE (id_article='" + this->id_stock + "');";
 	}
 	String^ Stock_mapTB::Chiffre_affaire(void) {
 		return "";
 	}
 	String^ Stock_mapTB::Seuil_produit(void) {
-		return "";
+		return "SELECT * FROM [Projet].[dbo].[article] WHERE (quantite < seuil_reappro AND disponible=1);";
 	}
 	String^ Stock_mapTB::Panier_moyen(void) {
 		return "";
@@ -32,7 +32,7 @@ namespace NS_Comp_Mappage{
 		return "";
 	}
 	String^ Stock_mapTB::Val_com(void) {
-		return "";
+		return "SELECT SUM(prix_HT_ * quantite) FROM article WHERE disponible=1";
 	}
 	String^ Stock_mapTB::Val_achat(void) {
 		return "";
@@ -48,6 +48,8 @@ namespace NS_Comp_Mappage{
 	void Stock_mapTB::setNbr_exemplaire(int nbr_exemplaire) { this->nbr_exemplaire = nbr_exemplaire; }
 	void Stock_mapTB::setPrixHT(float prixHT) { this->prixHT = prixHT; }
 	void Stock_mapTB::setPrixTTC(float prixTTC) { this->prixTTC = prixTTC; }
+	void Stock_mapTB::setPrixAchat(float prixAchat) { this->prixAchat = prixAchat; }
+	void Stock_mapTB::setMarge(int Marge) { this->Marge = Marge; }
 	void Stock_mapTB::setTVA(int TVA) { this->TVA = TVA; }
 	void Stock_mapTB::setSeuil(int seuil) { this->seuil = seuil; }
 	void Stock_mapTB::setDispo(bool dispo) { this->dispo = dispo; }
@@ -59,6 +61,8 @@ namespace NS_Comp_Mappage{
 	int Stock_mapTB::getNbr_exemplaire(void) { return this->nbr_exemplaire; }
 	float Stock_mapTB::getPrixHT(void) { return this->prixHT; }
 	float Stock_mapTB::getPrixTTC(void) { return this->prixTTC; }
+	float Stock_mapTB::getPrixAchat(void) { return this->prixAchat; }
+	int Stock_mapTB::getMarge(void) { return this->Marge; }
 	int Stock_mapTB::getTVA(void) { return this->TVA; }
 	int Stock_mapTB::getSeuil(void) { return this->seuil; }
 	bool Stock_mapTB::getDispo(void) { return this->dispo;  }

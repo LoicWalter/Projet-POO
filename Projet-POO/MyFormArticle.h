@@ -45,7 +45,8 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
 	private: System::Windows::Forms::TextBox^ ID_Article;
-	private: System::Windows::Forms::TextBox^ PrixHT_Article;
+	private: System::Windows::Forms::TextBox^ PrixAchat_Article;
+
 
 
 	private: System::Windows::Forms::TextBox^ Nom_Article;
@@ -76,6 +77,9 @@ namespace ProjetPOO {
 
 	private: System::Windows::Forms::Label^ label9;
 	private: System::Windows::Forms::TextBox^ Quantite_Article;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::TextBox^ Marge_Article;
+
 
 
 	private:
@@ -98,7 +102,7 @@ namespace ProjetPOO {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->ID_Article = (gcnew System::Windows::Forms::TextBox());
-			this->PrixHT_Article = (gcnew System::Windows::Forms::TextBox());
+			this->PrixAchat_Article = (gcnew System::Windows::Forms::TextBox());
 			this->Nom_Article = (gcnew System::Windows::Forms::TextBox());
 			this->mod_Article = (gcnew System::Windows::Forms::Button());
 			this->ins_Article = (gcnew System::Windows::Forms::Button());
@@ -115,6 +119,8 @@ namespace ProjetPOO {
 			this->Couleur_Article = (gcnew System::Windows::Forms::TextBox());
 			this->label9 = (gcnew System::Windows::Forms::Label());
 			this->Quantite_Article = (gcnew System::Windows::Forms::TextBox());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->Marge_Article = (gcnew System::Windows::Forms::TextBox());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseArticle))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -149,9 +155,9 @@ namespace ProjetPOO {
 			this->label3->Location = System::Drawing::Point(718, 295);
 			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(48, 13);
+			this->label3->Size = System::Drawing::Size(61, 13);
 			this->label3->TabIndex = 93;
-			this->label3->Text = L"Prix HT :";
+			this->label3->Text = L"Prix Achat :";
 			// 
 			// label2
 			// 
@@ -185,13 +191,13 @@ namespace ProjetPOO {
 			this->ID_Article->Size = System::Drawing::Size(303, 20);
 			this->ID_Article->TabIndex = 90;
 			// 
-			// PrixHT_Article
+			// PrixAchat_Article
 			// 
-			this->PrixHT_Article->Location = System::Drawing::Point(718, 310);
-			this->PrixHT_Article->Margin = System::Windows::Forms::Padding(2);
-			this->PrixHT_Article->Name = L"PrixHT_Article";
-			this->PrixHT_Article->Size = System::Drawing::Size(303, 20);
-			this->PrixHT_Article->TabIndex = 89;
+			this->PrixAchat_Article->Location = System::Drawing::Point(718, 310);
+			this->PrixAchat_Article->Margin = System::Windows::Forms::Padding(2);
+			this->PrixAchat_Article->Name = L"PrixAchat_Article";
+			this->PrixAchat_Article->Size = System::Drawing::Size(303, 20);
+			this->PrixAchat_Article->TabIndex = 89;
 			// 
 			// Nom_Article
 			// 
@@ -265,7 +271,7 @@ namespace ProjetPOO {
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label4->Location = System::Drawing::Point(718, 388);
+			this->label4->Location = System::Drawing::Point(718, 431);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(137, 13);
@@ -274,7 +280,7 @@ namespace ProjetPOO {
 			// 
 			// SeuilReappro_Article
 			// 
-			this->SeuilReappro_Article->Location = System::Drawing::Point(718, 403);
+			this->SeuilReappro_Article->Location = System::Drawing::Point(718, 446);
 			this->SeuilReappro_Article->Margin = System::Windows::Forms::Padding(2);
 			this->SeuilReappro_Article->Name = L"SeuilReappro_Article";
 			this->SeuilReappro_Article->Size = System::Drawing::Size(303, 20);
@@ -285,7 +291,7 @@ namespace ProjetPOO {
 			this->label5->AutoSize = true;
 			this->label5->BackColor = System::Drawing::Color::Transparent;
 			this->label5->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label5->Location = System::Drawing::Point(716, 341);
+			this->label5->Location = System::Drawing::Point(716, 384);
 			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(51, 13);
@@ -294,7 +300,7 @@ namespace ProjetPOO {
 			// 
 			// TVA_Article
 			// 
-			this->TVA_Article->Location = System::Drawing::Point(718, 356);
+			this->TVA_Article->Location = System::Drawing::Point(718, 399);
 			this->TVA_Article->Margin = System::Windows::Forms::Padding(2);
 			this->TVA_Article->Name = L"TVA_Article";
 			this->TVA_Article->Size = System::Drawing::Size(303, 20);
@@ -360,11 +366,33 @@ namespace ProjetPOO {
 			this->Quantite_Article->Size = System::Drawing::Size(303, 20);
 			this->Quantite_Article->TabIndex = 108;
 			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->BackColor = System::Drawing::Color::Transparent;
+			this->label6->ImeMode = System::Windows::Forms::ImeMode::NoControl;
+			this->label6->Location = System::Drawing::Point(716, 338);
+			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(123, 13);
+			this->label6->TabIndex = 111;
+			this->label6->Text = L"Marge Commerciale (%) :";
+			// 
+			// Marge_Article
+			// 
+			this->Marge_Article->Location = System::Drawing::Point(718, 353);
+			this->Marge_Article->Margin = System::Windows::Forms::Padding(2);
+			this->Marge_Article->Name = L"Marge_Article";
+			this->Marge_Article->Size = System::Drawing::Size(303, 20);
+			this->Marge_Article->TabIndex = 110;
+			// 
 			// MyFormArticle
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1052, 477);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->Marge_Article);
 			this->Controls->Add(this->label9);
 			this->Controls->Add(this->Quantite_Article);
 			this->Controls->Add(this->label8);
@@ -381,7 +409,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->ID_Article);
-			this->Controls->Add(this->PrixHT_Article);
+			this->Controls->Add(this->PrixAchat_Article);
 			this->Controls->Add(this->Nom_Article);
 			this->Controls->Add(this->mod_Article);
 			this->Controls->Add(this->ins_Article);
@@ -416,16 +444,21 @@ private: System::Void sel_Article_Click(System::Object^ sender, System::EventArg
 	this->dataBaseArticle->DataMember = "Rsl";
 }
 private: System::Void ins_Article_Click(System::Object^ sender, System::EventArgs^ e) {
-	float PrixHT = float::Parse(this->PrixHT_Article->Text);
+	float PrixAchat = float::Parse(this->PrixAchat_Article->Text);
+	int MargeCom = int::Parse(this->Marge_Article->Text);
+	float PrixHT = PrixAchat + (PrixAchat * MargeCom / 100);
 	int TVA = int::Parse(this->TVA_Article->Text);
 	float prixTTC = PrixHT + (PrixHT * TVA / 100);
-	this->Svc->AddArticle(this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, prixTTC, TVA, int::Parse(this->SeuilReappro_Article->Text));
+
+	this->Svc->AddArticle(this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, prixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
 }
 private: System::Void mod_Article_Click(System::Object^ sender, System::EventArgs^ e) {
-	float PrixHT = float::Parse(this->PrixHT_Article->Text);
+	float PrixAchat = float::Parse(this->PrixAchat_Article->Text);
+	int MargeCom = int::Parse(this->Marge_Article->Text);
+	float PrixHT = PrixAchat + (PrixAchat * MargeCom / 100);
 	int TVA = int::Parse(this->TVA_Article->Text);
 	float prixTTC = PrixHT + (PrixHT * TVA / 100);
-	this->Svc->UpdateArticle(int::Parse(this->ID_Article->Text), this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, prixTTC, TVA, int::Parse(this->SeuilReappro_Article->Text));
+	this->Svc->UpdateArticle(int::Parse(this->ID_Article->Text), this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, prixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
 }
 private: System::Void sup_Article_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc->DeleteArticle(int::Parse(this->ID_Article->Text));

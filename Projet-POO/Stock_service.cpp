@@ -17,13 +17,15 @@ namespace NS_Comp_Svc {
 		StockMappTB->setId_Stock(id);
 		return this->Cad->getRows(this->StockMappTB->SelectParticulier(), dataTableName);
 	}
-	void Stock_service::AddArticle(String^ nom, String^ nature, String^ couleur, int nbr_exemplaire, float prixHT, float prixTTC, int TVA, int seuil){
+	void Stock_service::AddArticle(String^ nom, String^ nature, String^ couleur, int nbr_exemplaire, float prixHT, float prixTTC, float prixAchat, int marge, int TVA, int seuil){
 		StockMappTB->setNom(nom);
 		StockMappTB->setNature(nature);
 		StockMappTB->setCouleur(couleur);
 		StockMappTB->setNbr_exemplaire(nbr_exemplaire);
 		StockMappTB->setPrixHT(prixHT);
 		StockMappTB->setPrixTTC(prixTTC);
+		StockMappTB->setPrixAchat(prixAchat);
+		StockMappTB->setMarge(marge);
 		StockMappTB->setTVA(TVA);
 		StockMappTB->setSeuil(seuil);
 
@@ -33,7 +35,7 @@ namespace NS_Comp_Svc {
 		StockMappTB->setId_Stock(id);
 		this->Cad->actionRows(this->StockMappTB->Delete());
 	}
-	void Stock_service::UpdateArticle(int id, String^ nom, String^ nature, String^ couleur, int nbr_exemplaire, float prixHT, float prixTTC, int TVA, int seuil){
+	void Stock_service::UpdateArticle(int id, String^ nom, String^ nature, String^ couleur, int nbr_exemplaire, float prixHT, float prixTTC, float prixAchat, int marge, int TVA, int seuil){
 		StockMappTB->setId_Stock(id);
 		StockMappTB->setNom(nom);
 		StockMappTB->setNature(nature);
@@ -41,9 +43,15 @@ namespace NS_Comp_Svc {
 		StockMappTB->setNbr_exemplaire(nbr_exemplaire);
 		StockMappTB->setPrixHT(prixHT);
 		StockMappTB->setPrixTTC(prixTTC);
+		StockMappTB->setPrixAchat(prixAchat);
+		StockMappTB->setMarge(marge);
 		StockMappTB->setTVA(TVA);
 		StockMappTB->setSeuil(seuil);
 
 		this->Cad->actionRows(this->StockMappTB->Update());
 	}
+	DataSet^ Stock_service::ReapproDepasse(String^ dataTableName) {
+		return this->Cad->getRows(this->StockMappTB->Seuil_produit(), dataTableName);
+	}
+
 }

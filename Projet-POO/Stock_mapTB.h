@@ -13,7 +13,9 @@ namespace NS_Comp_Mappage {
 		int nbr_exemplaire;
 		float prixHT;
 		float prixTTC;
+		float prixAchat;
 		int TVA;
+		int Marge;
 		int seuil;
 		bool dispo;
 	public:
@@ -38,6 +40,8 @@ namespace NS_Comp_Mappage {
 		void setNbr_exemplaire(int);
 		void setPrixHT(float);
 		void setPrixTTC(float);
+		void setPrixAchat(float);
+		void setMarge(int);
 		void setTVA(int);
 		void setSeuil(int);
 		void setDispo(bool);
@@ -49,6 +53,8 @@ namespace NS_Comp_Mappage {
 		int getNbr_exemplaire(void);
 		float getPrixHT(void);
 		float getPrixTTC(void);
+		float getPrixAchat(void);
+		int getMarge(void);
 		int getTVA(void);
 		int getSeuil(void);
 		bool getDispo(void);
