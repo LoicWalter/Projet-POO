@@ -45,6 +45,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ button7;
 	private: System::Windows::Forms::Button^ button8;
 	private: System::Windows::Forms::Button^ button9;
+	private: System::Windows::Forms::Button^ retourMenu;
 
 	private:
 		/// <summary>
@@ -70,6 +71,7 @@ namespace ProjetPOO {
 			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->button9 = (gcnew System::Windows::Forms::Button());
+			this->retourMenu = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -165,11 +167,23 @@ namespace ProjetPOO {
 			this->button9->UseVisualStyleBackColor = true;
 			this->button9->Click += gcnew System::EventHandler(this, &MyFormStats::button9_Click);
 			// 
+			// retourMenu
+			// 
+			this->retourMenu->Location = System::Drawing::Point(858, 685);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->retourMenu->Name = L"retourMenu";
+			this->retourMenu->Size = System::Drawing::Size(176, 44);
+			this->retourMenu->TabIndex = 98;
+			this->retourMenu->Text = L"Retour au menu";
+			this->retourMenu->UseVisualStyleBackColor = true;
+			this->retourMenu->Click += gcnew System::EventHandler(this, &MyFormStats::retourMenu_Click);
+			// 
 			// MyFormStats
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1046, 741);
+			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->button9);
 			this->Controls->Add(this->button8);
 			this->Controls->Add(this->button7);
@@ -196,6 +210,9 @@ private: System::Void MyFormStats_Load(System::Object^ sender, System::EventArgs
 private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
 	Form^ FormMenuVariation = gcnew MyFormVariation();
 	FormMenuVariation->Show();
+}
+private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Close();
 }
 };
 }

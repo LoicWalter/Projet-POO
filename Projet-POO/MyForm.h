@@ -3,6 +3,7 @@
 #include "MyFormPersonnel.h"
 #include "MyFormStats.h"
 #include "MyFormCommande.h"
+#include "MyFormArticle.h"
 
 namespace ProjetPOO {
 
@@ -240,6 +241,11 @@ namespace ProjetPOO {
 		FormMenuStats->Show();
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		Form^ FormMenuArticle = gcnew MyFormArticle();
+		FormMenuArticle->Show();
+
+
+
 	}
 private: System::Void boutonCommandeMenu_Click(System::Object^ sender, System::EventArgs^ e) {
 	Form^ FormMenuCommande = gcnew MyFormCommande();

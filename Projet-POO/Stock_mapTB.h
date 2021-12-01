@@ -8,12 +8,17 @@ namespace NS_Comp_Mappage {
 	private:
 		int id_stock;
 		String^ nom;
+		String^ nature;
+		String^ couleur;
 		int nbr_exemplaire;
 		float prixHT;
+		float prixTTC;
 		int TVA;
 		int seuil;
+		bool dispo;
 	public:
 		String^ Select(void);
+		String^ SelectParticulier(void);
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);
@@ -28,17 +33,25 @@ namespace NS_Comp_Mappage {
 
 		void setId_Stock(int);
 		void setNom(String^);
+		void setNature(String^);
+		void setCouleur(String^);
 		void setNbr_exemplaire(int);
 		void setPrixHT(float);
+		void setPrixTTC(float);
 		void setTVA(int);
 		void setSeuil(int);
+		void setDispo(bool);
 
 		int getId_Stock(void);
 		String^ getNom(void);
+		String^ getNature(void);
+		String^ getCouleur(void);
 		int getNbr_exemplaire(void);
 		float getPrixHT(void);
+		float getPrixTTC(void);
 		int getTVA(void);
 		int getSeuil(void);
+		bool getDispo(void);
 	};
 }
 

@@ -15,9 +15,10 @@ namespace NS_Comp_Svc {
 	public:
 		Stock_service(void);
 		DataSet^ Stocks(String^);
-		void AddArticle(String^, int, float, int, int);
+		void AddArticle(String^, String^, String^, int, float, float, int, int);
 		void DeleteArticle(int);
-		void UpdateArticle(int, String^, int, float, int, int);
+		DataSet^ SelectArticle(int, String^);
+		void UpdateArticle(int, String^, String^, String^, int, float, float, int, int);
 	};
 }
 
