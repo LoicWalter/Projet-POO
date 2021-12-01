@@ -146,7 +146,7 @@ namespace ProjetPOO {
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label3->Location = System::Drawing::Point(718, 282);
+			this->label3->Location = System::Drawing::Point(718, 295);
 			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(48, 13);
@@ -187,7 +187,7 @@ namespace ProjetPOO {
 			// 
 			// PrixHT_Article
 			// 
-			this->PrixHT_Article->Location = System::Drawing::Point(718, 297);
+			this->PrixHT_Article->Location = System::Drawing::Point(718, 310);
 			this->PrixHT_Article->Margin = System::Windows::Forms::Padding(2);
 			this->PrixHT_Article->Name = L"PrixHT_Article";
 			this->PrixHT_Article->Size = System::Drawing::Size(303, 20);
@@ -265,7 +265,7 @@ namespace ProjetPOO {
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label4->Location = System::Drawing::Point(718, 375);
+			this->label4->Location = System::Drawing::Point(718, 388);
 			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(137, 13);
@@ -274,7 +274,7 @@ namespace ProjetPOO {
 			// 
 			// SeuilReappro_Article
 			// 
-			this->SeuilReappro_Article->Location = System::Drawing::Point(718, 390);
+			this->SeuilReappro_Article->Location = System::Drawing::Point(718, 403);
 			this->SeuilReappro_Article->Margin = System::Windows::Forms::Padding(2);
 			this->SeuilReappro_Article->Name = L"SeuilReappro_Article";
 			this->SeuilReappro_Article->Size = System::Drawing::Size(303, 20);
@@ -285,7 +285,7 @@ namespace ProjetPOO {
 			this->label5->AutoSize = true;
 			this->label5->BackColor = System::Drawing::Color::Transparent;
 			this->label5->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label5->Location = System::Drawing::Point(716, 328);
+			this->label5->Location = System::Drawing::Point(716, 341);
 			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(51, 13);
@@ -294,7 +294,7 @@ namespace ProjetPOO {
 			// 
 			// TVA_Article
 			// 
-			this->TVA_Article->Location = System::Drawing::Point(718, 343);
+			this->TVA_Article->Location = System::Drawing::Point(718, 356);
 			this->TVA_Article->Margin = System::Windows::Forms::Padding(2);
 			this->TVA_Article->Name = L"TVA_Article";
 			this->TVA_Article->Size = System::Drawing::Size(303, 20);
@@ -305,7 +305,7 @@ namespace ProjetPOO {
 			this->label7->AutoSize = true;
 			this->label7->BackColor = System::Drawing::Color::Transparent;
 			this->label7->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label7->Location = System::Drawing::Point(716, 138);
+			this->label7->Location = System::Drawing::Point(716, 191);
 			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(45, 13);
@@ -314,7 +314,7 @@ namespace ProjetPOO {
 			// 
 			// Nature_Article
 			// 
-			this->Nature_Article->Location = System::Drawing::Point(718, 154);
+			this->Nature_Article->Location = System::Drawing::Point(718, 207);
 			this->Nature_Article->Margin = System::Windows::Forms::Padding(2);
 			this->Nature_Article->Name = L"Nature_Article";
 			this->Nature_Article->Size = System::Drawing::Size(303, 20);
@@ -325,7 +325,7 @@ namespace ProjetPOO {
 			this->label8->AutoSize = true;
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label8->Location = System::Drawing::Point(716, 182);
+			this->label8->Location = System::Drawing::Point(716, 142);
 			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label8->Name = L"label8";
 			this->label8->Size = System::Drawing::Size(49, 13);
@@ -334,7 +334,7 @@ namespace ProjetPOO {
 			// 
 			// Couleur_Article
 			// 
-			this->Couleur_Article->Location = System::Drawing::Point(718, 197);
+			this->Couleur_Article->Location = System::Drawing::Point(718, 157);
 			this->Couleur_Article->Margin = System::Windows::Forms::Padding(2);
 			this->Couleur_Article->Name = L"Couleur_Article";
 			this->Couleur_Article->Size = System::Drawing::Size(303, 20);
@@ -345,7 +345,7 @@ namespace ProjetPOO {
 			this->label9->AutoSize = true;
 			this->label9->BackColor = System::Drawing::Color::Transparent;
 			this->label9->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label9->Location = System::Drawing::Point(718, 229);
+			this->label9->Location = System::Drawing::Point(718, 245);
 			this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(53, 13);
@@ -354,7 +354,7 @@ namespace ProjetPOO {
 			// 
 			// Quantite_Article
 			// 
-			this->Quantite_Article->Location = System::Drawing::Point(718, 244);
+			this->Quantite_Article->Location = System::Drawing::Point(718, 260);
 			this->Quantite_Article->Margin = System::Windows::Forms::Padding(2);
 			this->Quantite_Article->Name = L"Quantite_Article";
 			this->Quantite_Article->Size = System::Drawing::Size(303, 20);

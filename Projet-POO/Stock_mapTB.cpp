@@ -2,19 +2,19 @@
 
 namespace NS_Comp_Mappage{
 	String^ Stock_mapTB::Select(void) {
-		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article]";
+		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (disponible = 1);";
 	}
 	String^ Stock_mapTB::SelectParticulier(void) {
-		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (id_article='" + this->id_stock + "');";
+		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (id_article='" + this->id_stock + "' AND disponible = 1);";
 	}
 	String^ Stock_mapTB::Insert(void) {
-		return "";
+		return "INSERT INTO article (nom_article, couleur, nature, quantite, prix_HT_,prix_TTC_, TVA, seuil_reappro, disponible) SELECT '" + this->nom + "', '" + this->couleur + "', '" + this->nature + "', '" + this->nbr_exemplaire + "', '" + this->prixHT + "', '" + this->prixTTC + "', '" + this->TVA + "', '" + this->seuil + "', '1' WHERE NOT EXISTS (SELECT * FROM [Projet].[dbo].[article] WHERE nom_article = '" + this->nom + "' AND couleur = '" + this->couleur + "' AND nature = '" + this->nature + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "'); UPDATE [Projet].[dbo].[article] SET disponible='1'  WHERE (nom_article = '" + this->nom + "' AND nature = '" + this->nature + "' AND couleur = '" + this->couleur + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "');";
 	}
 	String^ Stock_mapTB::Delete(void) {
-		return "";
+		return "UPDATE [Projet].[dbo].[article] SET disponible='0'  WHERE (id_article='" + this->id_stock + "');";
 	}
 	String^ Stock_mapTB::Update(void) {
-		return "";
+		return "UPDATE [Projet].[dbo].[article] SET nom_article = '" + this->nom + "', couleur = '" + this->couleur + "', nature = '" + this->nature + "', quantite = '" + this->nbr_exemplaire + "', prix_HT_ = '" + this->prixHT + "',prix_TTC_ = '" + this->prixTTC + "', TVA = '" + this->TVA + "', seuil_reappro = '" + this->seuil + "' WHERE (id_article='" + this->id_stock + "');";
 	}
 	String^ Stock_mapTB::Chiffre_affaire(void) {
 		return "";
