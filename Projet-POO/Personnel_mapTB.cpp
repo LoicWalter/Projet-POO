@@ -16,7 +16,7 @@ namespace NS_Comp_Mappage {
 		return "SELECT [id_personnel], [nom], [prenom], [superieur], [date_embauche],[pays], [ville], [code_postal], [numero_adresse], [adresse], [complement_adresse] FROM [Projet].[dbo].[personnel] INNER JOIN [adresse] ON ([personnel].[id_adresse] = [adresse].[id_adresse]);";
 	}
 	String^ Personnel_mapTB::SelectParticulierPersonnel() {
-		return "SELECT [id_personnel], [nom], [prenom], [superieur], [date_embauche] FROM [Projet].[dbo].[personnel]  WHERE (id_personnel='" + this->id_personnel + "');";
+		return "SELECT [id_personnel], [nom], [prenom], [superieur], [date_embauche],[pays], [ville], [code_postal], [numero_adresse], [adresse], [complement_adresse] FROM [Projet].[dbo].[personnel] INNER JOIN [adresse] ON ([personnel].[id_adresse] = [adresse].[id_adresse]) WHERE (id_personnel='" + this->id_personnel + "');";
 	}
 	String^ Personnel_mapTB::Delete() {
 		return "DELETE FROM [Projet].[dbo].[personnel] WHERE (id_personnel ='" + this->id_personnel + "');";
@@ -25,7 +25,7 @@ namespace NS_Comp_Mappage {
 		return "INSERT INTO adresse (type_adresse,adresse,ville,code_postal,numero_adresse,complement_adresse,pays) SELECT '" + getAdresse->getType_Adress() + "', '" + getAdresse->getAdresse() + "', '" + getAdresse->getVille() + "', '" + getAdresse->getCP() + "', '" + getAdresse->getNum_Adress() + "', '" + getAdresse->getComplement() + "', '" + getAdresse->getPays() + "' WHERE NOT EXISTS (SELECT * FROM [Projet].[dbo].[adresse] WHERE type_adresse = '" + getAdresse->getType_Adress() + "' AND adresse = '" + getAdresse->getAdresse() + "' AND ville = '" + getAdresse->getVille() + "' AND code_postal = '" + getAdresse->getCP() + "' AND numero_adresse = '" + getAdresse->getNum_Adress() + "'  AND complement_adresse = '" + getAdresse->getComplement() + "' AND pays = '" + getAdresse->getPays() + "'); INSERT INTO personnel  (nom, prenom, superieur, date_embauche, id_adresse) SELECT '" + this->nom_personnel + "', '" + this->prenom_personnel + "', '" + this->superieur + "', '" + this->date_embauche + "', id_adresse FROM adresse WHERE(type_adresse = '" + getAdresse->getType_Adress() + "' AND adresse = '" + getAdresse->getAdresse() + "' AND ville = '" + getAdresse->getVille() + "' AND code_postal = '" + getAdresse->getCP() + "' AND numero_adresse = '" + getAdresse->getNum_Adress() + "' AND complement_adresse = '" + getAdresse->getComplement() + "' AND pays = '" + getAdresse->getPays() + "');";
 	}
 	String^ Personnel_mapTB::Update() {
-		return "UPDATE [Projet].[dbo].[personnel] SET nom = '" + this->nom_personnel + "', prenom = '" + this->prenom_personnel + "',  superieur = '" + this->superieur + "', date_embauche = '" + this->date_embauche + "' WHERE (id_personnel='" + this->id_personnel + "');";
+		return "UPDATE [Projet].[dbo].[personnel] SET nom ='" + this->nom_personnel + "', prenom = '" + this->prenom_personnel + "', superieur = '" + this->superieur + "', date_embauche = '" + this->date_embauche + "' WHERE (id_personnel = '" + this->id_personnel + "'); UPDATE [Projet].[dbo].[adresse] SET type_adresse = '" + getAdresse->getType_Adress() + "', adresse ='" + getAdresse->getAdresse() + "', ville ='" + getAdresse->getVille() + "', code_postal ='" + getAdresse->getCP() + "', numero_adresse ='" + getAdresse->getNum_Adress() + "', complement_adresse = '" + getAdresse->getComplement() + "', pays = '" + getAdresse->getPays() + "' WHERE (id_adresse = (SELECT id_adresse FROM personnel WHERE id_personnel = '" + this->id_personnel + "'));";
 	}
 
 	void Personnel_mapTB::setId_personnel(int Id) { this->id_personnel = Id; }
@@ -43,6 +43,7 @@ namespace NS_Comp_Mappage {
 	
 
 
+	
 
 
 }
