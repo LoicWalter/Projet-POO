@@ -10,6 +10,8 @@ namespace NS_Comp_Mappage {
 		String^ nom;
 		String^ prenom;
 		String^ date_naissance;
+		String^ date_premier_achat;
+
 	public:
 		String^ Select(void);
 		String^ SelectParticulier(void);
@@ -20,11 +22,13 @@ namespace NS_Comp_Mappage {
 		void setNom_Client(String^);
 		void setPrenom_Client(String^);
 		void setDateNaissance_Client(String^);
-		//rajouter date premier achat
+		void setDatePremier_achat(String^);
+
 		int getId_Client(void);
 		String^ getNom_Client(void);
 		String^ getPrenom_Client(void);
 		String^ getDateNaissance_Client(void);
+		String^ getDatePremier_achat(void);
 
 	};
 }

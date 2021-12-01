@@ -4,11 +4,11 @@ using namespace std;
 
 namespace NS_Comp_Mappage {
 	String^ Client_mapTB::Select() {
-		return "SELECT [id_client], [nom], [prenom], [date_naissance] FROM [Projet].[dbo].[client]";
+		return "SELECT [id_client], [nom], [prenom], [date_naissance], [date_premiere] FROM [Projet].[dbo].[client]";
 	}
 
 	String^ Client_mapTB::SelectParticulier() {
-		return "SELECT [id_client], [nom], [prenom], [date_naissance] FROM [Projet].[dbo].[client]  WHERE (id_client='" + this->Id + "');";
+		return "SELECT [id_client], [nom], [prenom], [date_naissance], [date_premiere] FROM [Projet].[dbo].[client]  WHERE (id_client='" + this->Id + "');";
 	}
 
 	String^ Client_mapTB::Delete() {
@@ -28,11 +28,11 @@ namespace NS_Comp_Mappage {
 	void Client_mapTB::setNom_Client(String^ nom) { this->nom = nom; }
 	void Client_mapTB::setPrenom_Client(String^ prenom) { this->prenom = prenom; }
 	void Client_mapTB::setDateNaissance_Client(String^ date_naissance) { this->date_naissance = date_naissance; }
-
+	void Client_mapTB::setDatePremier_achat(String^ date_premier_achat) { this->date_premier_achat = date_premier_achat; }
 
 	int Client_mapTB::getId_Client(void) { return this->Id; }
 	String^ Client_mapTB::getNom_Client(void) { return this->nom; }
 	String^ Client_mapTB::getPrenom_Client(void) { return this->prenom; }
 	String^ Client_mapTB::getDateNaissance_Client(void) { return this->date_naissance; }
-	//rajouter date premier achat
+	String^ Client_mapTB::getDatePremier_achat(void) { return this->date_premier_achat; }
 }

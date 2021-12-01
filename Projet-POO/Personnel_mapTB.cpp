@@ -3,9 +3,6 @@
 
 namespace NS_Comp_Mappage {
 
-
-
-
 	Personnel_mapTB::Personnel_mapTB(void)
 	{
 
