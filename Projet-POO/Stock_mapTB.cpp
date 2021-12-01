@@ -42,17 +42,13 @@ namespace NS_Comp_Mappage{
 	void Stock_mapTB::setNom(String^ nom) { this->nom = nom; }
 	void Stock_mapTB::setNbr_exemplaire(int nbr_exemplaire) { this->nbr_exemplaire = nbr_exemplaire; }
 	void Stock_mapTB::setPrixHT(float prixHT) { this->prixHT = prixHT; }
-	void Stock_mapTB::setTVA(float TVA) { this->TVA = TVA; }
+	void Stock_mapTB::setTVA(int TVA) { this->TVA = TVA; }
 	void Stock_mapTB::setSeuil(int seuil) { this->seuil = seuil; }
-	void Stock_mapTB::setRemise(int remise) { this->remise = remise; }
-	void Stock_mapTB::setPourcentage_remise(String^ pourcentage_remise) { this->pourcentage_remise = pourcentage_remise; }
 
 	int Stock_mapTB::getId_Stock(void) { return this->id_stock;  }
 	String^ Stock_mapTB::getNom(void) { return this->nom; }
 	int Stock_mapTB::getNbr_exemplaire(void) { return this->nbr_exemplaire; }
 	float Stock_mapTB::getPrixHT(void) { return this->prixHT; }
-	float Stock_mapTB::getTVA(void) { return this->TVA; }
+	int Stock_mapTB::getTVA(void) { return this->TVA; }
 	int Stock_mapTB::getSeuil(void) { return this->seuil; }
-	int Stock_mapTB::getRemise(void) { return this->remise; }
-	String^ Stock_mapTB::getPourcentage_remise(void) { return this->pourcentage_remise;}
 }
