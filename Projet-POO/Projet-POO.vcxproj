@@ -136,6 +136,7 @@
     <ClCompile Include="Payement_mapTB.cpp" />
     <ClCompile Include="Personnel_mapTB.cpp" />
     <ClCompile Include="Personnel_service.cpp" />
+    <ClCompile Include="Stock_mapTB.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adresse_mapTB.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Payement_mapTB.h" />
     <ClInclude Include="Personnel_mapTB.h" />
     <ClInclude Include="Personnel_service.h" />
+    <ClInclude Include="Stock_mapTB.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
