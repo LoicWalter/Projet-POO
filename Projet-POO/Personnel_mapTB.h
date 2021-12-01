@@ -1,8 +1,10 @@
 #pragma once
+#include "Adresse_mapTB.h"
+
 using namespace System;
 
 namespace NS_Comp_Mappage {
-	ref class Personnel_mapTB
+	ref class Personnel_mapTB : public Adresse_mapTB
 	{
 	private:
 		int id_personnel;
@@ -10,7 +12,10 @@ namespace NS_Comp_Mappage {
 		String^ prenom_personnel;
 		String^ date_embauche;
 		String^ superieur;
+		Adresse_mapTB^ getAdresse;
+
 	public:
+		Personnel_mapTB(void);
 		String^ Select(void);
 		String^ Insert(void);
 		String^ Delete(void);
