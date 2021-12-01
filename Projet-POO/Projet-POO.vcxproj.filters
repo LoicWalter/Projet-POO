@@ -34,6 +34,9 @@
     <Filter Include="Fichiers sources\stats">
       <UniqueIdentifier>{bb267fb5-e3d7-4771-aab2-5d4bd35b4d9c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Stats">
+      <UniqueIdentifier>{07ae3295-70e9-4af3-8f7c-2fc604858973}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CAD.cpp">
@@ -88,6 +91,9 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Stock_service.cpp">
+      <Filter>Fichiers sources\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="Commande_mapTB.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
@@ -137,12 +143,6 @@
     <ClInclude Include="Payement_mapTB.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Stock_mapTB.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-        <ClInclude Include="Stock_service.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="MyFormVariation.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
@@ -150,6 +150,15 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="MyFormVariation.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock_mapTB.h">
+      <Filter>Fichiers d%27en-tête\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Stock_service.h">
+      <Filter>Fichiers d%27en-tête\Stats</Filter>
+    </ClInclude>
+    <ClInclude Include="Commande_mapTB.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
