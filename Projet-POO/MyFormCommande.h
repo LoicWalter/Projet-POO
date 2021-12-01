@@ -82,6 +82,11 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Label^ label20;
 	private: System::Windows::Forms::DateTimePicker^ datePaiement_Commande;
 	private: System::Windows::Forms::ComboBox^ MoyenPaiementcombo;
+	private: System::Windows::Forms::DataGridView^ dataGridView1;
+	private: System::Windows::Forms::Label^ label21;
+	private: System::Windows::Forms::Label^ label22;
+	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Label^ label23;
 
 
 	protected:
@@ -145,15 +150,21 @@ namespace ProjetPOO {
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->datePaiement_Commande = (gcnew System::Windows::Forms::DateTimePicker());
 			this->MoyenPaiementcombo = (gcnew System::Windows::Forms::ComboBox());
+			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label23 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// retourMenu
 			// 
-			this->retourMenu->Location = System::Drawing::Point(12, 964);
-			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->retourMenu->Location = System::Drawing::Point(11, 780);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->retourMenu->Name = L"retourMenu";
-			this->retourMenu->Size = System::Drawing::Size(277, 69);
+			this->retourMenu->Size = System::Drawing::Size(192, 47);
 			this->retourMenu->TabIndex = 123;
 			this->retourMenu->Text = L"Retour au menu";
 			this->retourMenu->UseVisualStyleBackColor = true;
@@ -164,18 +175,19 @@ namespace ProjetPOO {
 			this->label13->AutoSize = true;
 			this->label13->BackColor = System::Drawing::Color::Transparent;
 			this->label13->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label13->Location = System::Drawing::Point(41, 838);
+			this->label13->Location = System::Drawing::Point(25, 703);
+			this->label13->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label13->Name = L"label13";
-			this->label13->Size = System::Drawing::Size(204, 17);
+			this->label13->Size = System::Drawing::Size(152, 13);
 			this->label13->TabIndex = 122;
 			this->label13->Text = L"Informations complémentaires :";
 			// 
 			// infoComp_facturation
 			// 
-			this->infoComp_facturation->Location = System::Drawing::Point(43, 860);
-			this->infoComp_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->infoComp_facturation->Location = System::Drawing::Point(26, 721);
+			this->infoComp_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->infoComp_facturation->Name = L"infoComp_facturation";
-			this->infoComp_facturation->Size = System::Drawing::Size(375, 22);
+			this->infoComp_facturation->Size = System::Drawing::Size(282, 20);
 			this->infoComp_facturation->TabIndex = 121;
 			// 
 			// label14
@@ -183,18 +195,19 @@ namespace ProjetPOO {
 			this->label14->AutoSize = true;
 			this->label14->BackColor = System::Drawing::Color::Transparent;
 			this->label14->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label14->Location = System::Drawing::Point(438, 765);
+			this->label14->Location = System::Drawing::Point(322, 644);
+			this->label14->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(111, 17);
+			this->label14->Size = System::Drawing::Size(83, 13);
 			this->label14->TabIndex = 120;
 			this->label14->Text = L"Numéro de rue :";
 			// 
 			// numRue_facturation
 			// 
-			this->numRue_facturation->Location = System::Drawing::Point(441, 789);
-			this->numRue_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->numRue_facturation->Location = System::Drawing::Point(325, 663);
+			this->numRue_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->numRue_facturation->Name = L"numRue_facturation";
-			this->numRue_facturation->Size = System::Drawing::Size(195, 22);
+			this->numRue_facturation->Size = System::Drawing::Size(147, 20);
 			this->numRue_facturation->TabIndex = 119;
 			// 
 			// label15
@@ -202,18 +215,19 @@ namespace ProjetPOO {
 			this->label15->AutoSize = true;
 			this->label15->BackColor = System::Drawing::Color::Transparent;
 			this->label15->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label15->Location = System::Drawing::Point(438, 706);
+			this->label15->Location = System::Drawing::Point(322, 596);
+			this->label15->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label15->Name = L"label15";
-			this->label15->Size = System::Drawing::Size(95, 17);
+			this->label15->Size = System::Drawing::Size(72, 13);
 			this->label15->TabIndex = 118;
 			this->label15->Text = L"Code postal : ";
 			// 
 			// CP_facturation
 			// 
-			this->CP_facturation->Location = System::Drawing::Point(441, 730);
-			this->CP_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->CP_facturation->Location = System::Drawing::Point(325, 615);
+			this->CP_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->CP_facturation->Name = L"CP_facturation";
-			this->CP_facturation->Size = System::Drawing::Size(195, 22);
+			this->CP_facturation->Size = System::Drawing::Size(147, 20);
 			this->CP_facturation->TabIndex = 117;
 			// 
 			// label16
@@ -221,9 +235,10 @@ namespace ProjetPOO {
 			this->label16->AutoSize = true;
 			this->label16->BackColor = System::Drawing::Color::Transparent;
 			this->label16->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label16->Location = System::Drawing::Point(41, 767);
+			this->label16->Location = System::Drawing::Point(25, 645);
+			this->label16->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label16->Name = L"label16";
-			this->label16->Size = System::Drawing::Size(105, 17);
+			this->label16->Size = System::Drawing::Size(79, 13);
 			this->label16->TabIndex = 116;
 			this->label16->Text = L"Nom de la rue :";
 			// 
@@ -232,9 +247,10 @@ namespace ProjetPOO {
 			this->label17->AutoSize = true;
 			this->label17->BackColor = System::Drawing::Color::Transparent;
 			this->label17->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label17->Location = System::Drawing::Point(218, 706);
+			this->label17->Location = System::Drawing::Point(158, 596);
+			this->label17->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label17->Name = L"label17";
-			this->label17->Size = System::Drawing::Size(42, 17);
+			this->label17->Size = System::Drawing::Size(32, 13);
 			this->label17->TabIndex = 115;
 			this->label17->Text = L"Ville :";
 			// 
@@ -243,34 +259,35 @@ namespace ProjetPOO {
 			this->label18->AutoSize = true;
 			this->label18->BackColor = System::Drawing::Color::Transparent;
 			this->label18->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label18->Location = System::Drawing::Point(41, 706);
+			this->label18->Location = System::Drawing::Point(25, 596);
+			this->label18->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label18->Name = L"label18";
-			this->label18->Size = System::Drawing::Size(51, 17);
+			this->label18->Size = System::Drawing::Size(39, 13);
 			this->label18->TabIndex = 114;
 			this->label18->Text = L"Pays : ";
 			// 
 			// ville_facturation
 			// 
-			this->ville_facturation->Location = System::Drawing::Point(225, 730);
-			this->ville_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->ville_facturation->Location = System::Drawing::Point(163, 615);
+			this->ville_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->ville_facturation->Name = L"ville_facturation";
-			this->ville_facturation->Size = System::Drawing::Size(195, 22);
+			this->ville_facturation->Size = System::Drawing::Size(147, 20);
 			this->ville_facturation->TabIndex = 113;
 			// 
 			// nomRue_facturation
 			// 
-			this->nomRue_facturation->Location = System::Drawing::Point(43, 789);
-			this->nomRue_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->nomRue_facturation->Location = System::Drawing::Point(26, 663);
+			this->nomRue_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->nomRue_facturation->Name = L"nomRue_facturation";
-			this->nomRue_facturation->Size = System::Drawing::Size(375, 22);
+			this->nomRue_facturation->Size = System::Drawing::Size(282, 20);
 			this->nomRue_facturation->TabIndex = 112;
 			// 
 			// pays_facturation
 			// 
-			this->pays_facturation->Location = System::Drawing::Point(43, 730);
-			this->pays_facturation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pays_facturation->Location = System::Drawing::Point(26, 615);
+			this->pays_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pays_facturation->Name = L"pays_facturation";
-			this->pays_facturation->Size = System::Drawing::Size(159, 22);
+			this->pays_facturation->Size = System::Drawing::Size(120, 20);
 			this->pays_facturation->TabIndex = 111;
 			// 
 			// label12
@@ -278,18 +295,19 @@ namespace ProjetPOO {
 			this->label12->AutoSize = true;
 			this->label12->BackColor = System::Drawing::Color::Transparent;
 			this->label12->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label12->Location = System::Drawing::Point(38, 600);
+			this->label12->Location = System::Drawing::Point(22, 510);
+			this->label12->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label12->Name = L"label12";
-			this->label12->Size = System::Drawing::Size(204, 17);
+			this->label12->Size = System::Drawing::Size(152, 13);
 			this->label12->TabIndex = 110;
 			this->label12->Text = L"Informations complémentaires :";
 			// 
 			// infoComp_livraison
 			// 
-			this->infoComp_livraison->Location = System::Drawing::Point(44, 622);
-			this->infoComp_livraison->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->infoComp_livraison->Location = System::Drawing::Point(27, 527);
+			this->infoComp_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->infoComp_livraison->Name = L"infoComp_livraison";
-			this->infoComp_livraison->Size = System::Drawing::Size(375, 22);
+			this->infoComp_livraison->Size = System::Drawing::Size(282, 20);
 			this->infoComp_livraison->TabIndex = 109;
 			// 
 			// label11
@@ -297,28 +315,32 @@ namespace ProjetPOO {
 			this->label11->AutoSize = true;
 			this->label11->BackColor = System::Drawing::Color::Transparent;
 			this->label11->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label11->Location = System::Drawing::Point(436, 527);
+			this->label11->Location = System::Drawing::Point(321, 450);
+			this->label11->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(111, 17);
+			this->label11->Size = System::Drawing::Size(83, 13);
 			this->label11->TabIndex = 108;
 			this->label11->Text = L"Numéro de rue :";
 			// 
 			// numRue_livraison
 			// 
-			this->numRue_livraison->Location = System::Drawing::Point(440, 551);
-			this->numRue_livraison->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->numRue_livraison->Location = System::Drawing::Point(324, 470);
+			this->numRue_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->numRue_livraison->Name = L"numRue_livraison";
-			this->numRue_livraison->Size = System::Drawing::Size(195, 22);
+			this->numRue_livraison->Size = System::Drawing::Size(147, 20);
 			this->numRue_livraison->TabIndex = 107;
 			// 
 			// label10
 			// 
 			this->label10->AutoSize = true;
 			this->label10->BackColor = System::Drawing::Color::Transparent;
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->label10->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label10->Location = System::Drawing::Point(1171, 438);
+			this->label10->Location = System::Drawing::Point(880, 59);
+			this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(125, 17);
+			this->label10->Size = System::Drawing::Size(118, 16);
 			this->label10->TabIndex = 106;
 			this->label10->Text = L"Moyen Paiement : ";
 			// 
@@ -327,9 +349,10 @@ namespace ProjetPOO {
 			this->label9->AutoSize = true;
 			this->label9->BackColor = System::Drawing::Color::Transparent;
 			this->label9->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label9->Location = System::Drawing::Point(38, 529);
+			this->label9->Location = System::Drawing::Point(22, 452);
+			this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(105, 17);
+			this->label9->Size = System::Drawing::Size(79, 13);
 			this->label9->TabIndex = 104;
 			this->label9->Text = L"Nom de la rue :";
 			// 
@@ -338,9 +361,10 @@ namespace ProjetPOO {
 			this->label8->AutoSize = true;
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label8->Location = System::Drawing::Point(220, 468);
+			this->label8->Location = System::Drawing::Point(159, 402);
+			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(42, 17);
+			this->label8->Size = System::Drawing::Size(32, 13);
 			this->label8->TabIndex = 103;
 			this->label8->Text = L"Ville :";
 			// 
@@ -349,34 +373,35 @@ namespace ProjetPOO {
 			this->label7->AutoSize = true;
 			this->label7->BackColor = System::Drawing::Color::Transparent;
 			this->label7->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label7->Location = System::Drawing::Point(38, 468);
+			this->label7->Location = System::Drawing::Point(22, 402);
+			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(51, 17);
+			this->label7->Size = System::Drawing::Size(39, 13);
 			this->label7->TabIndex = 102;
 			this->label7->Text = L"Pays : ";
 			// 
 			// ville_livraison
 			// 
-			this->ville_livraison->Location = System::Drawing::Point(221, 492);
-			this->ville_livraison->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->ville_livraison->Location = System::Drawing::Point(160, 422);
+			this->ville_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->ville_livraison->Name = L"ville_livraison";
-			this->ville_livraison->Size = System::Drawing::Size(195, 22);
+			this->ville_livraison->Size = System::Drawing::Size(147, 20);
 			this->ville_livraison->TabIndex = 101;
 			// 
 			// nomRue_livraison
 			// 
-			this->nomRue_livraison->Location = System::Drawing::Point(44, 551);
-			this->nomRue_livraison->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->nomRue_livraison->Location = System::Drawing::Point(27, 470);
+			this->nomRue_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->nomRue_livraison->Name = L"nomRue_livraison";
-			this->nomRue_livraison->Size = System::Drawing::Size(375, 22);
+			this->nomRue_livraison->Size = System::Drawing::Size(282, 20);
 			this->nomRue_livraison->TabIndex = 100;
 			// 
 			// pays_livraison
 			// 
-			this->pays_livraison->Location = System::Drawing::Point(44, 492);
-			this->pays_livraison->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->pays_livraison->Location = System::Drawing::Point(27, 422);
+			this->pays_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->pays_livraison->Name = L"pays_livraison";
-			this->pays_livraison->Size = System::Drawing::Size(159, 22);
+			this->pays_livraison->Size = System::Drawing::Size(120, 20);
 			this->pays_livraison->TabIndex = 99;
 			// 
 			// label6
@@ -384,9 +409,10 @@ namespace ProjetPOO {
 			this->label6->AutoSize = true;
 			this->label6->BackColor = System::Drawing::Color::Transparent;
 			this->label6->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label6->Location = System::Drawing::Point(966, 262);
+			this->label6->Location = System::Drawing::Point(581, 576);
+			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(139, 17);
+			this->label6->Size = System::Drawing::Size(106, 13);
 			this->label6->TabIndex = 98;
 			this->label6->Text = L"Date de commande :";
 			// 
@@ -394,19 +420,19 @@ namespace ProjetPOO {
 			// 
 			this->dateCommande_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->dateCommande_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-			this->dateCommande_Commande->Location = System::Drawing::Point(966, 297);
-			this->dateCommande_Commande->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->dateCommande_Commande->Location = System::Drawing::Point(581, 604);
+			this->dateCommande_Commande->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->dateCommande_Commande->Name = L"dateCommande_Commande";
-			this->dateCommande_Commande->Size = System::Drawing::Size(134, 22);
+			this->dateCommande_Commande->Size = System::Drawing::Size(102, 20);
 			this->dateCommande_Commande->TabIndex = 97;
 			// 
 			// act_client
 			// 
 			this->act_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_client->Location = System::Drawing::Point(625, 73);
-			this->act_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->act_client->Location = System::Drawing::Point(469, 59);
+			this->act_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->act_client->Name = L"act_client";
-			this->act_client->Size = System::Drawing::Size(264, 70);
+			this->act_client->Size = System::Drawing::Size(198, 57);
 			this->act_client->TabIndex = 96;
 			this->act_client->Text = L"Actualiser";
 			this->act_client->UseVisualStyleBackColor = true;
@@ -419,9 +445,10 @@ namespace ProjetPOO {
 				static_cast<System::Byte>(0)));
 			this->label5->ForeColor = System::Drawing::Color::Black;
 			this->label5->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label5->Location = System::Drawing::Point(37, 669);
+			this->label5->Location = System::Drawing::Point(22, 566);
+			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(188, 24);
+			this->label5->Size = System::Drawing::Size(148, 18);
 			this->label5->TabIndex = 95;
 			this->label5->Text = L"Adresse Facturation :";
 			// 
@@ -433,9 +460,10 @@ namespace ProjetPOO {
 				static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::Color::Black;
 			this->label4->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label4->Location = System::Drawing::Point(37, 431);
+			this->label4->Location = System::Drawing::Point(22, 372);
+			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(169, 24);
+			this->label4->Size = System::Drawing::Size(133, 18);
 			this->label4->TabIndex = 94;
 			this->label4->Text = L"Adresse Livraison :";
 			// 
@@ -444,9 +472,10 @@ namespace ProjetPOO {
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label3->Location = System::Drawing::Point(966, 189);
+			this->label3->Location = System::Drawing::Point(581, 517);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(104, 17);
+			this->label3->Size = System::Drawing::Size(78, 13);
 			this->label3->TabIndex = 93;
 			this->label3->Text = L"Prénom Client :";
 			// 
@@ -455,9 +484,10 @@ namespace ProjetPOO {
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label2->Location = System::Drawing::Point(966, 119);
+			this->label2->Location = System::Drawing::Point(581, 460);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(84, 17);
+			this->label2->Size = System::Drawing::Size(64, 13);
 			this->label2->TabIndex = 92;
 			this->label2->Text = L"Nom Client :";
 			// 
@@ -466,43 +496,44 @@ namespace ProjetPOO {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label1->Location = System::Drawing::Point(966, 51);
+			this->label1->Location = System::Drawing::Point(581, 404);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(104, 17);
+			this->label1->Size = System::Drawing::Size(80, 13);
 			this->label1->TabIndex = 91;
 			this->label1->Text = L"ID Commande :";
 			// 
 			// ID_Client
 			// 
-			this->ID_Client->Location = System::Drawing::Point(966, 73);
-			this->ID_Client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->ID_Client->Location = System::Drawing::Point(581, 422);
+			this->ID_Client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->ID_Client->Name = L"ID_Client";
-			this->ID_Client->Size = System::Drawing::Size(403, 22);
+			this->ID_Client->Size = System::Drawing::Size(303, 20);
 			this->ID_Client->TabIndex = 90;
 			// 
 			// Prenom_Client
 			// 
-			this->Prenom_Client->Location = System::Drawing::Point(966, 212);
-			this->Prenom_Client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Prenom_Client->Location = System::Drawing::Point(581, 535);
+			this->Prenom_Client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Prenom_Client->Name = L"Prenom_Client";
-			this->Prenom_Client->Size = System::Drawing::Size(403, 22);
+			this->Prenom_Client->Size = System::Drawing::Size(303, 20);
 			this->Prenom_Client->TabIndex = 89;
 			// 
 			// Nom_Client
 			// 
-			this->Nom_Client->Location = System::Drawing::Point(966, 142);
-			this->Nom_Client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->Nom_Client->Location = System::Drawing::Point(581, 478);
+			this->Nom_Client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Nom_Client->Name = L"Nom_Client";
-			this->Nom_Client->Size = System::Drawing::Size(403, 22);
+			this->Nom_Client->Size = System::Drawing::Size(303, 20);
 			this->Nom_Client->TabIndex = 88;
 			// 
 			// mod_client
 			// 
 			this->mod_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->mod_client->Location = System::Drawing::Point(625, 253);
-			this->mod_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->mod_client->Location = System::Drawing::Point(469, 206);
+			this->mod_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->mod_client->Name = L"mod_client";
-			this->mod_client->Size = System::Drawing::Size(120, 69);
+			this->mod_client->Size = System::Drawing::Size(90, 56);
 			this->mod_client->TabIndex = 87;
 			this->mod_client->Text = L"Modification";
 			this->mod_client->UseVisualStyleBackColor = true;
@@ -510,10 +541,10 @@ namespace ProjetPOO {
 			// ins_client
 			// 
 			this->ins_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->ins_client->Location = System::Drawing::Point(769, 167);
-			this->ins_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->ins_client->Location = System::Drawing::Point(577, 136);
+			this->ins_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->ins_client->Name = L"ins_client";
-			this->ins_client->Size = System::Drawing::Size(120, 69);
+			this->ins_client->Size = System::Drawing::Size(90, 56);
 			this->ins_client->TabIndex = 86;
 			this->ins_client->Text = L"Insertion";
 			this->ins_client->UseVisualStyleBackColor = true;
@@ -521,10 +552,10 @@ namespace ProjetPOO {
 			// sup_client
 			// 
 			this->sup_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sup_client->Location = System::Drawing::Point(769, 253);
-			this->sup_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->sup_client->Location = System::Drawing::Point(577, 206);
+			this->sup_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->sup_client->Name = L"sup_client";
-			this->sup_client->Size = System::Drawing::Size(120, 69);
+			this->sup_client->Size = System::Drawing::Size(90, 56);
 			this->sup_client->TabIndex = 85;
 			this->sup_client->Text = L"Suppression";
 			this->sup_client->UseVisualStyleBackColor = true;
@@ -532,10 +563,10 @@ namespace ProjetPOO {
 			// sel_client
 			// 
 			this->sel_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sel_client->Location = System::Drawing::Point(625, 167);
-			this->sel_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->sel_client->Location = System::Drawing::Point(469, 136);
+			this->sel_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->sel_client->Name = L"sel_client";
-			this->sel_client->Size = System::Drawing::Size(120, 69);
+			this->sel_client->Size = System::Drawing::Size(90, 56);
 			this->sel_client->TabIndex = 84;
 			this->sel_client->Text = L"Sélection";
 			this->sel_client->UseVisualStyleBackColor = true;
@@ -543,12 +574,12 @@ namespace ProjetPOO {
 			// dataBaseClient
 			// 
 			this->dataBaseClient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseClient->Location = System::Drawing::Point(21, 8);
-			this->dataBaseClient->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->dataBaseClient->Location = System::Drawing::Point(16, 6);
+			this->dataBaseClient->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->dataBaseClient->Name = L"dataBaseClient";
 			this->dataBaseClient->RowHeadersWidth = 51;
 			this->dataBaseClient->RowTemplate->Height = 24;
-			this->dataBaseClient->Size = System::Drawing::Size(531, 395);
+			this->dataBaseClient->Size = System::Drawing::Size(404, 310);
 			this->dataBaseClient->TabIndex = 83;
 			// 
 			// label19
@@ -556,9 +587,10 @@ namespace ProjetPOO {
 			this->label19->AutoSize = true;
 			this->label19->BackColor = System::Drawing::Color::Transparent;
 			this->label19->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label19->Location = System::Drawing::Point(1145, 262);
+			this->label19->Location = System::Drawing::Point(716, 576);
+			this->label19->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label19->Name = L"label19";
-			this->label19->Size = System::Drawing::Size(170, 17);
+			this->label19->Size = System::Drawing::Size(128, 13);
 			this->label19->TabIndex = 125;
 			this->label19->Text = L"Date de livraison prévue :";
 			this->label19->Click += gcnew System::EventHandler(this, &MyFormCommande::label19_Click);
@@ -567,48 +599,114 @@ namespace ProjetPOO {
 			// 
 			this->dateLivraison_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->dateLivraison_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-			this->dateLivraison_Commande->Location = System::Drawing::Point(1145, 297);
-			this->dateLivraison_Commande->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->dateLivraison_Commande->Location = System::Drawing::Point(716, 604);
+			this->dateLivraison_Commande->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->dateLivraison_Commande->Name = L"dateLivraison_Commande";
-			this->dateLivraison_Commande->Size = System::Drawing::Size(134, 22);
+			this->dateLivraison_Commande->Size = System::Drawing::Size(102, 20);
 			this->dateLivraison_Commande->TabIndex = 124;
 			// 
 			// label20
 			// 
 			this->label20->AutoSize = true;
 			this->label20->BackColor = System::Drawing::Color::Transparent;
+			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->label20->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label20->Location = System::Drawing::Point(966, 438);
+			this->label20->Location = System::Drawing::Point(722, 59);
+			this->label20->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(128, 17);
+			this->label20->Size = System::Drawing::Size(121, 16);
 			this->label20->TabIndex = 127;
 			this->label20->Text = L"Date de paiement :";
+			this->label20->Click += gcnew System::EventHandler(this, &MyFormCommande::label20_Click);
 			// 
 			// datePaiement_Commande
 			// 
 			this->datePaiement_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->datePaiement_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-			this->datePaiement_Commande->Location = System::Drawing::Point(966, 473);
-			this->datePaiement_Commande->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
+			this->datePaiement_Commande->Location = System::Drawing::Point(725, 85);
+			this->datePaiement_Commande->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->datePaiement_Commande->Name = L"datePaiement_Commande";
-			this->datePaiement_Commande->Size = System::Drawing::Size(134, 22);
+			this->datePaiement_Commande->Size = System::Drawing::Size(102, 20);
 			this->datePaiement_Commande->TabIndex = 126;
+			this->datePaiement_Commande->ValueChanged += gcnew System::EventHandler(this, &MyFormCommande::datePaiement_Commande_ValueChanged);
 			// 
 			// MoyenPaiementcombo
 			// 
 			this->MoyenPaiementcombo->FormattingEnabled = true;
 			this->MoyenPaiementcombo->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"Paypal", L"CB", L"Virement", L"Paysafecard" });
-			this->MoyenPaiementcombo->Location = System::Drawing::Point(1174, 469);
+			this->MoyenPaiementcombo->Location = System::Drawing::Point(883, 84);
+			this->MoyenPaiementcombo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->MoyenPaiementcombo->Name = L"MoyenPaiementcombo";
-			this->MoyenPaiementcombo->Size = System::Drawing::Size(121, 24);
+			this->MoyenPaiementcombo->Size = System::Drawing::Size(92, 21);
 			this->MoyenPaiementcombo->TabIndex = 128;
+			// 
+			// dataGridView1
+			// 
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(725, 150);
+			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->Size = System::Drawing::Size(264, 112);
+			this->dataGridView1->TabIndex = 129;
+			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label21->Location = System::Drawing::Point(721, 127);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(61, 16);
+			this->label21->TabIndex = 130;
+			this->label21->Text = L"Montant :";
+			this->label21->Click += gcnew System::EventHandler(this, &MyFormCommande::label21_Click);
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->BackColor = System::Drawing::Color::DarkGray;
+			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label22->Location = System::Drawing::Point(936, 183);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(39, 42);
+			this->label22->TabIndex = 131;
+			this->label22->Text = L"€";
+			// 
+			// button1
+			// 
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(881, 769);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(122, 42);
+			this->button1->TabIndex = 132;
+			this->button1->Text = L"Facture";
+			this->button1->UseVisualStyleBackColor = true;
+			// 
+			// label23
+			// 
+			this->label23->AutoSize = true;
+			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label23->Location = System::Drawing::Point(52, 332);
+			this->label23->Name = L"label23";
+			this->label23->Size = System::Drawing::Size(230, 24);
+			this->label23->TabIndex = 133;
+			this->label23->Text = L" Informations personnelles";
+			this->label23->Click += gcnew System::EventHandler(this, &MyFormCommande::label23_Click);
 			// 
 			// MyFormCommande
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1390, 1044);
+			this->ClientSize = System::Drawing::Size(1042, 716);
+			this->Controls->Add(this->label23);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->label22);
+			this->Controls->Add(this->label21);
+			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->MoyenPaiementcombo);
 			this->Controls->Add(this->label20);
 			this->Controls->Add(this->datePaiement_Commande);
@@ -655,10 +753,12 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sel_client);
 			this->Controls->Add(this->dataBaseClient);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"MyFormCommande";
 			this->Text = L"MyFormCommande";
 			this->Load += gcnew System::EventHandler(this, &MyFormCommande::MyFormCommande_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -670,6 +770,14 @@ namespace ProjetPOO {
 	}
 private: System::Void retourMenu_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Close();
+}
+private: System::Void datePaiement_Commande_ValueChanged(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label20_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label21_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label23_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }

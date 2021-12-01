@@ -7,9 +7,6 @@
     <ClCompile Include="CAD.cpp">
       <Filter>Fichier sources</Filter>
     </ClCompile>
-    <ClCompile Include="Commande_mapTB.cpp">
-      <Filter>Fichier sources</Filter>
-    </ClCompile>
     <ClCompile Include="Payement_mapTB.cpp">
       <Filter>Fichier sources</Filter>
     </ClCompile>
@@ -52,11 +49,17 @@
     <ClCompile Include="Personnel_service.cpp">
       <Filter>Fichier sources\Personnel</Filter>
     </ClCompile>
-    <ClCompile Include="Stock_service.cpp">
-      <Filter>Fichier sources\Personnel</Filter>
+    <ClCompile Include="Commande_service.cpp">
+      <Filter>Fichier sources\Commande</Filter>
+    </ClCompile>
+    <ClCompile Include="Commande_mapTB.cpp">
+      <Filter>Fichier sources\Commande</Filter>
     </ClCompile>
     <ClCompile Include="Stock_mapTB.cpp">
-      <Filter>Fichier sources\Personnel</Filter>
+      <Filter>Fichier sources\Stock</Filter>
+    </ClCompile>
+    <ClCompile Include="Stock_service.cpp">
+      <Filter>Fichier sources\Stock</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,9 +74,6 @@
       <Filter>Fichier d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="CAD.h">
-      <Filter>Fichier d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Commande_mapTB.h">
       <Filter>Fichier d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Payement_mapTB.h">
@@ -102,6 +102,12 @@
     </ClInclude>
     <ClInclude Include="Stock_service.h">
       <Filter>Fichier d%27en-tête\Stock</Filter>
+    </ClInclude>
+    <ClInclude Include="Commande_mapTB.h">
+      <Filter>Fichier d%27en-tête\Commande</Filter>
+    </ClInclude>
+    <ClInclude Include="Commande_service.h">
+      <Filter>Fichier d%27en-tête\Commande</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +143,12 @@
     </Filter>
     <Filter Include="Fichier sources\Stock">
       <UniqueIdentifier>{df1c15e1-4e50-4da4-b33a-c713ceefd9c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier d%27en-tête\Commande">
+      <UniqueIdentifier>{4b4756b1-079f-4b88-8295-faeba8c1c773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichier sources\Commande">
+      <UniqueIdentifier>{bf8a089c-77f0-454b-a586-785077b3cf6a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
