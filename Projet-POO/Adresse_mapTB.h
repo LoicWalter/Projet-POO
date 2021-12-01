@@ -5,36 +5,36 @@ namespace NS_Comp_Mappage {
 	ref class Adresse_mapTB
 	{
 	private:
-		int id_adress;
-		String^ type_adress;
-		String^ adress;
-		String^ ville;
-		int CP;
-		int num_adress;
-		String^ complement;
-		String^ pays;
+		static int id_adress;
+		static String^ type_adress;
+		static String^ adress;
+		static String^ ville;
+		static int CP;
+		static int num_adress;
+		static String^ complement;
+		static String^ pays;
 	public:
 		String^ Select(void);
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);
-		void setId_Adress(int);
-		void setCP(int);
-		void setNum_Adress(int);
-		void setType_Adress(String^);
-		void setAdress(String^);
-		void setVille(String^);
-		void setComplement(String^);
-		void setPays(String^);
+		virtual void setId_Adress(int);
+		virtual void setCP(int);
+		virtual void setNum_Adress(int);
+		virtual void setType_Adress(String^);
+		virtual void setAdress(String^);
+		virtual void setVille(String^);
+		virtual void setComplement(String^);
+		virtual void setPays(String^);
 
-		int getId_Adress(void);
-		int getCP(void);
-		int getNum_Adress(void);
-		String^ getType_Adress(void);
-		String^ getAdresse(void);
-		String^ getVille(void);
-		String^ getComplement(void);
-		String^ getPays(void);
+		virtual int getId_Adress(void);
+		virtual int getCP(void);
+		virtual int getNum_Adress(void);
+		virtual String^ getType_Adress(void);
+		virtual String^ getAdresse(void);
+		virtual String^ getVille(void);
+		virtual String^ getComplement(void);
+		virtual String^ getPays(void);
 
 	};
 }

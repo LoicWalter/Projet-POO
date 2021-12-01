@@ -71,6 +71,7 @@ namespace ProjetPOO {
 
 	private: System::Windows::Forms::Button^ retourMenu;
 
+
 	private:
 		/// <summary>
 		/// Variable nécessaire au concepteur.
@@ -158,7 +159,7 @@ namespace ProjetPOO {
 			// 
 			this->label26->AutoSize = true;
 			this->label26->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label26->Location = System::Drawing::Point(425, 531);
+			this->label26->Location = System::Drawing::Point(425, 530);
 			this->label26->Name = L"label26";
 			this->label26->Size = System::Drawing::Size(111, 17);
 			this->label26->TabIndex = 96;
@@ -282,7 +283,7 @@ namespace ProjetPOO {
 			this->label33->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.8F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Underline))));
 			this->label33->ForeColor = System::Drawing::Color::DimGray;
 			this->label33->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label33->Location = System::Drawing::Point(28, 435);
+			this->label33->Location = System::Drawing::Point(28, 434);
 			this->label33->Name = L"label33";
 			this->label33->Size = System::Drawing::Size(195, 24);
 			this->label33->TabIndex = 83;
@@ -404,8 +405,9 @@ namespace ProjetPOO {
 			// retourMenu
 			// 
 			this->retourMenu->Location = System::Drawing::Point(32, 710);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->retourMenu->Name = L"retourMenu";
-			this->retourMenu->Size = System::Drawing::Size(278, 69);
+			this->retourMenu->Size = System::Drawing::Size(277, 69);
 			this->retourMenu->TabIndex = 101;
 			this->retourMenu->Text = L"Retour au menu";
 			this->retourMenu->UseVisualStyleBackColor = true;
@@ -447,6 +449,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sel_personnel);
 			this->Controls->Add(this->dataBasePersonnel);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormPersonnel";
 			this->Text = L"MyFormPersonnel";
 			this->Load += gcnew System::EventHandler(this, &MyFormPersonnel::MyFormPersonnel_Load);
@@ -478,7 +481,8 @@ private: System::Void sel_personnel_Click(System::Object^ sender, System::EventA
 	this->dataBasePersonnel->DataMember = "Rsl";
 }
 private: System::Void ins_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Svc->AddPersonnel(this->nom_personnel->Text, this->prenom_personnel->Text, this->superieur->Text, this->dateEmbauche->Text);
+	String^ type = "habitation";
+	this->Svc->AddPersonnel(this->nom_personnel->Text, this->prenom_personnel->Text, this->superieur->Text, this->dateEmbauche->Text, this->pays_habitation->Text, this->infoComp_habitation->Text, this->nomRue_habitation->Text, this->ville_habitation->Text, int::Parse(this->CP_habitation->Text), int::Parse(this->numRue_habitation->Text), type);
 }
 private: System::Void mod_personnel_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc->UpdatePersonnel(int::Parse(this->ID_personnel->Text), this->nom_personnel->Text, this->prenom_personnel->Text, this->superieur->Text, this->dateEmbauche->Text);
@@ -489,5 +493,7 @@ private: System::Void sup_personnel_Click(System::Object^ sender, System::EventA
 private: System::Void MyFormPersonnel_Load(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc = gcnew NS_Comp_Svc::Personnel_service();
 }
+
+	
 };
 }
