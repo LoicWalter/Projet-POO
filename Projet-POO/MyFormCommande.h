@@ -1,4 +1,5 @@
 #pragma once
+#include "Commande_service.h"
 
 namespace ProjetPOO {
 
@@ -62,8 +63,12 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::TextBox^ pays_livraison;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::DateTimePicker^ dateCommande_Commande;
+	private: System::Windows::Forms::Button^ act_commande;
 
-	private: System::Windows::Forms::Button^ act_client;
+
+	private: NS_Comp_Svc::Commande_service^ Svc;
+	private: System::Data::DataSet^ Ds;
+
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
@@ -76,7 +81,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ ins_client;
 	private: System::Windows::Forms::Button^ sup_client;
 	private: System::Windows::Forms::Button^ sel_client;
-	private: System::Windows::Forms::DataGridView^ dataBaseClient;
+	private: System::Windows::Forms::DataGridView^ dataBaseCommande;
 	private: System::Windows::Forms::Label^ label19;
 	private: System::Windows::Forms::DateTimePicker^ dateLivraison_Commande;
 	private: System::Windows::Forms::Label^ label20;
@@ -131,7 +136,7 @@ namespace ProjetPOO {
 			this->pays_livraison = (gcnew System::Windows::Forms::TextBox());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->dateCommande_Commande = (gcnew System::Windows::Forms::DateTimePicker());
-			this->act_client = (gcnew System::Windows::Forms::Button());
+			this->act_commande = (gcnew System::Windows::Forms::Button());
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
@@ -144,7 +149,7 @@ namespace ProjetPOO {
 			this->ins_client = (gcnew System::Windows::Forms::Button());
 			this->sup_client = (gcnew System::Windows::Forms::Button());
 			this->sel_client = (gcnew System::Windows::Forms::Button());
-			this->dataBaseClient = (gcnew System::Windows::Forms::DataGridView());
+			this->dataBaseCommande = (gcnew System::Windows::Forms::DataGridView());
 			this->label19 = (gcnew System::Windows::Forms::Label());
 			this->dateLivraison_Commande = (gcnew System::Windows::Forms::DateTimePicker());
 			this->label20 = (gcnew System::Windows::Forms::Label());
@@ -155,14 +160,14 @@ namespace ProjetPOO {
 			this->label22 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label23 = (gcnew System::Windows::Forms::Label());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseCommande))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// retourMenu
 			// 
 			this->retourMenu->Location = System::Drawing::Point(11, 780);
-			this->retourMenu->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(2);
 			this->retourMenu->Name = L"retourMenu";
 			this->retourMenu->Size = System::Drawing::Size(192, 47);
 			this->retourMenu->TabIndex = 123;
@@ -185,7 +190,7 @@ namespace ProjetPOO {
 			// infoComp_facturation
 			// 
 			this->infoComp_facturation->Location = System::Drawing::Point(26, 721);
-			this->infoComp_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->infoComp_facturation->Margin = System::Windows::Forms::Padding(2);
 			this->infoComp_facturation->Name = L"infoComp_facturation";
 			this->infoComp_facturation->Size = System::Drawing::Size(282, 20);
 			this->infoComp_facturation->TabIndex = 121;
@@ -205,7 +210,7 @@ namespace ProjetPOO {
 			// numRue_facturation
 			// 
 			this->numRue_facturation->Location = System::Drawing::Point(325, 663);
-			this->numRue_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->numRue_facturation->Margin = System::Windows::Forms::Padding(2);
 			this->numRue_facturation->Name = L"numRue_facturation";
 			this->numRue_facturation->Size = System::Drawing::Size(147, 20);
 			this->numRue_facturation->TabIndex = 119;
@@ -225,7 +230,7 @@ namespace ProjetPOO {
 			// CP_facturation
 			// 
 			this->CP_facturation->Location = System::Drawing::Point(325, 615);
-			this->CP_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->CP_facturation->Margin = System::Windows::Forms::Padding(2);
 			this->CP_facturation->Name = L"CP_facturation";
 			this->CP_facturation->Size = System::Drawing::Size(147, 20);
 			this->CP_facturation->TabIndex = 117;
@@ -269,7 +274,7 @@ namespace ProjetPOO {
 			// ville_facturation
 			// 
 			this->ville_facturation->Location = System::Drawing::Point(163, 615);
-			this->ville_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->ville_facturation->Margin = System::Windows::Forms::Padding(2);
 			this->ville_facturation->Name = L"ville_facturation";
 			this->ville_facturation->Size = System::Drawing::Size(147, 20);
 			this->ville_facturation->TabIndex = 113;
@@ -277,7 +282,7 @@ namespace ProjetPOO {
 			// nomRue_facturation
 			// 
 			this->nomRue_facturation->Location = System::Drawing::Point(26, 663);
-			this->nomRue_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->nomRue_facturation->Margin = System::Windows::Forms::Padding(2);
 			this->nomRue_facturation->Name = L"nomRue_facturation";
 			this->nomRue_facturation->Size = System::Drawing::Size(282, 20);
 			this->nomRue_facturation->TabIndex = 112;
@@ -285,7 +290,7 @@ namespace ProjetPOO {
 			// pays_facturation
 			// 
 			this->pays_facturation->Location = System::Drawing::Point(26, 615);
-			this->pays_facturation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pays_facturation->Margin = System::Windows::Forms::Padding(2);
 			this->pays_facturation->Name = L"pays_facturation";
 			this->pays_facturation->Size = System::Drawing::Size(120, 20);
 			this->pays_facturation->TabIndex = 111;
@@ -305,7 +310,7 @@ namespace ProjetPOO {
 			// infoComp_livraison
 			// 
 			this->infoComp_livraison->Location = System::Drawing::Point(27, 527);
-			this->infoComp_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->infoComp_livraison->Margin = System::Windows::Forms::Padding(2);
 			this->infoComp_livraison->Name = L"infoComp_livraison";
 			this->infoComp_livraison->Size = System::Drawing::Size(282, 20);
 			this->infoComp_livraison->TabIndex = 109;
@@ -325,7 +330,7 @@ namespace ProjetPOO {
 			// numRue_livraison
 			// 
 			this->numRue_livraison->Location = System::Drawing::Point(324, 470);
-			this->numRue_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->numRue_livraison->Margin = System::Windows::Forms::Padding(2);
 			this->numRue_livraison->Name = L"numRue_livraison";
 			this->numRue_livraison->Size = System::Drawing::Size(147, 20);
 			this->numRue_livraison->TabIndex = 107;
@@ -383,7 +388,7 @@ namespace ProjetPOO {
 			// ville_livraison
 			// 
 			this->ville_livraison->Location = System::Drawing::Point(160, 422);
-			this->ville_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->ville_livraison->Margin = System::Windows::Forms::Padding(2);
 			this->ville_livraison->Name = L"ville_livraison";
 			this->ville_livraison->Size = System::Drawing::Size(147, 20);
 			this->ville_livraison->TabIndex = 101;
@@ -391,7 +396,7 @@ namespace ProjetPOO {
 			// nomRue_livraison
 			// 
 			this->nomRue_livraison->Location = System::Drawing::Point(27, 470);
-			this->nomRue_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->nomRue_livraison->Margin = System::Windows::Forms::Padding(2);
 			this->nomRue_livraison->Name = L"nomRue_livraison";
 			this->nomRue_livraison->Size = System::Drawing::Size(282, 20);
 			this->nomRue_livraison->TabIndex = 100;
@@ -399,7 +404,7 @@ namespace ProjetPOO {
 			// pays_livraison
 			// 
 			this->pays_livraison->Location = System::Drawing::Point(27, 422);
-			this->pays_livraison->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->pays_livraison->Margin = System::Windows::Forms::Padding(2);
 			this->pays_livraison->Name = L"pays_livraison";
 			this->pays_livraison->Size = System::Drawing::Size(120, 20);
 			this->pays_livraison->TabIndex = 99;
@@ -421,21 +426,22 @@ namespace ProjetPOO {
 			this->dateCommande_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->dateCommande_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateCommande_Commande->Location = System::Drawing::Point(581, 604);
-			this->dateCommande_Commande->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dateCommande_Commande->Margin = System::Windows::Forms::Padding(2);
 			this->dateCommande_Commande->Name = L"dateCommande_Commande";
 			this->dateCommande_Commande->Size = System::Drawing::Size(102, 20);
 			this->dateCommande_Commande->TabIndex = 97;
 			// 
-			// act_client
+			// act_commande
 			// 
-			this->act_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_client->Location = System::Drawing::Point(469, 59);
-			this->act_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->act_client->Name = L"act_client";
-			this->act_client->Size = System::Drawing::Size(198, 57);
-			this->act_client->TabIndex = 96;
-			this->act_client->Text = L"Actualiser";
-			this->act_client->UseVisualStyleBackColor = true;
+			this->act_commande->ImeMode = System::Windows::Forms::ImeMode::NoControl;
+			this->act_commande->Location = System::Drawing::Point(469, 59);
+			this->act_commande->Margin = System::Windows::Forms::Padding(2);
+			this->act_commande->Name = L"act_commande";
+			this->act_commande->Size = System::Drawing::Size(198, 57);
+			this->act_commande->TabIndex = 96;
+			this->act_commande->Text = L"Actualiser";
+			this->act_commande->UseVisualStyleBackColor = true;
+			this->act_commande->Click += gcnew System::EventHandler(this, &MyFormCommande::act_commande_Click);
 			// 
 			// label5
 			// 
@@ -506,7 +512,7 @@ namespace ProjetPOO {
 			// ID_Client
 			// 
 			this->ID_Client->Location = System::Drawing::Point(581, 422);
-			this->ID_Client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->ID_Client->Margin = System::Windows::Forms::Padding(2);
 			this->ID_Client->Name = L"ID_Client";
 			this->ID_Client->Size = System::Drawing::Size(303, 20);
 			this->ID_Client->TabIndex = 90;
@@ -514,7 +520,7 @@ namespace ProjetPOO {
 			// Prenom_Client
 			// 
 			this->Prenom_Client->Location = System::Drawing::Point(581, 535);
-			this->Prenom_Client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Prenom_Client->Margin = System::Windows::Forms::Padding(2);
 			this->Prenom_Client->Name = L"Prenom_Client";
 			this->Prenom_Client->Size = System::Drawing::Size(303, 20);
 			this->Prenom_Client->TabIndex = 89;
@@ -522,7 +528,7 @@ namespace ProjetPOO {
 			// Nom_Client
 			// 
 			this->Nom_Client->Location = System::Drawing::Point(581, 478);
-			this->Nom_Client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Nom_Client->Margin = System::Windows::Forms::Padding(2);
 			this->Nom_Client->Name = L"Nom_Client";
 			this->Nom_Client->Size = System::Drawing::Size(303, 20);
 			this->Nom_Client->TabIndex = 88;
@@ -531,7 +537,7 @@ namespace ProjetPOO {
 			// 
 			this->mod_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
 			this->mod_client->Location = System::Drawing::Point(469, 206);
-			this->mod_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->mod_client->Margin = System::Windows::Forms::Padding(2);
 			this->mod_client->Name = L"mod_client";
 			this->mod_client->Size = System::Drawing::Size(90, 56);
 			this->mod_client->TabIndex = 87;
@@ -542,7 +548,7 @@ namespace ProjetPOO {
 			// 
 			this->ins_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
 			this->ins_client->Location = System::Drawing::Point(577, 136);
-			this->ins_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->ins_client->Margin = System::Windows::Forms::Padding(2);
 			this->ins_client->Name = L"ins_client";
 			this->ins_client->Size = System::Drawing::Size(90, 56);
 			this->ins_client->TabIndex = 86;
@@ -553,7 +559,7 @@ namespace ProjetPOO {
 			// 
 			this->sup_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
 			this->sup_client->Location = System::Drawing::Point(577, 206);
-			this->sup_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->sup_client->Margin = System::Windows::Forms::Padding(2);
 			this->sup_client->Name = L"sup_client";
 			this->sup_client->Size = System::Drawing::Size(90, 56);
 			this->sup_client->TabIndex = 85;
@@ -564,23 +570,23 @@ namespace ProjetPOO {
 			// 
 			this->sel_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
 			this->sel_client->Location = System::Drawing::Point(469, 136);
-			this->sel_client->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->sel_client->Margin = System::Windows::Forms::Padding(2);
 			this->sel_client->Name = L"sel_client";
 			this->sel_client->Size = System::Drawing::Size(90, 56);
 			this->sel_client->TabIndex = 84;
 			this->sel_client->Text = L"Sélection";
 			this->sel_client->UseVisualStyleBackColor = true;
 			// 
-			// dataBaseClient
+			// dataBaseCommande
 			// 
-			this->dataBaseClient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseClient->Location = System::Drawing::Point(16, 6);
-			this->dataBaseClient->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
-			this->dataBaseClient->Name = L"dataBaseClient";
-			this->dataBaseClient->RowHeadersWidth = 51;
-			this->dataBaseClient->RowTemplate->Height = 24;
-			this->dataBaseClient->Size = System::Drawing::Size(404, 310);
-			this->dataBaseClient->TabIndex = 83;
+			this->dataBaseCommande->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataBaseCommande->Location = System::Drawing::Point(16, 6);
+			this->dataBaseCommande->Margin = System::Windows::Forms::Padding(2);
+			this->dataBaseCommande->Name = L"dataBaseCommande";
+			this->dataBaseCommande->RowHeadersWidth = 51;
+			this->dataBaseCommande->RowTemplate->Height = 24;
+			this->dataBaseCommande->Size = System::Drawing::Size(404, 310);
+			this->dataBaseCommande->TabIndex = 83;
 			// 
 			// label19
 			// 
@@ -600,7 +606,7 @@ namespace ProjetPOO {
 			this->dateLivraison_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->dateLivraison_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->dateLivraison_Commande->Location = System::Drawing::Point(716, 604);
-			this->dateLivraison_Commande->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dateLivraison_Commande->Margin = System::Windows::Forms::Padding(2);
 			this->dateLivraison_Commande->Name = L"dateLivraison_Commande";
 			this->dateLivraison_Commande->Size = System::Drawing::Size(102, 20);
 			this->dateLivraison_Commande->TabIndex = 124;
@@ -625,7 +631,7 @@ namespace ProjetPOO {
 			this->datePaiement_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->datePaiement_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
 			this->datePaiement_Commande->Location = System::Drawing::Point(725, 85);
-			this->datePaiement_Commande->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->datePaiement_Commande->Margin = System::Windows::Forms::Padding(2);
 			this->datePaiement_Commande->Name = L"datePaiement_Commande";
 			this->datePaiement_Commande->Size = System::Drawing::Size(102, 20);
 			this->datePaiement_Commande->TabIndex = 126;
@@ -636,7 +642,7 @@ namespace ProjetPOO {
 			this->MoyenPaiementcombo->FormattingEnabled = true;
 			this->MoyenPaiementcombo->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"Paypal", L"CB", L"Virement", L"Paysafecard" });
 			this->MoyenPaiementcombo->Location = System::Drawing::Point(883, 84);
-			this->MoyenPaiementcombo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->MoyenPaiementcombo->Margin = System::Windows::Forms::Padding(2);
 			this->MoyenPaiementcombo->Name = L"MoyenPaiementcombo";
 			this->MoyenPaiementcombo->Size = System::Drawing::Size(92, 21);
 			this->MoyenPaiementcombo->TabIndex = 128;
@@ -677,7 +683,7 @@ namespace ProjetPOO {
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(881, 769);
+			this->button1->Location = System::Drawing::Point(830, 779);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(122, 42);
 			this->button1->TabIndex = 132;
@@ -687,11 +693,12 @@ namespace ProjetPOO {
 			// label23
 			// 
 			this->label23->AutoSize = true;
-			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label23->BackColor = System::Drawing::Color::Transparent;
+			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label23->Location = System::Drawing::Point(52, 332);
+			this->label23->Location = System::Drawing::Point(55, 330);
 			this->label23->Name = L"label23";
-			this->label23->Size = System::Drawing::Size(230, 24);
+			this->label23->Size = System::Drawing::Size(196, 20);
 			this->label23->TabIndex = 133;
 			this->label23->Text = L" Informations personnelles";
 			this->label23->Click += gcnew System::EventHandler(this, &MyFormCommande::label23_Click);
@@ -701,7 +708,10 @@ namespace ProjetPOO {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoScroll = true;
-			this->ClientSize = System::Drawing::Size(1042, 716);
+			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->ClientSize = System::Drawing::Size(1059, 716);
 			this->Controls->Add(this->label23);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label22);
@@ -738,7 +748,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->pays_livraison);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->dateCommande_Commande);
-			this->Controls->Add(this->act_client);
+			this->Controls->Add(this->act_commande);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
@@ -751,13 +761,14 @@ namespace ProjetPOO {
 			this->Controls->Add(this->ins_client);
 			this->Controls->Add(this->sup_client);
 			this->Controls->Add(this->sel_client);
-			this->Controls->Add(this->dataBaseClient);
+			this->Controls->Add(this->dataBaseCommande);
+			this->DoubleBuffered = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"MyFormCommande";
 			this->Text = L"MyFormCommande";
 			this->Load += gcnew System::EventHandler(this, &MyFormCommande::MyFormCommande_Load);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseCommande))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -765,6 +776,7 @@ namespace ProjetPOO {
 		}
 #pragma endregion
 	private: System::Void MyFormCommande_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->Svc = gcnew NS_Comp_Svc::Commande_service();
 	}
 	private: System::Void label19_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -778,6 +790,12 @@ private: System::Void label20_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void label21_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label23_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void act_commande_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->dataBaseCommande->Refresh();
+	this->Ds = this->Svc->Commandes("Rsl");
+	this->dataBaseCommande->DataSource = this->Ds;
+	this->dataBaseCommande->DataMember = "Rsl";
 }
 };
 }

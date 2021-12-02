@@ -32,7 +32,7 @@ namespace NS_Comp_Mappage{
 		return "";
 	}
 	String^ Stock_mapTB::Val_com(void) {
-		return "SELECT SUM(prix_HT_ * quantite) FROM article WHERE disponible=1";
+		return "SELECT SUM(prix_HT_ * quantite) AS Valeur_commerciale FROM article WHERE disponible=1";
 	}
 	String^ Stock_mapTB::Val_achat(void) {
 		return "";
