@@ -15,7 +15,7 @@ namespace NS_Comp_Svc {
 	public:
 		Personnel_service(void);
 		DataSet^ Personnels(String^);
-		DataSet^ SelectPersonnel(int id_client, String^ dataTableName);
+		DataSet^ SelectPersonnel(int id_aclient, String^ dataTableName);
 		void AddPersonnel(String^, String^, String^, String^, String^, String^, String^, String^, int, int, String^);
 		void DeletePersonnel(int);
 		void UpdatePersonnel(int, String^, String^, String^, String^);

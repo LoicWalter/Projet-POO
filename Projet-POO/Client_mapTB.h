@@ -18,13 +18,13 @@ namespace NS_Comp_Mappage {
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);
-		void setId_Client(int);
+		void setid_aclient(int);
 		void setNom_Client(String^);
 		void setPrenom_Client(String^);
 		void setDateNaissance_Client(String^);
 		void setDatePremier_achat(String^);
 
-		int getId_Client(void);
+		int getid_aclient(void);
 		String^ getNom_Client(void);
 		String^ getPrenom_Client(void);
 		String^ getDateNaissance_Client(void);

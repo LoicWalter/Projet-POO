@@ -61,8 +61,10 @@ namespace NS_Comp_Svc {
 	}
 	DataSet^ Stock_service::VariationStats(float TVA, float marge, float inconnue, float remise, String^ dataTableName) {
 
-		float total = (1 + (TVA / 100)) + (1 + (marge / 100)) - (1 + (remise / 100)) - (1 + (inconnue / 100));
-		StockMappTB->setTotal(total);
+		StockMappTB->setTVA(TVA);
+		StockMappTB->setMarge(marge);
+		StockMappTB->setInconnue(inconnue);
+		StockMappTB->setRemise(remise);
 		return this->Cad->getRows(this->StockMappTB->Variation(), dataTableName);
 	}
 

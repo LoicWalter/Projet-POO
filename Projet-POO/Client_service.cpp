@@ -21,12 +21,12 @@ namespace NS_Comp_Svc {
 
 		this->Cad->actionRows(this->ClientMappTB->Insert());
 	}
-	void Client_service::DeleteClient(int id_client) {
-		this->ClientMappTB->setId_Client(id_client);
+	void Client_service::DeleteClient(int id_aclient) {
+		this->ClientMappTB->setid_aclient(id_aclient);
 		this->Cad->actionRows(this->ClientMappTB->Delete());
 	}
-	void Client_service::UpdateClient(int id_client, String^ nom, String^ prenom, String^ DateNaissance/*, String^ DatePremierAchat*/ ) {
-		ClientMappTB->setId_Client(id_client);
+	void Client_service::UpdateClient(int id_aclient, String^ nom, String^ prenom, String^ DateNaissance/*, String^ DatePremierAchat*/ ) {
+		ClientMappTB->setid_aclient(id_aclient);
 		ClientMappTB->setNom_Client(nom);
 		ClientMappTB->setPrenom_Client(prenom);
 		ClientMappTB->setDateNaissance_Client(DateNaissance);
@@ -34,8 +34,8 @@ namespace NS_Comp_Svc {
 		this->Cad->actionRows(this->ClientMappTB->Update());
 
 	}
-	DataSet^ Client_service::SelectClient(int id_client, String^ dataTableName) {
-		this->ClientMappTB->setId_Client(id_client);
+	DataSet^ Client_service::SelectClient(int id_aclient, String^ dataTableName) {
+		this->ClientMappTB->setid_aclient(id_aclient);
 		return this->Cad->getRows(this->ClientMappTB->SelectParticulier(), dataTableName);
 	}
 }
