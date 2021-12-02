@@ -126,10 +126,10 @@ namespace ProjetPOO {
 			// 
 			// retourMenu
 			// 
-			this->retourMenu->Location = System::Drawing::Point(11, 410);
-			this->retourMenu->Margin = System::Windows::Forms::Padding(2);
+			this->retourMenu->Location = System::Drawing::Point(15, 505);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->retourMenu->Name = L"retourMenu";
-			this->retourMenu->Size = System::Drawing::Size(208, 56);
+			this->retourMenu->Size = System::Drawing::Size(277, 69);
 			this->retourMenu->TabIndex = 97;
 			this->retourMenu->Text = L"Retour au menu";
 			this->retourMenu->UseVisualStyleBackColor = true;
@@ -138,10 +138,10 @@ namespace ProjetPOO {
 			// act_Article
 			// 
 			this->act_Article->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_Article->Location = System::Drawing::Point(462, 62);
-			this->act_Article->Margin = System::Windows::Forms::Padding(2);
+			this->act_Article->Location = System::Drawing::Point(616, 76);
+			this->act_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->act_Article->Name = L"act_Article";
-			this->act_Article->Size = System::Drawing::Size(198, 57);
+			this->act_Article->Size = System::Drawing::Size(264, 70);
 			this->act_Article->TabIndex = 94;
 			this->act_Article->Text = L"Actualiser";
 			this->act_Article->UseVisualStyleBackColor = true;
@@ -152,10 +152,9 @@ namespace ProjetPOO {
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label3->Location = System::Drawing::Point(718, 295);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(957, 363);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(61, 13);
+			this->label3->Size = System::Drawing::Size(79, 17);
 			this->label3->TabIndex = 93;
 			this->label3->Text = L"Prix Achat :";
 			// 
@@ -164,10 +163,9 @@ namespace ProjetPOO {
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label2->Location = System::Drawing::Point(716, 97);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(955, 119);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(35, 13);
+			this->label2->Size = System::Drawing::Size(45, 17);
 			this->label2->TabIndex = 92;
 			this->label2->Text = L"Nom :";
 			// 
@@ -176,44 +174,43 @@ namespace ProjetPOO {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label1->Location = System::Drawing::Point(718, 54);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(957, 66);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(24, 13);
+			this->label1->Size = System::Drawing::Size(29, 17);
 			this->label1->TabIndex = 91;
 			this->label1->Text = L"ID :";
 			// 
 			// ID_Article
 			// 
-			this->ID_Article->Location = System::Drawing::Point(718, 69);
-			this->ID_Article->Margin = System::Windows::Forms::Padding(2);
+			this->ID_Article->Location = System::Drawing::Point(957, 85);
+			this->ID_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->ID_Article->Name = L"ID_Article";
-			this->ID_Article->Size = System::Drawing::Size(303, 20);
+			this->ID_Article->Size = System::Drawing::Size(403, 22);
 			this->ID_Article->TabIndex = 90;
 			// 
 			// PrixAchat_Article
 			// 
-			this->PrixAchat_Article->Location = System::Drawing::Point(718, 310);
-			this->PrixAchat_Article->Margin = System::Windows::Forms::Padding(2);
+			this->PrixAchat_Article->Location = System::Drawing::Point(957, 382);
+			this->PrixAchat_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->PrixAchat_Article->Name = L"PrixAchat_Article";
-			this->PrixAchat_Article->Size = System::Drawing::Size(303, 20);
+			this->PrixAchat_Article->Size = System::Drawing::Size(403, 22);
 			this->PrixAchat_Article->TabIndex = 89;
 			// 
 			// Nom_Article
 			// 
-			this->Nom_Article->Location = System::Drawing::Point(718, 112);
-			this->Nom_Article->Margin = System::Windows::Forms::Padding(2);
+			this->Nom_Article->Location = System::Drawing::Point(957, 138);
+			this->Nom_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Nom_Article->Name = L"Nom_Article";
-			this->Nom_Article->Size = System::Drawing::Size(303, 20);
+			this->Nom_Article->Size = System::Drawing::Size(403, 22);
 			this->Nom_Article->TabIndex = 88;
 			// 
 			// mod_Article
 			// 
 			this->mod_Article->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->mod_Article->Location = System::Drawing::Point(462, 208);
-			this->mod_Article->Margin = System::Windows::Forms::Padding(2);
+			this->mod_Article->Location = System::Drawing::Point(616, 256);
+			this->mod_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->mod_Article->Name = L"mod_Article";
-			this->mod_Article->Size = System::Drawing::Size(90, 56);
+			this->mod_Article->Size = System::Drawing::Size(120, 69);
 			this->mod_Article->TabIndex = 87;
 			this->mod_Article->Text = L"Modification";
 			this->mod_Article->UseVisualStyleBackColor = true;
@@ -222,10 +219,10 @@ namespace ProjetPOO {
 			// ins_Article
 			// 
 			this->ins_Article->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->ins_Article->Location = System::Drawing::Point(570, 138);
-			this->ins_Article->Margin = System::Windows::Forms::Padding(2);
+			this->ins_Article->Location = System::Drawing::Point(760, 170);
+			this->ins_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->ins_Article->Name = L"ins_Article";
-			this->ins_Article->Size = System::Drawing::Size(90, 56);
+			this->ins_Article->Size = System::Drawing::Size(120, 69);
 			this->ins_Article->TabIndex = 86;
 			this->ins_Article->Text = L"Insertion";
 			this->ins_Article->UseVisualStyleBackColor = true;
@@ -234,10 +231,10 @@ namespace ProjetPOO {
 			// sup_Article
 			// 
 			this->sup_Article->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sup_Article->Location = System::Drawing::Point(570, 208);
-			this->sup_Article->Margin = System::Windows::Forms::Padding(2);
+			this->sup_Article->Location = System::Drawing::Point(760, 256);
+			this->sup_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->sup_Article->Name = L"sup_Article";
-			this->sup_Article->Size = System::Drawing::Size(90, 56);
+			this->sup_Article->Size = System::Drawing::Size(120, 69);
 			this->sup_Article->TabIndex = 85;
 			this->sup_Article->Text = L"Suppression";
 			this->sup_Article->UseVisualStyleBackColor = true;
@@ -246,10 +243,10 @@ namespace ProjetPOO {
 			// sel_Article
 			// 
 			this->sel_Article->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sel_Article->Location = System::Drawing::Point(462, 138);
-			this->sel_Article->Margin = System::Windows::Forms::Padding(2);
+			this->sel_Article->Location = System::Drawing::Point(616, 170);
+			this->sel_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->sel_Article->Name = L"sel_Article";
-			this->sel_Article->Size = System::Drawing::Size(90, 56);
+			this->sel_Article->Size = System::Drawing::Size(120, 69);
 			this->sel_Article->TabIndex = 84;
 			this->sel_Article->Text = L"Sélection";
 			this->sel_Article->UseVisualStyleBackColor = true;
@@ -258,12 +255,12 @@ namespace ProjetPOO {
 			// dataBaseArticle
 			// 
 			this->dataBaseArticle->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseArticle->Location = System::Drawing::Point(9, 9);
-			this->dataBaseArticle->Margin = System::Windows::Forms::Padding(2);
+			this->dataBaseArticle->Location = System::Drawing::Point(12, 11);
+			this->dataBaseArticle->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dataBaseArticle->Name = L"dataBaseArticle";
 			this->dataBaseArticle->RowHeadersWidth = 51;
 			this->dataBaseArticle->RowTemplate->Height = 24;
-			this->dataBaseArticle->Size = System::Drawing::Size(398, 321);
+			this->dataBaseArticle->Size = System::Drawing::Size(531, 395);
 			this->dataBaseArticle->TabIndex = 83;
 			// 
 			// label4
@@ -271,19 +268,18 @@ namespace ProjetPOO {
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label4->Location = System::Drawing::Point(718, 431);
-			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Location = System::Drawing::Point(957, 530);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(137, 13);
+			this->label4->Size = System::Drawing::Size(184, 17);
 			this->label4->TabIndex = 99;
 			this->label4->Text = L"Seuil réapprovisionnement :";
 			// 
 			// SeuilReappro_Article
 			// 
-			this->SeuilReappro_Article->Location = System::Drawing::Point(718, 446);
-			this->SeuilReappro_Article->Margin = System::Windows::Forms::Padding(2);
+			this->SeuilReappro_Article->Location = System::Drawing::Point(957, 549);
+			this->SeuilReappro_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->SeuilReappro_Article->Name = L"SeuilReappro_Article";
-			this->SeuilReappro_Article->Size = System::Drawing::Size(303, 20);
+			this->SeuilReappro_Article->Size = System::Drawing::Size(403, 22);
 			this->SeuilReappro_Article->TabIndex = 98;
 			// 
 			// label5
@@ -291,19 +287,18 @@ namespace ProjetPOO {
 			this->label5->AutoSize = true;
 			this->label5->BackColor = System::Drawing::Color::Transparent;
 			this->label5->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label5->Location = System::Drawing::Point(716, 384);
-			this->label5->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label5->Location = System::Drawing::Point(955, 473);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(51, 13);
+			this->label5->Size = System::Drawing::Size(69, 17);
 			this->label5->TabIndex = 101;
 			this->label5->Text = L"TVA (%) :";
 			// 
 			// TVA_Article
 			// 
-			this->TVA_Article->Location = System::Drawing::Point(718, 399);
-			this->TVA_Article->Margin = System::Windows::Forms::Padding(2);
+			this->TVA_Article->Location = System::Drawing::Point(957, 491);
+			this->TVA_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->TVA_Article->Name = L"TVA_Article";
-			this->TVA_Article->Size = System::Drawing::Size(303, 20);
+			this->TVA_Article->Size = System::Drawing::Size(403, 22);
 			this->TVA_Article->TabIndex = 100;
 			// 
 			// label7
@@ -311,19 +306,18 @@ namespace ProjetPOO {
 			this->label7->AutoSize = true;
 			this->label7->BackColor = System::Drawing::Color::Transparent;
 			this->label7->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label7->Location = System::Drawing::Point(716, 191);
-			this->label7->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label7->Location = System::Drawing::Point(957, 174);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(45, 13);
+			this->label7->Size = System::Drawing::Size(59, 17);
 			this->label7->TabIndex = 105;
 			this->label7->Text = L"Nature :";
 			// 
 			// Nature_Article
 			// 
-			this->Nature_Article->Location = System::Drawing::Point(718, 207);
-			this->Nature_Article->Margin = System::Windows::Forms::Padding(2);
+			this->Nature_Article->Location = System::Drawing::Point(957, 193);
+			this->Nature_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Nature_Article->Name = L"Nature_Article";
-			this->Nature_Article->Size = System::Drawing::Size(303, 20);
+			this->Nature_Article->Size = System::Drawing::Size(403, 22);
 			this->Nature_Article->TabIndex = 104;
 			// 
 			// label8
@@ -331,19 +325,18 @@ namespace ProjetPOO {
 			this->label8->AutoSize = true;
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label8->Location = System::Drawing::Point(716, 142);
-			this->label8->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label8->Location = System::Drawing::Point(955, 238);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(49, 13);
+			this->label8->Size = System::Drawing::Size(65, 17);
 			this->label8->TabIndex = 107;
 			this->label8->Text = L"Couleur :";
 			// 
 			// Couleur_Article
 			// 
-			this->Couleur_Article->Location = System::Drawing::Point(718, 157);
-			this->Couleur_Article->Margin = System::Windows::Forms::Padding(2);
+			this->Couleur_Article->Location = System::Drawing::Point(957, 256);
+			this->Couleur_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Couleur_Article->Name = L"Couleur_Article";
-			this->Couleur_Article->Size = System::Drawing::Size(303, 20);
+			this->Couleur_Article->Size = System::Drawing::Size(403, 22);
 			this->Couleur_Article->TabIndex = 106;
 			// 
 			// label9
@@ -351,19 +344,18 @@ namespace ProjetPOO {
 			this->label9->AutoSize = true;
 			this->label9->BackColor = System::Drawing::Color::Transparent;
 			this->label9->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label9->Location = System::Drawing::Point(718, 245);
-			this->label9->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label9->Location = System::Drawing::Point(957, 302);
 			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(53, 13);
+			this->label9->Size = System::Drawing::Size(70, 17);
 			this->label9->TabIndex = 109;
 			this->label9->Text = L"Quantité :";
 			// 
 			// Quantite_Article
 			// 
-			this->Quantite_Article->Location = System::Drawing::Point(718, 260);
-			this->Quantite_Article->Margin = System::Windows::Forms::Padding(2);
+			this->Quantite_Article->Location = System::Drawing::Point(957, 320);
+			this->Quantite_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Quantite_Article->Name = L"Quantite_Article";
-			this->Quantite_Article->Size = System::Drawing::Size(303, 20);
+			this->Quantite_Article->Size = System::Drawing::Size(403, 22);
 			this->Quantite_Article->TabIndex = 108;
 			// 
 			// label6
@@ -371,26 +363,25 @@ namespace ProjetPOO {
 			this->label6->AutoSize = true;
 			this->label6->BackColor = System::Drawing::Color::Transparent;
 			this->label6->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label6->Location = System::Drawing::Point(716, 338);
-			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label6->Location = System::Drawing::Point(955, 416);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(123, 13);
+			this->label6->Size = System::Drawing::Size(167, 17);
 			this->label6->TabIndex = 111;
 			this->label6->Text = L"Marge Commerciale (%) :";
 			// 
 			// Marge_Article
 			// 
-			this->Marge_Article->Location = System::Drawing::Point(718, 353);
-			this->Marge_Article->Margin = System::Windows::Forms::Padding(2);
+			this->Marge_Article->Location = System::Drawing::Point(957, 434);
+			this->Marge_Article->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Marge_Article->Name = L"Marge_Article";
-			this->Marge_Article->Size = System::Drawing::Size(303, 20);
+			this->Marge_Article->Size = System::Drawing::Size(403, 22);
 			this->Marge_Article->TabIndex = 110;
 			// 
 			// MyFormArticle
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1052, 477);
+			this->ClientSize = System::Drawing::Size(1403, 587);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->Marge_Article);
 			this->Controls->Add(this->label9);
@@ -417,7 +408,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sel_Article);
 			this->Controls->Add(this->dataBaseArticle);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormArticle";
 			this->Text = L"MyFormArticle";
 			this->Load += gcnew System::EventHandler(this, &MyFormArticle::MyFormArticle_Load);
@@ -449,9 +440,6 @@ private: System::Void ins_Article_Click(System::Object^ sender, System::EventArg
 	float PrixHT = PrixAchat + (PrixAchat * MargeCom / 100);
 	int TVA = int::Parse(this->TVA_Article->Text);
 	float PrixTTC = PrixHT + (PrixHT * TVA / 100);
-	/*String^ prixHT = PrixHT.ToString();
-	String^ prixAchat = PrixAchat.ToString();
-	String^ prixTTC = PrixTTC.ToString();*/
 
 	this->Svc->AddArticle(this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, PrixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
 }
@@ -461,10 +449,7 @@ private: System::Void mod_Article_Click(System::Object^ sender, System::EventArg
 	float PrixHT = PrixAchat + (PrixAchat * MargeCom / 100);
 	int TVA = int::Parse(this->TVA_Article->Text);
 	float PrixTTC = PrixHT + (PrixHT * TVA / 100);
-/*	String^ prixHT = PrixHT.ToString();
-	String^ prixAchat = PrixAchat.ToString();
-	String^ prixTTC = PrixTTC.ToString();
-	*/
+
 	this->Svc->UpdateArticle(int::Parse(this->ID_Article->Text), this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, PrixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
 }
 private: System::Void sup_Article_Click(System::Object^ sender, System::EventArgs^ e) {

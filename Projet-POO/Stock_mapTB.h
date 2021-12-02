@@ -14,8 +14,11 @@ namespace NS_Comp_Mappage {
 		float prixHT;
 		float prixTTC;
 		float prixAchat;
+		float total;
 		int TVA;
 		int Marge;
+		int inconnue;
+		int remise;
 		int seuil;
 		bool dispo;
 	public:
@@ -32,6 +35,7 @@ namespace NS_Comp_Mappage {
 		String^ Val_com(void);			//valeur commerciale du stock
 		String^ Val_achat(void);		//valeur commerciale du stock
 		String^ Montant_achat(void);	// montant total des achats pour un client
+		String^ Variation(void);
 
 		void setId_Stock(int);
 		void setNom(String^);
@@ -41,8 +45,11 @@ namespace NS_Comp_Mappage {
 		void setPrixHT(float);
 		void setPrixTTC(float);
 		void setPrixAchat(float);
+		void setTotal(float);
 		void setMarge(int);
 		void setTVA(int);
+		void setInconnue(int);
+		void setRemise(int);
 		void setSeuil(int);
 		void setDispo(bool);
 
@@ -54,8 +61,11 @@ namespace NS_Comp_Mappage {
 		float getPrixHT(void);
 		float getPrixTTC(void);
 		float getPrixAchat(void);
+		float getTotal(void);
 		int getMarge(void);
 		int getTVA(void);
+		int getInconnue(void);
+		int getRemise(void);
 		int getSeuil(void);
 		bool getDispo(void);
 	};

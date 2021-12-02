@@ -1,5 +1,6 @@
 #pragma once
-
+#define null ((void*)0)
+#include "Stock_service.h"
 namespace ProjetPOO {
 
 	using namespace System;
@@ -21,6 +22,7 @@ namespace ProjetPOO {
 			//
 			//TODO: ajoutez ici le code du constructeur
 			//
+			this->Svc = gcnew NS_Comp_Svc::Stock_service();
 		}
 
 	protected:
@@ -34,12 +36,21 @@ namespace ProjetPOO {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart1;
+
 	private: System::Windows::Forms::ComboBox^ TVAcombo;
 	private: System::Windows::Forms::ComboBox^ Remisecombo;
 	private: System::Windows::Forms::ComboBox^ inconnuecombo;
 	private: System::Windows::Forms::ComboBox^ margecombo;
 	private: System::Windows::Forms::Button^ valider;
+	private: System::Windows::Forms::DataGridView^ dataBaseVariation;
+	private: NS_Comp_Svc::Stock_service^ Svc;
+	private: System::Data::DataSet^ Ds;
+	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Label^ label2;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
+
+
 	protected:
 
 	private:
@@ -55,113 +66,164 @@ namespace ProjetPOO {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataVisualization::Charting::ChartArea^ chartArea1 = (gcnew System::Windows::Forms::DataVisualization::Charting::ChartArea());
-			System::Windows::Forms::DataVisualization::Charting::Legend^ legend1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Legend());
-			System::Windows::Forms::DataVisualization::Charting::Series^ series1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Series());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyFormVariation::typeid));
-			this->chart1 = (gcnew System::Windows::Forms::DataVisualization::Charting::Chart());
 			this->TVAcombo = (gcnew System::Windows::Forms::ComboBox());
 			this->Remisecombo = (gcnew System::Windows::Forms::ComboBox());
 			this->inconnuecombo = (gcnew System::Windows::Forms::ComboBox());
 			this->margecombo = (gcnew System::Windows::Forms::ComboBox());
 			this->valider = (gcnew System::Windows::Forms::Button());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->BeginInit();
+			this->dataBaseVariation = (gcnew System::Windows::Forms::DataGridView());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseVariation))->BeginInit();
 			this->SuspendLayout();
-			// 
-			// chart1
-			// 
-			chartArea1->Name = L"ChartArea1";
-			this->chart1->ChartAreas->Add(chartArea1);
-			legend1->Name = L"Legend1";
-			this->chart1->Legends->Add(legend1);
-			this->chart1->Location = System::Drawing::Point(12, 12);
-			this->chart1->Name = L"chart1";
-			series1->ChartArea = L"ChartArea1";
-			series1->Legend = L"Legend1";
-			series1->Name = L"Series1";
-			this->chart1->Series->Add(series1);
-			this->chart1->Size = System::Drawing::Size(454, 415);
-			this->chart1->TabIndex = 0;
-			this->chart1->Text = L"chart1";
 			// 
 			// TVAcombo
 			// 
 			this->TVAcombo->FormattingEnabled = true;
-			this->TVAcombo->Items->AddRange(gcnew cli::array< System::Object^  >(6) { L"10", L"15", L"20", L"5", L"10", L"15" });
-			this->TVAcombo->Location = System::Drawing::Point(551, 56);
+			this->TVAcombo->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"10", L"15", L"20" });
+			this->TVAcombo->Location = System::Drawing::Point(427, 58);
+			this->TVAcombo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->TVAcombo->Name = L"TVAcombo";
-			this->TVAcombo->Size = System::Drawing::Size(121, 24);
+			this->TVAcombo->Size = System::Drawing::Size(92, 21);
 			this->TVAcombo->TabIndex = 1;
 			// 
 			// Remisecombo
 			// 
 			this->Remisecombo->FormattingEnabled = true;
 			this->Remisecombo->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"5", L"6" });
-			this->Remisecombo->Location = System::Drawing::Point(817, 56);
+			this->Remisecombo->Location = System::Drawing::Point(613, 58);
+			this->Remisecombo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Remisecombo->Name = L"Remisecombo";
-			this->Remisecombo->Size = System::Drawing::Size(121, 24);
+			this->Remisecombo->Size = System::Drawing::Size(92, 21);
 			this->Remisecombo->TabIndex = 2;
 			// 
 			// inconnuecombo
 			// 
 			this->inconnuecombo->FormattingEnabled = true;
 			this->inconnuecombo->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"2", L"3", L"5" });
-			this->inconnuecombo->Location = System::Drawing::Point(551, 157);
+			this->inconnuecombo->Location = System::Drawing::Point(427, 128);
+			this->inconnuecombo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->inconnuecombo->Name = L"inconnuecombo";
-			this->inconnuecombo->Size = System::Drawing::Size(121, 24);
+			this->inconnuecombo->Size = System::Drawing::Size(92, 21);
 			this->inconnuecombo->TabIndex = 3;
-			this->inconnuecombo->SelectedIndexChanged += gcnew System::EventHandler(this, &MyFormVariation::inconnuecombo_SelectedIndexChanged);
 			// 
 			// margecombo
 			// 
 			this->margecombo->FormattingEnabled = true;
 			this->margecombo->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"5", L"10", L"15" });
-			this->margecombo->Location = System::Drawing::Point(817, 157);
+			this->margecombo->Location = System::Drawing::Point(613, 128);
+			this->margecombo->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->margecombo->Name = L"margecombo";
-			this->margecombo->Size = System::Drawing::Size(121, 24);
+			this->margecombo->Size = System::Drawing::Size(92, 21);
 			this->margecombo->TabIndex = 4;
 			// 
 			// valider
 			// 
-			this->valider->Location = System::Drawing::Point(551, 267);
+			this->valider->Location = System::Drawing::Point(427, 184);
+			this->valider->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->valider->Name = L"valider";
-			this->valider->Size = System::Drawing::Size(75, 23);
+			this->valider->Size = System::Drawing::Size(277, 31);
 			this->valider->TabIndex = 5;
 			this->valider->Text = L"Valider";
 			this->valider->UseVisualStyleBackColor = true;
 			this->valider->Click += gcnew System::EventHandler(this, &MyFormVariation::valider_Click);
 			// 
+			// dataBaseVariation
+			// 
+			this->dataBaseVariation->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataBaseVariation->Location = System::Drawing::Point(9, 10);
+			this->dataBaseVariation->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->dataBaseVariation->Name = L"dataBaseVariation";
+			this->dataBaseVariation->RowHeadersWidth = 51;
+			this->dataBaseVariation->RowTemplate->Height = 24;
+			this->dataBaseVariation->Size = System::Drawing::Size(392, 339);
+			this->dataBaseVariation->TabIndex = 6;
+			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Location = System::Drawing::Point(427, 40);
+			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(60, 13);
+			this->label1->TabIndex = 7;
+			this->label1->Text = L"TVA en % :";
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(424, 111);
+			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(135, 13);
+			this->label2->TabIndex = 8;
+			this->label2->Text = L"Demarque inconnue en % :";
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Location = System::Drawing::Point(610, 42);
+			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(130, 13);
+			this->label3->TabIndex = 9;
+			this->label3->Text = L"Remise commerciale en %";
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Location = System::Drawing::Point(610, 111);
+			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(132, 13);
+			this->label4->TabIndex = 10;
+			this->label4->Text = L"Marge Commerciale en % :";
+			// 
 			// MyFormVariation
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1010, 441);
+			this->ClientSize = System::Drawing::Size(758, 358);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
+			this->Controls->Add(this->label2);
+			this->Controls->Add(this->label1);
+			this->Controls->Add(this->dataBaseVariation);
 			this->Controls->Add(this->valider);
 			this->Controls->Add(this->margecombo);
 			this->Controls->Add(this->inconnuecombo);
 			this->Controls->Add(this->Remisecombo);
 			this->Controls->Add(this->TVAcombo);
-			this->Controls->Add(this->chart1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"MyFormVariation";
 			this->Text = L"MyFormVariation";
 			this->Load += gcnew System::EventHandler(this, &MyFormVariation::MyFormVariation_Load);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->chart1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseVariation))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
 	private: System::Void MyFormVariation_Load(System::Object^ sender, System::EventArgs^ e) {
+		this->Svc = gcnew NS_Comp_Svc::Stock_service();
 	}
 
 
 private: System::Void valider_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->TVAcombo->Text;
-	this->margecombo->Text;
-	this->Remisecombo->Text;
-	this->inconnuecombo->Text;
-}
-private: System::Void inconnuecombo_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
+	String^ TVA = this->TVAcombo->SelectedItem->ToString();
+	String^ Marge = this->margecombo->SelectedItem->ToString();
+	String^ inconnue = this->inconnuecombo->SelectedItem->ToString();
+	String^ remise = this->Remisecombo->SelectedItem->ToString();
+
+	this->dataBaseVariation->Refresh();
+	this->Ds = this->Svc->VariationStats(float::Parse(TVA), float::Parse(Marge), float::Parse(inconnue), float::Parse(remise),"Rsl");
+	this->dataBaseVariation->DataSource = this->Ds;
+	this->dataBaseVariation->DataMember = "Rsl";
+
 }
 };
 }
