@@ -70,9 +70,6 @@
     <ClInclude Include="MyFormPersonnel.h" />
     <ClInclude Include="MyFormStats.h" />
     <ClInclude Include="MyFormVariation.h" />
-    <ClInclude Include="affichageForms.h">
-      <Filter>Fichier d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="CAD.h">
       <Filter>Fichier d%27en-tête</Filter>
     </ClInclude>
@@ -108,6 +105,9 @@
     </ClInclude>
     <ClInclude Include="Commande_service.h">
       <Filter>Fichier d%27en-tête\Commande</Filter>
+    </ClInclude>
+    <ClInclude Include="affichageForms.h">
+      <Filter>Fichier d%27en-tête\Stock</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -11,6 +11,9 @@ namespace NS_Comp_Svc {
 	DataSet^ Commande_service::Commandes(String^ dataTableName){
 		return this->Cad->getRows(this->CommandeMappTB->Select(), dataTableName);
 	}
+	DataSet^ Commande_service::CommandesClient(String^ dataTableName) {
+		return this->Cad->getRows(this->CommandeMappTB->Select1(), dataTableName);
+	}
 	void Commande_service::AddCommande(String^ reference, String^ date_emission, String^ date_livraison, int TVA, float HT, float TTC, String^ remise_commerciale){
 		CommandeMappTB->setReference(reference);
 		CommandeMappTB->setDate_emission(date_emission);

@@ -2,7 +2,10 @@
 
 namespace NS_Comp_Mappage {
 	String^ Commande_mapTB::Select(void) {
-		return "";
+		return "SELECT [client].[id_client] AS numero_client, [nom], [prenom], [reference] AS Reference_commande FROM [Projet].[dbo].[commande] INNER JOIN [client] ON ([commande].[id_client] = [client].[id_client])";
+	}
+	String^ Commande_mapTB::Select1(void) {
+		return "SELECT [id_client], [nom], [prenom], [date_naissance], [date_premiere] FROM [Projet].[dbo].[client] ";
 	}
 	String^ Commande_mapTB::Insert(void){
 		return "";
