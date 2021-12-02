@@ -15,6 +15,7 @@ namespace NS_Comp_Mappage {
 		String^ remise_commerciale;
 	public:
 		String^ Select(void);
+		String^ Select1(void);
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);

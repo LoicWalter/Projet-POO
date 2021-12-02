@@ -15,6 +15,7 @@ namespace NS_Comp_Svc {
 	public:
 		Commande_service(void);
 		DataSet^ Commandes(String^);
+		DataSet^ CommandesClient(String^);
 		void AddCommande(String^, String^, String^, int, float, float, String^);
 		void DeleteCommande(int);
 		void UpdateCommande(int, String^, String^, String^, int, float, float, String^);

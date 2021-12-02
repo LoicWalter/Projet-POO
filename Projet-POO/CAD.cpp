@@ -3,7 +3,7 @@
 namespace NS_Comp_Data {
 	CAD::CAD(void) {
 		this->req_sql = "";
-		this->cnx = "Data Source=LE-PC-QUIRESPIR;Initial Catalog=Projet;Persist Security Info=True;User ID=CNX_Projet;Password=azerty";
+		this->cnx = "Data Source=DESKTOP-CDT98NO;Initial Catalog=Projet;Persist Security Info=True;User ID=CNX_Projet;Password=azerty";
 		this->Cnx = gcnew SqlConnection(this->cnx);
 		this->Cmd = gcnew SqlCommand(this->req_sql, this->Cnx);
 		this->Da = gcnew SqlDataAdapter(this->Cmd);

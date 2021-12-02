@@ -69,6 +69,9 @@ namespace ProjetPOO {
 	private: NS_Comp_Svc::Commande_service^ Svc;
 	private: System::Data::DataSet^ Ds;
 
+	private: NS_Comp_Svc::Commande_service^ oSvc;
+	private: System::Data::DataSet^ oDs;
+
 	private: System::Windows::Forms::Label^ label5;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label3;
@@ -87,11 +90,15 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Label^ label20;
 	private: System::Windows::Forms::DateTimePicker^ datePaiement_Commande;
 	private: System::Windows::Forms::ComboBox^ MoyenPaiementcombo;
-	private: System::Windows::Forms::DataGridView^ dataGridView1;
-	private: System::Windows::Forms::Label^ label21;
-	private: System::Windows::Forms::Label^ label22;
+	private: System::Windows::Forms::DataGridView^ dataBaseCommande1;
+
+
+
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Label^ label23;
+	private: System::Windows::Forms::Label^ label21;
+	private: System::Windows::Forms::Label^ label22;
+	private: System::Windows::Forms::Button^ act_comCLi;
 
 
 	protected:
@@ -155,13 +162,14 @@ namespace ProjetPOO {
 			this->label20 = (gcnew System::Windows::Forms::Label());
 			this->datePaiement_Commande = (gcnew System::Windows::Forms::DateTimePicker());
 			this->MoyenPaiementcombo = (gcnew System::Windows::Forms::ComboBox());
-			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
-			this->label21 = (gcnew System::Windows::Forms::Label());
-			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->dataBaseCommande1 = (gcnew System::Windows::Forms::DataGridView());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label23 = (gcnew System::Windows::Forms::Label());
+			this->label21 = (gcnew System::Windows::Forms::Label());
+			this->label22 = (gcnew System::Windows::Forms::Label());
+			this->act_comCLi = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseCommande))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseCommande1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// retourMenu
@@ -339,13 +347,13 @@ namespace ProjetPOO {
 			// 
 			this->label10->AutoSize = true;
 			this->label10->BackColor = System::Drawing::Color::Transparent;
-			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label10->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label10->Location = System::Drawing::Point(880, 59);
+			this->label10->Location = System::Drawing::Point(716, 644);
 			this->label10->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(118, 16);
+			this->label10->Size = System::Drawing::Size(95, 13);
 			this->label10->TabIndex = 106;
 			this->label10->Text = L"Moyen Paiement : ";
 			// 
@@ -434,12 +442,12 @@ namespace ProjetPOO {
 			// act_commande
 			// 
 			this->act_commande->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_commande->Location = System::Drawing::Point(469, 59);
+			this->act_commande->Location = System::Drawing::Point(424, 266);
 			this->act_commande->Margin = System::Windows::Forms::Padding(2);
 			this->act_commande->Name = L"act_commande";
-			this->act_commande->Size = System::Drawing::Size(198, 57);
+			this->act_commande->Size = System::Drawing::Size(81, 37);
 			this->act_commande->TabIndex = 96;
-			this->act_commande->Text = L"Actualiser";
+			this->act_commande->Text = L"Actualiser Commande";
 			this->act_commande->UseVisualStyleBackColor = true;
 			this->act_commande->Click += gcnew System::EventHandler(this, &MyFormCommande::act_commande_Click);
 			// 
@@ -536,18 +544,19 @@ namespace ProjetPOO {
 			// mod_client
 			// 
 			this->mod_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->mod_client->Location = System::Drawing::Point(469, 206);
+			this->mod_client->Location = System::Drawing::Point(469, 129);
 			this->mod_client->Margin = System::Windows::Forms::Padding(2);
 			this->mod_client->Name = L"mod_client";
 			this->mod_client->Size = System::Drawing::Size(90, 56);
 			this->mod_client->TabIndex = 87;
 			this->mod_client->Text = L"Modification";
 			this->mod_client->UseVisualStyleBackColor = true;
+			this->mod_client->Click += gcnew System::EventHandler(this, &MyFormCommande::mod_client_Click);
 			// 
 			// ins_client
 			// 
 			this->ins_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->ins_client->Location = System::Drawing::Point(577, 136);
+			this->ins_client->Location = System::Drawing::Point(577, 52);
 			this->ins_client->Margin = System::Windows::Forms::Padding(2);
 			this->ins_client->Name = L"ins_client";
 			this->ins_client->Size = System::Drawing::Size(90, 56);
@@ -558,7 +567,7 @@ namespace ProjetPOO {
 			// sup_client
 			// 
 			this->sup_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sup_client->Location = System::Drawing::Point(577, 206);
+			this->sup_client->Location = System::Drawing::Point(577, 129);
 			this->sup_client->Margin = System::Windows::Forms::Padding(2);
 			this->sup_client->Name = L"sup_client";
 			this->sup_client->Size = System::Drawing::Size(90, 56);
@@ -569,7 +578,7 @@ namespace ProjetPOO {
 			// sel_client
 			// 
 			this->sel_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sel_client->Location = System::Drawing::Point(469, 136);
+			this->sel_client->Location = System::Drawing::Point(469, 52);
 			this->sel_client->Margin = System::Windows::Forms::Padding(2);
 			this->sel_client->Name = L"sel_client";
 			this->sel_client->Size = System::Drawing::Size(90, 56);
@@ -580,12 +589,12 @@ namespace ProjetPOO {
 			// dataBaseCommande
 			// 
 			this->dataBaseCommande->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseCommande->Location = System::Drawing::Point(16, 6);
+			this->dataBaseCommande->Location = System::Drawing::Point(16, 29);
 			this->dataBaseCommande->Margin = System::Windows::Forms::Padding(2);
 			this->dataBaseCommande->Name = L"dataBaseCommande";
 			this->dataBaseCommande->RowHeadersWidth = 51;
 			this->dataBaseCommande->RowTemplate->Height = 24;
-			this->dataBaseCommande->Size = System::Drawing::Size(404, 310);
+			this->dataBaseCommande->Size = System::Drawing::Size(404, 287);
 			this->dataBaseCommande->TabIndex = 83;
 			// 
 			// label19
@@ -615,13 +624,13 @@ namespace ProjetPOO {
 			// 
 			this->label20->AutoSize = true;
 			this->label20->BackColor = System::Drawing::Color::Transparent;
-			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label20->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label20->Location = System::Drawing::Point(722, 59);
+			this->label20->Location = System::Drawing::Point(581, 644);
 			this->label20->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
 			this->label20->Name = L"label20";
-			this->label20->Size = System::Drawing::Size(121, 16);
+			this->label20->Size = System::Drawing::Size(97, 13);
 			this->label20->TabIndex = 127;
 			this->label20->Text = L"Date de paiement :";
 			this->label20->Click += gcnew System::EventHandler(this, &MyFormCommande::label20_Click);
@@ -630,7 +639,7 @@ namespace ProjetPOO {
 			// 
 			this->datePaiement_Commande->CustomFormat = L"dd/MM/yyyy";
 			this->datePaiement_Commande->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-			this->datePaiement_Commande->Location = System::Drawing::Point(725, 85);
+			this->datePaiement_Commande->Location = System::Drawing::Point(581, 663);
 			this->datePaiement_Commande->Margin = System::Windows::Forms::Padding(2);
 			this->datePaiement_Commande->Name = L"datePaiement_Commande";
 			this->datePaiement_Commande->Size = System::Drawing::Size(102, 20);
@@ -641,43 +650,20 @@ namespace ProjetPOO {
 			// 
 			this->MoyenPaiementcombo->FormattingEnabled = true;
 			this->MoyenPaiementcombo->Items->AddRange(gcnew cli::array< System::Object^  >(4) { L"Paypal", L"CB", L"Virement", L"Paysafecard" });
-			this->MoyenPaiementcombo->Location = System::Drawing::Point(883, 84);
+			this->MoyenPaiementcombo->Location = System::Drawing::Point(716, 663);
 			this->MoyenPaiementcombo->Margin = System::Windows::Forms::Padding(2);
 			this->MoyenPaiementcombo->Name = L"MoyenPaiementcombo";
-			this->MoyenPaiementcombo->Size = System::Drawing::Size(92, 21);
+			this->MoyenPaiementcombo->Size = System::Drawing::Size(102, 21);
 			this->MoyenPaiementcombo->TabIndex = 128;
 			// 
-			// dataGridView1
+			// dataBaseCommande1
 			// 
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(725, 150);
-			this->dataGridView1->Name = L"dataGridView1";
-			this->dataGridView1->Size = System::Drawing::Size(264, 112);
-			this->dataGridView1->TabIndex = 129;
-			// 
-			// label21
-			// 
-			this->label21->AutoSize = true;
-			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label21->Location = System::Drawing::Point(721, 127);
-			this->label21->Name = L"label21";
-			this->label21->Size = System::Drawing::Size(61, 16);
-			this->label21->TabIndex = 130;
-			this->label21->Text = L"Montant :";
-			this->label21->Click += gcnew System::EventHandler(this, &MyFormCommande::label21_Click);
-			// 
-			// label22
-			// 
-			this->label22->AutoSize = true;
-			this->label22->BackColor = System::Drawing::Color::DarkGray;
-			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 27.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label22->Location = System::Drawing::Point(936, 183);
-			this->label22->Name = L"label22";
-			this->label22->Size = System::Drawing::Size(39, 42);
-			this->label22->TabIndex = 131;
-			this->label22->Text = L"€";
+			this->dataBaseCommande1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataBaseCommande1->Location = System::Drawing::Point(706, 29);
+			this->dataBaseCommande1->Name = L"dataBaseCommande1";
+			this->dataBaseCommande1->Size = System::Drawing::Size(286, 287);
+			this->dataBaseCommande1->TabIndex = 129;
+			this->dataBaseCommande1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &MyFormCommande::dataGridView1_CellContentClick);
 			// 
 			// button1
 			// 
@@ -703,6 +689,42 @@ namespace ProjetPOO {
 			this->label23->Text = L" Informations personnelles";
 			this->label23->Click += gcnew System::EventHandler(this, &MyFormCommande::label23_Click);
 			// 
+			// label21
+			// 
+			this->label21->AutoSize = true;
+			this->label21->BackColor = System::Drawing::Color::Transparent;
+			this->label21->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->label21->Location = System::Drawing::Point(20, 9);
+			this->label21->Name = L"label21";
+			this->label21->Size = System::Drawing::Size(80, 15);
+			this->label21->TabIndex = 134;
+			this->label21->Text = L"Commande";
+			// 
+			// label22
+			// 
+			this->label22->AutoSize = true;
+			this->label22->BackColor = System::Drawing::Color::Transparent;
+			this->label22->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->label22->Location = System::Drawing::Point(703, 9);
+			this->label22->Name = L"label22";
+			this->label22->Size = System::Drawing::Size(44, 15);
+			this->label22->TabIndex = 135;
+			this->label22->Text = L"Client";
+			// 
+			// act_comCLi
+			// 
+			this->act_comCLi->ImeMode = System::Windows::Forms::ImeMode::NoControl;
+			this->act_comCLi->Location = System::Drawing::Point(620, 266);
+			this->act_comCLi->Margin = System::Windows::Forms::Padding(2);
+			this->act_comCLi->Name = L"act_comCLi";
+			this->act_comCLi->Size = System::Drawing::Size(81, 37);
+			this->act_comCLi->TabIndex = 136;
+			this->act_comCLi->Text = L"Actualiser Client";
+			this->act_comCLi->UseVisualStyleBackColor = true;
+			this->act_comCLi->Click += gcnew System::EventHandler(this, &MyFormCommande::act_comCLi_Click);
+			// 
 			// MyFormCommande
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -711,12 +733,13 @@ namespace ProjetPOO {
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1059, 716);
-			this->Controls->Add(this->label23);
-			this->Controls->Add(this->button1);
+			this->ClientSize = System::Drawing::Size(1076, 716);
+			this->Controls->Add(this->act_comCLi);
 			this->Controls->Add(this->label22);
 			this->Controls->Add(this->label21);
-			this->Controls->Add(this->dataGridView1);
+			this->Controls->Add(this->label23);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->dataBaseCommande1);
 			this->Controls->Add(this->MoyenPaiementcombo);
 			this->Controls->Add(this->label20);
 			this->Controls->Add(this->datePaiement_Commande);
@@ -769,7 +792,7 @@ namespace ProjetPOO {
 			this->Text = L"MyFormCommande";
 			this->Load += gcnew System::EventHandler(this, &MyFormCommande::MyFormCommande_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseCommande))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseCommande1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -777,6 +800,7 @@ namespace ProjetPOO {
 #pragma endregion
 	private: System::Void MyFormCommande_Load(System::Object^ sender, System::EventArgs^ e) {
 		this->Svc = gcnew NS_Comp_Svc::Commande_service();
+		this->oSvc = gcnew NS_Comp_Svc::Commande_service();
 	}
 	private: System::Void label19_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
@@ -796,6 +820,17 @@ private: System::Void act_commande_Click(System::Object^ sender, System::EventAr
 	this->Ds = this->Svc->Commandes("Rsl");
 	this->dataBaseCommande->DataSource = this->Ds;
 	this->dataBaseCommande->DataMember = "Rsl";
+}
+private: System::Void dataGridView1_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+
+}
+private: System::Void mod_client_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void act_comCLi_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->dataBaseCommande1->Refresh();
+	this->oDs = this->oSvc->CommandesClient("Rsl");
+	this->dataBaseCommande1->DataSource = this->oDs;
+	this->dataBaseCommande1->DataMember = "Rsl";
 }
 };
 }
