@@ -448,17 +448,24 @@ private: System::Void ins_Article_Click(System::Object^ sender, System::EventArg
 	int MargeCom = int::Parse(this->Marge_Article->Text);
 	float PrixHT = PrixAchat + (PrixAchat * MargeCom / 100);
 	int TVA = int::Parse(this->TVA_Article->Text);
-	float prixTTC = PrixHT + (PrixHT * TVA / 100);
+	float PrixTTC = PrixHT + (PrixHT * TVA / 100);
+	/*String^ prixHT = PrixHT.ToString();
+	String^ prixAchat = PrixAchat.ToString();
+	String^ prixTTC = PrixTTC.ToString();*/
 
-	this->Svc->AddArticle(this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, prixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
+	this->Svc->AddArticle(this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, PrixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
 }
 private: System::Void mod_Article_Click(System::Object^ sender, System::EventArgs^ e) {
 	float PrixAchat = float::Parse(this->PrixAchat_Article->Text);
 	int MargeCom = int::Parse(this->Marge_Article->Text);
 	float PrixHT = PrixAchat + (PrixAchat * MargeCom / 100);
 	int TVA = int::Parse(this->TVA_Article->Text);
-	float prixTTC = PrixHT + (PrixHT * TVA / 100);
-	this->Svc->UpdateArticle(int::Parse(this->ID_Article->Text), this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, prixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
+	float PrixTTC = PrixHT + (PrixHT * TVA / 100);
+/*	String^ prixHT = PrixHT.ToString();
+	String^ prixAchat = PrixAchat.ToString();
+	String^ prixTTC = PrixTTC.ToString();
+	*/
+	this->Svc->UpdateArticle(int::Parse(this->ID_Article->Text), this->Nom_Article->Text, this->Nature_Article->Text, this->Couleur_Article->Text, int::Parse(this->Quantite_Article->Text), PrixHT, PrixTTC, PrixAchat, MargeCom, TVA, int::Parse(this->SeuilReappro_Article->Text));
 }
 private: System::Void sup_Article_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc->DeleteArticle(int::Parse(this->ID_Article->Text));

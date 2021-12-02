@@ -8,7 +8,7 @@ namespace NS_Comp_Mappage{
 		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite], [prix_HT_], [prix_TTC_], [prixAchat], [MargeCommerciale], [TVA], [seuil_reappro] FROM [Projet].[dbo].[article] WHERE (id_article='" + this->id_stock + "' AND disponible = 1);";
 	}
 	String^ Stock_mapTB::Insert(void) {
-		return "INSERT INTO article (nom_article, couleur, nature, quantite, prix_HT_,prix_TTC_, prixAchat, MargeCommerciale, TVA, seuil_reappro, disponible) SELECT '" + this->nom + "', '" + this->couleur + "', '" + this->nature + "', '" + this->nbr_exemplaire + "', '" + this->prixHT + "', '" + this->prixTTC + "', '" + this->prixAchat + "', '" + this->Marge + "', '" + this->TVA + "', '" + this->seuil + "', '1' WHERE NOT EXISTS (SELECT * FROM [Projet].[dbo].[article] WHERE nom_article = '" + this->nom + "' AND couleur = '" + this->couleur + "' AND nature = '" + this->nature + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND prixAchat = '" + this->prixAchat + "' AND MargeCommerciale = '" + this->Marge + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "'); UPDATE [Projet].[dbo].[article] SET disponible='1'  WHERE (nom_article = '" + this->nom + "' AND nature = '" + this->nature + "' AND couleur = '" + this->couleur + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ = '" + this->prixHT + "' AND Prix_TTC_ = '" + this->prixTTC + "' AND prixAchat = '" + this->prixAchat + "' AND MargeCommerciale = '" + this->Marge + "'  AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "');";
+		return "INSERT INTO article (nom_article, couleur, nature, quantite, prix_HT_,prix_TTC_, prixAchat, MargeCommerciale, TVA, seuil_reappro, disponible) SELECT '" + this->nom + "', '" + this->couleur + "', '" + this->nature + "', '" + this->nbr_exemplaire + "', REPLACE('" + this->prixHT + "',',','.'), REPLACE('" + this->prixTTC + "',',','.'), REPLACE('" + this->prixAchat + "',',','.'), '" + this->Marge + "', '" + this->TVA + "', '" + this->seuil + "', '1' WHERE NOT EXISTS (SELECT * FROM [Projet].[dbo].[article] WHERE nom_article = '" + this->nom + "' AND couleur = '" + this->couleur + "' AND nature = '" + this->nature + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ =  REPLACE('" + this->prixHT + "',',','.') AND Prix_TTC_ =  REPLACE('" + this->prixTTC + "',',','.') AND PrixAchat =  REPLACE('" + this->prixAchat + "',',','.') AND MargeCommerciale = '" + this->Marge + "' AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "'); UPDATE [Projet].[dbo].[article] SET disponible='1'  WHERE (nom_article = '" + this->nom + "' AND nature = '" + this->nature + "' AND couleur = '" + this->couleur + "' AND quantite = '" + this->nbr_exemplaire + "' AND Prix_HT_ =  REPLACE('" + this->prixHT + "',',','.') AND Prix_TTC_ =  REPLACE('" + this->prixTTC + "',',','.') AND PrixAchat =  REPLACE('" + this->prixAchat + "',',','.') AND MargeCommerciale = '" + this->Marge + "'  AND TVA = '" + this->TVA + "'AND seuil_reappro = '" + this->seuil + "');";
 	}
 	String^ Stock_mapTB::Delete(void) {
 		return "UPDATE [Projet].[dbo].[article] SET disponible='0'  WHERE (id_article='" + this->id_stock + "');";
@@ -20,7 +20,7 @@ namespace NS_Comp_Mappage{
 		return "";
 	}
 	String^ Stock_mapTB::Seuil_produit(void) {
-		return "SELECT * FROM [Projet].[dbo].[article] WHERE (quantite < seuil_reappro AND disponible=1);";
+		return "SELECT [id_article], [nom_article], [nature], [couleur], [quantite] FROM [Projet].[dbo].[article] WHERE (quantite < seuil_reappro AND disponible=1);";
 	}
 	String^ Stock_mapTB::Panier_moyen(void) {
 		return "";
@@ -32,10 +32,10 @@ namespace NS_Comp_Mappage{
 		return "";
 	}
 	String^ Stock_mapTB::Val_com(void) {
-		return "SELECT SUM(prix_HT_ * quantite) AS Valeur_commerciale FROM article WHERE disponible=1";
+		return "SELECT SUM(quantite * prix_HT_) AS ValeurCommerciale FROM article WHERE (disponible = 1) ;";
 	}
 	String^ Stock_mapTB::Val_achat(void) {
-		return "";
+		return "SELECT SUM(quantite * prixAchat) AS ValeurAchat FROM article WHERE (disponible = 1) ;";
 	}
 	String^ Stock_mapTB::Montant_achat(void) {
 		return "";
