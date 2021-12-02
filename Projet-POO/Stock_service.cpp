@@ -53,5 +53,11 @@ namespace NS_Comp_Svc {
 	DataSet^ Stock_service::ReapproDepasse(String^ dataTableName) {
 		return this->Cad->getRows(this->StockMappTB->Seuil_produit(), dataTableName);
 	}
+	DataSet^ Stock_service::ValeurCommerciale(String ^ dataTableName) {
+		return this->Cad->getRows(this->StockMappTB->Val_com(), dataTableName);
+	}
+	DataSet^ Stock_service::ValeurAchat(String ^ dataTableName) {
+		return this->Cad->getRows(this->StockMappTB->Val_achat(), dataTableName);
+	}
 
 }

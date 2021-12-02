@@ -20,6 +20,8 @@ namespace NS_Comp_Svc {
 		DataSet^ SelectArticle(int, String^);
 		void UpdateArticle(int, String^, String^, String^, int, float, float, float, int, int, int);
 		DataSet^ ReapproDepasse(String^);
+		DataSet^ ValeurCommerciale(String^);
+		DataSet^ ValeurAchat(String^);
 	};
 }
 
