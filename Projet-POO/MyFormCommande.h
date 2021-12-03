@@ -1,5 +1,6 @@
 #pragma once
 #include "Commande_service.h"
+#include "MyFormFacture.h"
 
 namespace ProjetPOO {
 
@@ -669,12 +670,13 @@ namespace ProjetPOO {
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->button1->Location = System::Drawing::Point(830, 779);
+			this->button1->Location = System::Drawing::Point(844, 779);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(122, 42);
 			this->button1->TabIndex = 132;
 			this->button1->Text = L"Facture";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &MyFormCommande::button1_Click);
 			// 
 			// label23
 			// 
@@ -831,6 +833,10 @@ private: System::Void act_comCLi_Click(System::Object^ sender, System::EventArgs
 	this->oDs = this->oSvc->CommandesClient("Rsl");
 	this->dataBaseCommande1->DataSource = this->oDs;
 	this->dataBaseCommande1->DataMember = "Rsl";
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	Form^ FormFacture = gcnew MyFormFacture();
+	FormFacture->Show();
 }
 };
 }

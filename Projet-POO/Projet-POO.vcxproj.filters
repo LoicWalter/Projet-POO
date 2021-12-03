@@ -61,6 +61,7 @@
     <ClCompile Include="Stock_service.cpp">
       <Filter>Fichier sources\Stock</Filter>
     </ClCompile>
+    <ClCompile Include="MyFormFacture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h" />
@@ -109,6 +110,7 @@
     <ClInclude Include="affichageForms.h">
       <Filter>Fichier d%27en-tête\Stock</Filter>
     </ClInclude>
+    <ClInclude Include="MyFormFacture.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Fichier d%27en-tête">

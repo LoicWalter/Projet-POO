@@ -135,6 +135,7 @@
     <ClCompile Include="MyFormArticle.cpp" />
     <ClCompile Include="MyFormClient.cpp" />
     <ClCompile Include="MyFormCommande.cpp" />
+    <ClCompile Include="MyFormFacture.cpp" />
     <ClCompile Include="MyFormPersonnel.cpp" />
     <ClCompile Include="MyFormStats.cpp" />
     <ClCompile Include="MyFormVariation.cpp" />
@@ -165,6 +166,9 @@
     <ClInclude Include="MyFormCommande.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MyFormFacture.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="MyFormPersonnel.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -192,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyFormCommande.resx">
       <DependentUpon>MyFormCommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFormFacture.resx">
+      <DependentUpon>MyFormFacture.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyFormPersonnel.resx">
       <DependentUpon>MyFormPersonnel.h</DependentUpon>
