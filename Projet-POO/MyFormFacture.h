@@ -39,7 +39,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel4;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
@@ -58,6 +58,11 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Button^ button1;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::Label^ label12;
+	private: System::Windows::Forms::Label^ label13;
+	private: System::Windows::Forms::Label^ label14;
+	private: System::Windows::Forms::Label^ label15;
+
 	protected:
 
 	private:
@@ -79,7 +84,6 @@ namespace ProjetPOO {
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
@@ -98,6 +102,10 @@ namespace ProjetPOO {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label13 = (gcnew System::Windows::Forms::Label());
+			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->label15 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel1->SuspendLayout();
 			this->tableLayoutPanel2->SuspendLayout();
 			this->tableLayoutPanel4->SuspendLayout();
@@ -185,23 +193,6 @@ namespace ProjetPOO {
 			this->label2->TabIndex = 0;
 			this->label2->Text = L"Facturation :";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			// 
-			// tableLayoutPanel3
-			// 
-			this->tableLayoutPanel3->ColumnCount = 2;
-			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
-			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
-			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Absolute,
-				135)));
-			this->tableLayoutPanel3->Location = System::Drawing::Point(0, 175);
-			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
-			this->tableLayoutPanel3->RowCount = 1;
-			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel3->Size = System::Drawing::Size(500, 92);
-			this->tableLayoutPanel3->TabIndex = 2;
 			// 
 			// tableLayoutPanel4
 			// 
@@ -440,19 +431,65 @@ namespace ProjetPOO {
 			this->pictureBox1->TabIndex = 1;
 			this->pictureBox1->TabStop = false;
 			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label12->Location = System::Drawing::Point(5, 190);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(34, 15);
+			this->label12->TabIndex = 9;
+			this->label12->Text = L"Mish";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label13->Location = System::Drawing::Point(5, 215);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(103, 15);
+			this->label13->TabIndex = 10;
+			this->label13->Text = L"10 Rue de la paix";
+			this->label13->Click += gcnew System::EventHandler(this, &MyFormFacture::label13_Click);
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F));
+			this->label14->Location = System::Drawing::Point(5, 233);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(63, 13);
+			this->label14->TabIndex = 11;
+			this->label14->Text = L"Paris 75000";
+			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F));
+			this->label15->Location = System::Drawing::Point(6, 248);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(40, 13);
+			this->label15->TabIndex = 12;
+			this->label15->Text = L"France";
+			// 
 			// MyFormFacture
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(500, 618);
+			this->Controls->Add(this->label15);
+			this->Controls->Add(this->label14);
+			this->Controls->Add(this->label13);
+			this->Controls->Add(this->label12);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->listView1);
 			this->Controls->Add(this->tableLayoutPanel6);
 			this->Controls->Add(this->tableLayoutPanel5);
 			this->Controls->Add(this->tableLayoutPanel4);
-			this->Controls->Add(this->tableLayoutPanel3);
 			this->Controls->Add(this->tableLayoutPanel2);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Name = L"MyFormFacture";
@@ -468,6 +505,7 @@ namespace ProjetPOO {
 			this->tableLayoutPanel6->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -490,6 +528,10 @@ private: System::Void label10_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label13_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
