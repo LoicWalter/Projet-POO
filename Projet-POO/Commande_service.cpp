@@ -12,6 +12,14 @@ namespace NS_Comp_Svc {
 	DataSet^ Commande_service::Commandes(String^ dataTableName){
 		return this->Cad->getRows(this->CommandeMappTB->Select(), dataTableName);
 	}
+	DataSet^ Commande_service::FactureLoad(int id, String^ dataTableName) {
+		CommandeMappTB->setId_commande(id);
+		return this->Cad->getRows(this->CommandeMappTB->SelectFacture(), dataTableName);
+	}
+	DataSet^ Commande_service::FactureLoad2(int id, String^ dataTableName) {
+		CommandeMappTB->setId_commande(id);
+		return this->Cad->getRows(this->CommandeMappTB->SelectFacture2(), dataTableName);
+	}
 	DataSet^ Commande_service::CommandesClient(String^ dataTableName) {
 		return this->Cad->getRows(this->CommandeMappTB->Select1(), dataTableName);
 	}
@@ -22,6 +30,13 @@ namespace NS_Comp_Svc {
 		CommandeMappTB->setId_commande(id);
 		return this->Cad->getRows(this->CommandeMappTB->Select3(), dataTableName);
 	}
+
+	void Commande_service::setIdCommande(int id) {
+		CommandeMappTB->setId_commande(id);
+	}
+
+
+
 	void Commande_service::AddCommande(String^ reference, String^ date_emission, String^ date_livraison, String^ pays, String^ complementaire, String^ nom_rue, String^ ville, int CP, int num_adresse, int id_aclient){
 		CommandeMappTB->setReference(reference);
 		CommandeMappTB->setDate_emission(date_emission);

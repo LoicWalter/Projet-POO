@@ -41,7 +41,7 @@ namespace NS_Comp_Mappage{
 		return "";
 	}
 	String^ Stock_mapTB::Variation(void) {
-		return "SELECT SUM (quantite * prixAchat * (1 + ('" + this->TVA + "' / 100)) + (1 + ('" + this->Marge + "' / 100)) + (1 - ('" + this->remise + "' / 100)) + (1 - ('" + this->inconnue + "' / 100))) FROM article WHERE(disponible = 1);";
+		return "SELECT SUM (quantite * prixAchat * REPLACE('" + this->total + "',',','.')) FROM article WHERE(disponible = 1);";
 	}
 
 	void Stock_mapTB::setId_Stock(int id_stock) { this->id_stock = id_stock; }

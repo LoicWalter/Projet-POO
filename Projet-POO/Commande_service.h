@@ -16,6 +16,8 @@ namespace NS_Comp_Svc {
 	public:
 		Commande_service(void);
 		DataSet^ Commandes(String^);
+		DataSet^ FactureLoad(int, String^);
+		DataSet^ FactureLoad2(int, String^);
 		DataSet^ CommandesClient(String^);
 		DataSet^ CommandesArticle(String^);
 		DataSet^ CommandesArticleCommande(int, String^);
@@ -24,6 +26,7 @@ namespace NS_Comp_Svc {
 		void DeleteCommande(int);
 		void UpdateCommande(int, String^, String^, String^, int, float, float, String^);
 		void AddArticleCommande(int, int, int);
+		void setIdCommande(int);
 	};
 
 }

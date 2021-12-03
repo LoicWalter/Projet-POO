@@ -25,6 +25,8 @@ namespace NS_Comp_Mappage {
 		String^ Select2(void);
 		String^ Select3(void);
 		String^ Select4(void);
+		String^ SelectFacture(void);
+		String^ SelectFacture2(void);
 		String^ Insert(void);
 		String^ Delete(void);
 		String^ Update(void);

@@ -65,6 +65,8 @@ namespace NS_Comp_Svc {
 		StockMappTB->setMarge(marge);
 		StockMappTB->setInconnue(inconnue);
 		StockMappTB->setRemise(remise);
+		float total = (1 + TVA/100) * (1 + marge / 100) * (1 - inconnue / 100) * (1 - remise / 100);
+		StockMappTB->setTotal(total);
 		return this->Cad->getRows(this->StockMappTB->Variation(), dataTableName);
 	}
 
