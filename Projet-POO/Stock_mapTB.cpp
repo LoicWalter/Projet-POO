@@ -35,10 +35,13 @@ namespace NS_Comp_Mappage{
 		return "SELECT SUM(quantite * prix_HT_) AS ValeurCommerciale FROM article WHERE (disponible = 1) ;";
 	}
 	String^ Stock_mapTB::Val_achat(void) {
-		return "SELECT SUM(quantite * prixAchat) AS ValeurAchat FROM article WHERE (disponible = 1) ;";
+		return "SELECT SUM(quantite * prixAchat *(1+(TVA/100))) AS ValeurAchat FROM article WHERE (disponible = 1) ;";
 	}
 	String^ Stock_mapTB::Montant_achat(void) {
 		return "";
+	}
+	String^ Stock_mapTB::Variation(void) {
+		return "SELECT SUM (quantite * prixAchat * (1 + ('" + this->TVA + "' / 100)) + (1 + ('" + this->Marge + "' / 100)) + (1 - ('" + this->remise + "' / 100)) + (1 - ('" + this->inconnue + "' / 100))) FROM article WHERE(disponible = 1);";
 	}
 
 	void Stock_mapTB::setId_Stock(int id_stock) { this->id_stock = id_stock; }
@@ -49,8 +52,11 @@ namespace NS_Comp_Mappage{
 	void Stock_mapTB::setPrixHT(float prixHT) { this->prixHT = prixHT; }
 	void Stock_mapTB::setPrixTTC(float prixTTC) { this->prixTTC = prixTTC; }
 	void Stock_mapTB::setPrixAchat(float prixAchat) { this->prixAchat = prixAchat; }
+	void Stock_mapTB::setTotal(float total) { this->total = total; }
 	void Stock_mapTB::setMarge(int Marge) { this->Marge = Marge; }
 	void Stock_mapTB::setTVA(int TVA) { this->TVA = TVA; }
+	void Stock_mapTB::setInconnue(int inconnue) { this->inconnue = inconnue; }
+	void Stock_mapTB::setRemise(int remise) { this->remise = remise; }
 	void Stock_mapTB::setSeuil(int seuil) { this->seuil = seuil; }
 	void Stock_mapTB::setDispo(bool dispo) { this->dispo = dispo; }
 
@@ -62,8 +68,11 @@ namespace NS_Comp_Mappage{
 	float Stock_mapTB::getPrixHT(void) { return this->prixHT; }
 	float Stock_mapTB::getPrixTTC(void) { return this->prixTTC; }
 	float Stock_mapTB::getPrixAchat(void) { return this->prixAchat; }
+	float Stock_mapTB::getTotal(void) { return this->total; }
 	int Stock_mapTB::getMarge(void) { return this->Marge; }
 	int Stock_mapTB::getTVA(void) { return this->TVA; }
+	int Stock_mapTB::getInconnue(void) { return this->inconnue; }
+	int Stock_mapTB::getRemise(void) { return this->remise; }
 	int Stock_mapTB::getSeuil(void) { return this->seuil; }
 	bool Stock_mapTB::getDispo(void) { return this->dispo;  }
 }

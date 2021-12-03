@@ -51,7 +51,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label1;
-	private: System::Windows::Forms::TextBox^ ID_Client;
+	private: System::Windows::Forms::TextBox^ id_aclient;
 	private: System::Windows::Forms::TextBox^ Prenom_Client;
 	private: System::Windows::Forms::TextBox^ Nom_Client;
 	private: System::Windows::Forms::Button^ mod_client;
@@ -97,7 +97,7 @@ namespace ProjetPOO {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->ID_Client = (gcnew System::Windows::Forms::TextBox());
+			this->id_aclient = (gcnew System::Windows::Forms::TextBox());
 			this->Prenom_Client = (gcnew System::Windows::Forms::TextBox());
 			this->Nom_Client = (gcnew System::Windows::Forms::TextBox());
 			this->mod_client = (gcnew System::Windows::Forms::Button());
@@ -179,13 +179,13 @@ namespace ProjetPOO {
 			this->label1->TabIndex = 50;
 			this->label1->Text = L"ID :";
 			// 
-			// ID_Client
+			// id_aclient
 			// 
-			this->ID_Client->Location = System::Drawing::Point(718, 62);
-			this->ID_Client->Margin = System::Windows::Forms::Padding(2);
-			this->ID_Client->Name = L"ID_Client";
-			this->ID_Client->Size = System::Drawing::Size(303, 20);
-			this->ID_Client->TabIndex = 49;
+			this->id_aclient->Location = System::Drawing::Point(718, 62);
+			this->id_aclient->Margin = System::Windows::Forms::Padding(2);
+			this->id_aclient->Name = L"id_aclient";
+			this->id_aclient->Size = System::Drawing::Size(303, 20);
+			this->id_aclient->TabIndex = 49;
 			// 
 			// Prenom_Client
 			// 
@@ -286,7 +286,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->ID_Client);
+			this->Controls->Add(this->id_aclient);
 			this->Controls->Add(this->Prenom_Client);
 			this->Controls->Add(this->Nom_Client);
 			this->Controls->Add(this->mod_client);
@@ -325,7 +325,7 @@ namespace ProjetPOO {
 	}
 
 	private: System::Void sup_client_Click(System::Object^ sender, System::EventArgs^ e) {
-		this->Svc->DeleteClient(int::Parse(this->ID_Client->Text));
+		this->Svc->DeleteClient(int::Parse(this->id_aclient->Text));
 	}
 
 	private: System::Void ins_client_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -333,13 +333,13 @@ namespace ProjetPOO {
 	}
 private: System::Void sel_client_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->dataBaseClient->Refresh();
-	this->Ds = this->Svc->SelectClient(int::Parse(this->ID_Client->Text), "Rsl");
+	this->Ds = this->Svc->SelectClient(int::Parse(this->id_aclient->Text), "Rsl");
 	this->dataBaseClient->DataSource = this->Ds;
 	this->dataBaseClient->DataMember = "Rsl";
 }
 
 private: System::Void mod_client_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Svc->UpdateClient(int::Parse(this->ID_Client->Text), this->Nom_Client->Text, this->Prenom_Client->Text, this->dateNaissance_Client->Text);
+	this->Svc->UpdateClient(int::Parse(this->id_aclient->Text), this->Nom_Client->Text, this->Prenom_Client->Text, this->dateNaissance_Client->Text);
 }
 
 

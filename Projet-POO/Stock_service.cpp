@@ -53,11 +53,19 @@ namespace NS_Comp_Svc {
 	DataSet^ Stock_service::ReapproDepasse(String^ dataTableName) {
 		return this->Cad->getRows(this->StockMappTB->Seuil_produit(), dataTableName);
 	}
-	DataSet^ Stock_service::ValeurCommerciale(String ^ dataTableName) {
+	DataSet^ Stock_service::ValeurCommerciale(String^ dataTableName) {
 		return this->Cad->getRows(this->StockMappTB->Val_com(), dataTableName);
 	}
 	DataSet^ Stock_service::ValeurAchat(String ^ dataTableName) {
 		return this->Cad->getRows(this->StockMappTB->Val_achat(), dataTableName);
+	}
+	DataSet^ Stock_service::VariationStats(float TVA, float marge, float inconnue, float remise, String^ dataTableName) {
+
+		StockMappTB->setTVA(TVA);
+		StockMappTB->setMarge(marge);
+		StockMappTB->setInconnue(inconnue);
+		StockMappTB->setRemise(remise);
+		return this->Cad->getRows(this->StockMappTB->Variation(), dataTableName);
 	}
 
 }
