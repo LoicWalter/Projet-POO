@@ -40,7 +40,7 @@ namespace ProjetPOO {
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel2;
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel3;
+
 	private: System::Windows::Forms::TableLayoutPanel^ tableLayoutPanel4;
 	private: System::Windows::Forms::Label^ label4;
 	private: System::Windows::Forms::Label^ label5;
@@ -92,7 +92,6 @@ namespace ProjetPOO {
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label5 = (gcnew System::Windows::Forms::Label());
@@ -504,6 +503,49 @@ namespace ProjetPOO {
 			this->dataBaseFacture2->Size = System::Drawing::Size(199, 97);
 			this->dataBaseFacture2->TabIndex = 94;
 			// 
+			// label12
+			// 
+			this->label12->AutoSize = true;
+			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label12->Location = System::Drawing::Point(5, 190);
+			this->label12->Name = L"label12";
+			this->label12->Size = System::Drawing::Size(34, 15);
+			this->label12->TabIndex = 9;
+			this->label12->Text = L"Mish";
+			// 
+			// label13
+			// 
+			this->label13->AutoSize = true;
+			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label13->Location = System::Drawing::Point(5, 215);
+			this->label13->Name = L"label13";
+			this->label13->Size = System::Drawing::Size(103, 15);
+			this->label13->TabIndex = 10;
+			this->label13->Text = L"10 Rue de la paix";
+			this->label13->Click += gcnew System::EventHandler(this, &MyFormFacture::label13_Click);
+			// 
+			// label14
+			// 
+			this->label14->AutoSize = true;
+			this->label14->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F));
+			this->label14->Location = System::Drawing::Point(5, 233);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(63, 13);
+			this->label14->TabIndex = 11;
+			this->label14->Text = L"Paris 75000";
+			// 
+			// label15
+			// 
+			this->label15->AutoSize = true;
+			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F));
+			this->label15->Location = System::Drawing::Point(6, 248);
+			this->label15->Name = L"label15";
+			this->label15->Size = System::Drawing::Size(40, 13);
+			this->label15->TabIndex = 12;
+			this->label15->Text = L"France";
+			// 
 			// MyFormFacture
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -519,7 +561,6 @@ namespace ProjetPOO {
 			this->Controls->Add(this->tableLayoutPanel6);
 			this->Controls->Add(this->tableLayoutPanel5);
 			this->Controls->Add(this->tableLayoutPanel4);
-			this->Controls->Add(this->tableLayoutPanel3);
 			this->Controls->Add(this->tableLayoutPanel2);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Margin = System::Windows::Forms::Padding(4);
@@ -574,6 +615,10 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void MyFormFacture_Load(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc = gcnew NS_Comp_Svc::Commande_service();
 	this->oSvc = gcnew NS_Comp_Svc::Commande_service();
+}
+private: System::Void label12_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label13_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
