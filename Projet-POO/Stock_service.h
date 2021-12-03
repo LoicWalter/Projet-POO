@@ -22,6 +22,8 @@ namespace NS_Comp_Svc {
 		DataSet^ ReapproDepasse(String^);
 		DataSet^ ValeurCommerciale(String^);
 		DataSet^ ValeurAchat(String^);
+		DataSet^ top10(String^);
+		DataSet^ bot10(String^);
 		DataSet^ VariationStats(float, float, float, float, String^);
 	};
 }

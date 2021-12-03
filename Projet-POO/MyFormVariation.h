@@ -86,48 +86,48 @@ namespace ProjetPOO {
 			// 
 			this->TVAcombo->FormattingEnabled = true;
 			this->TVAcombo->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"10", L"15", L"20" });
-			this->TVAcombo->Location = System::Drawing::Point(427, 58);
-			this->TVAcombo->Margin = System::Windows::Forms::Padding(2);
+			this->TVAcombo->Location = System::Drawing::Point(569, 71);
+			this->TVAcombo->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->TVAcombo->Name = L"TVAcombo";
-			this->TVAcombo->Size = System::Drawing::Size(92, 21);
+			this->TVAcombo->Size = System::Drawing::Size(121, 24);
 			this->TVAcombo->TabIndex = 1;
 			// 
 			// Remisecombo
 			// 
 			this->Remisecombo->FormattingEnabled = true;
 			this->Remisecombo->Items->AddRange(gcnew cli::array< System::Object^  >(2) { L"5", L"6" });
-			this->Remisecombo->Location = System::Drawing::Point(613, 58);
-			this->Remisecombo->Margin = System::Windows::Forms::Padding(2);
+			this->Remisecombo->Location = System::Drawing::Point(817, 71);
+			this->Remisecombo->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Remisecombo->Name = L"Remisecombo";
-			this->Remisecombo->Size = System::Drawing::Size(92, 21);
+			this->Remisecombo->Size = System::Drawing::Size(121, 24);
 			this->Remisecombo->TabIndex = 2;
 			// 
 			// inconnuecombo
 			// 
 			this->inconnuecombo->FormattingEnabled = true;
 			this->inconnuecombo->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"2", L"3", L"5" });
-			this->inconnuecombo->Location = System::Drawing::Point(427, 128);
-			this->inconnuecombo->Margin = System::Windows::Forms::Padding(2);
+			this->inconnuecombo->Location = System::Drawing::Point(569, 158);
+			this->inconnuecombo->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->inconnuecombo->Name = L"inconnuecombo";
-			this->inconnuecombo->Size = System::Drawing::Size(92, 21);
+			this->inconnuecombo->Size = System::Drawing::Size(121, 24);
 			this->inconnuecombo->TabIndex = 3;
 			// 
 			// margecombo
 			// 
 			this->margecombo->FormattingEnabled = true;
 			this->margecombo->Items->AddRange(gcnew cli::array< System::Object^  >(3) { L"5", L"10", L"15" });
-			this->margecombo->Location = System::Drawing::Point(613, 128);
-			this->margecombo->Margin = System::Windows::Forms::Padding(2);
+			this->margecombo->Location = System::Drawing::Point(817, 158);
+			this->margecombo->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->margecombo->Name = L"margecombo";
-			this->margecombo->Size = System::Drawing::Size(92, 21);
+			this->margecombo->Size = System::Drawing::Size(121, 24);
 			this->margecombo->TabIndex = 4;
 			// 
 			// valider
 			// 
-			this->valider->Location = System::Drawing::Point(427, 184);
-			this->valider->Margin = System::Windows::Forms::Padding(2);
+			this->valider->Location = System::Drawing::Point(569, 226);
+			this->valider->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->valider->Name = L"valider";
-			this->valider->Size = System::Drawing::Size(277, 31);
+			this->valider->Size = System::Drawing::Size(369, 38);
 			this->valider->TabIndex = 5;
 			this->valider->Text = L"Valider";
 			this->valider->UseVisualStyleBackColor = true;
@@ -136,60 +136,56 @@ namespace ProjetPOO {
 			// dataBaseVariation
 			// 
 			this->dataBaseVariation->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseVariation->Location = System::Drawing::Point(9, 10);
-			this->dataBaseVariation->Margin = System::Windows::Forms::Padding(2);
+			this->dataBaseVariation->Location = System::Drawing::Point(12, 12);
+			this->dataBaseVariation->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dataBaseVariation->Name = L"dataBaseVariation";
 			this->dataBaseVariation->RowHeadersWidth = 51;
 			this->dataBaseVariation->RowTemplate->Height = 24;
-			this->dataBaseVariation->Size = System::Drawing::Size(392, 339);
+			this->dataBaseVariation->Size = System::Drawing::Size(523, 417);
 			this->dataBaseVariation->TabIndex = 6;
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(427, 40);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(569, 49);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(60, 13);
+			this->label1->Size = System::Drawing::Size(79, 17);
 			this->label1->TabIndex = 7;
 			this->label1->Text = L"TVA en % :";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(424, 111);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(565, 137);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(135, 13);
+			this->label2->Size = System::Drawing::Size(180, 17);
 			this->label2->TabIndex = 8;
 			this->label2->Text = L"Demarque inconnue en % :";
 			// 
 			// label3
 			// 
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(610, 42);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(813, 52);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(130, 13);
+			this->label3->Size = System::Drawing::Size(174, 17);
 			this->label3->TabIndex = 9;
 			this->label3->Text = L"Remise commerciale en %";
 			// 
 			// label4
 			// 
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(610, 111);
-			this->label4->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label4->Location = System::Drawing::Point(813, 137);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(132, 13);
+			this->label4->Size = System::Drawing::Size(177, 17);
 			this->label4->TabIndex = 10;
 			this->label4->Text = L"Marge Commerciale en % :";
 			// 
 			// retourMenu
 			// 
-			this->retourMenu->Location = System::Drawing::Point(641, 325);
-			this->retourMenu->Margin = System::Windows::Forms::Padding(2);
+			this->retourMenu->Location = System::Drawing::Point(855, 400);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->retourMenu->Name = L"retourMenu";
-			this->retourMenu->Size = System::Drawing::Size(106, 24);
+			this->retourMenu->Size = System::Drawing::Size(141, 30);
 			this->retourMenu->TabIndex = 124;
 			this->retourMenu->Text = L"Retour";
 			this->retourMenu->UseVisualStyleBackColor = true;
@@ -197,9 +193,11 @@ namespace ProjetPOO {
 			// 
 			// MyFormVariation
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(758, 358);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->ClientSize = System::Drawing::Size(1011, 441);
 			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
@@ -211,10 +209,11 @@ namespace ProjetPOO {
 			this->Controls->Add(this->inconnuecombo);
 			this->Controls->Add(this->Remisecombo);
 			this->Controls->Add(this->TVAcombo);
+			this->DoubleBuffered = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormVariation";
-			this->Text = L"MyFormVariation";
+			this->Text = L"Variation";
 			this->Load += gcnew System::EventHandler(this, &MyFormVariation::MyFormVariation_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseVariation))->EndInit();
 			this->ResumeLayout(false);

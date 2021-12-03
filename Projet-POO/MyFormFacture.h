@@ -608,7 +608,7 @@ namespace ProjetPOO {
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"MyFormFacture";
-			this->Text = L"MyFormFacture";
+			this->Text = L"Facture";
 			this->Load += gcnew System::EventHandler(this, &MyFormFacture::MyFormFacture_Load);
 			this->tableLayoutPanel1->ResumeLayout(false);
 			this->tableLayoutPanel1->PerformLayout();

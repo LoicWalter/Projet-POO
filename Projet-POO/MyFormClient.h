@@ -114,10 +114,9 @@ namespace ProjetPOO {
 			this->label6->AutoSize = true;
 			this->label6->BackColor = System::Drawing::Color::Transparent;
 			this->label6->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label6->Location = System::Drawing::Point(718, 215);
-			this->label6->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label6->Location = System::Drawing::Point(957, 265);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(102, 13);
+			this->label6->Size = System::Drawing::Size(134, 17);
 			this->label6->TabIndex = 57;
 			this->label6->Text = L"Date de naissance :";
 			// 
@@ -125,19 +124,19 @@ namespace ProjetPOO {
 			// 
 			this->dateNaissance_Client->CustomFormat = L"dd/MM/yyyy";
 			this->dateNaissance_Client->Format = System::Windows::Forms::DateTimePickerFormat::Custom;
-			this->dateNaissance_Client->Location = System::Drawing::Point(718, 244);
-			this->dateNaissance_Client->Margin = System::Windows::Forms::Padding(2);
+			this->dateNaissance_Client->Location = System::Drawing::Point(957, 300);
+			this->dateNaissance_Client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dateNaissance_Client->Name = L"dateNaissance_Client";
-			this->dateNaissance_Client->Size = System::Drawing::Size(169, 20);
+			this->dateNaissance_Client->Size = System::Drawing::Size(224, 22);
 			this->dateNaissance_Client->TabIndex = 56;
 			// 
 			// act_client
 			// 
 			this->act_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->act_client->Location = System::Drawing::Point(462, 62);
-			this->act_client->Margin = System::Windows::Forms::Padding(2);
+			this->act_client->Location = System::Drawing::Point(616, 76);
+			this->act_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->act_client->Name = L"act_client";
-			this->act_client->Size = System::Drawing::Size(198, 57);
+			this->act_client->Size = System::Drawing::Size(264, 70);
 			this->act_client->TabIndex = 55;
 			this->act_client->Text = L"Actualiser";
 			this->act_client->UseVisualStyleBackColor = true;
@@ -148,10 +147,9 @@ namespace ProjetPOO {
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label3->Location = System::Drawing::Point(718, 156);
-			this->label3->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label3->Location = System::Drawing::Point(957, 192);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(49, 13);
+			this->label3->Size = System::Drawing::Size(65, 17);
 			this->label3->TabIndex = 52;
 			this->label3->Text = L"Prénom :";
 			// 
@@ -160,10 +158,9 @@ namespace ProjetPOO {
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label2->Location = System::Drawing::Point(718, 99);
-			this->label2->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label2->Location = System::Drawing::Point(957, 122);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(35, 13);
+			this->label2->Size = System::Drawing::Size(45, 17);
 			this->label2->TabIndex = 51;
 			this->label2->Text = L"Nom :";
 			// 
@@ -172,44 +169,43 @@ namespace ProjetPOO {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->label1->Location = System::Drawing::Point(718, 44);
-			this->label1->Margin = System::Windows::Forms::Padding(2, 0, 2, 0);
+			this->label1->Location = System::Drawing::Point(957, 54);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(24, 13);
+			this->label1->Size = System::Drawing::Size(29, 17);
 			this->label1->TabIndex = 50;
 			this->label1->Text = L"ID :";
 			// 
 			// id_aclient
 			// 
-			this->id_aclient->Location = System::Drawing::Point(718, 62);
-			this->id_aclient->Margin = System::Windows::Forms::Padding(2);
+			this->id_aclient->Location = System::Drawing::Point(957, 76);
+			this->id_aclient->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->id_aclient->Name = L"id_aclient";
-			this->id_aclient->Size = System::Drawing::Size(303, 20);
+			this->id_aclient->Size = System::Drawing::Size(403, 22);
 			this->id_aclient->TabIndex = 49;
 			// 
 			// Prenom_Client
 			// 
-			this->Prenom_Client->Location = System::Drawing::Point(718, 175);
-			this->Prenom_Client->Margin = System::Windows::Forms::Padding(2);
+			this->Prenom_Client->Location = System::Drawing::Point(957, 215);
+			this->Prenom_Client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Prenom_Client->Name = L"Prenom_Client";
-			this->Prenom_Client->Size = System::Drawing::Size(303, 20);
+			this->Prenom_Client->Size = System::Drawing::Size(403, 22);
 			this->Prenom_Client->TabIndex = 48;
 			// 
 			// Nom_Client
 			// 
-			this->Nom_Client->Location = System::Drawing::Point(718, 118);
-			this->Nom_Client->Margin = System::Windows::Forms::Padding(2);
+			this->Nom_Client->Location = System::Drawing::Point(957, 145);
+			this->Nom_Client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Nom_Client->Name = L"Nom_Client";
-			this->Nom_Client->Size = System::Drawing::Size(303, 20);
+			this->Nom_Client->Size = System::Drawing::Size(403, 22);
 			this->Nom_Client->TabIndex = 47;
 			// 
 			// mod_client
 			// 
 			this->mod_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->mod_client->Location = System::Drawing::Point(462, 208);
-			this->mod_client->Margin = System::Windows::Forms::Padding(2);
+			this->mod_client->Location = System::Drawing::Point(616, 256);
+			this->mod_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->mod_client->Name = L"mod_client";
-			this->mod_client->Size = System::Drawing::Size(90, 56);
+			this->mod_client->Size = System::Drawing::Size(120, 69);
 			this->mod_client->TabIndex = 46;
 			this->mod_client->Text = L"Modification";
 			this->mod_client->UseVisualStyleBackColor = true;
@@ -218,10 +214,10 @@ namespace ProjetPOO {
 			// ins_client
 			// 
 			this->ins_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->ins_client->Location = System::Drawing::Point(570, 138);
-			this->ins_client->Margin = System::Windows::Forms::Padding(2);
+			this->ins_client->Location = System::Drawing::Point(760, 170);
+			this->ins_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->ins_client->Name = L"ins_client";
-			this->ins_client->Size = System::Drawing::Size(90, 56);
+			this->ins_client->Size = System::Drawing::Size(120, 69);
 			this->ins_client->TabIndex = 45;
 			this->ins_client->Text = L"Insertion";
 			this->ins_client->UseVisualStyleBackColor = true;
@@ -230,10 +226,10 @@ namespace ProjetPOO {
 			// sup_client
 			// 
 			this->sup_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sup_client->Location = System::Drawing::Point(570, 208);
-			this->sup_client->Margin = System::Windows::Forms::Padding(2);
+			this->sup_client->Location = System::Drawing::Point(760, 256);
+			this->sup_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->sup_client->Name = L"sup_client";
-			this->sup_client->Size = System::Drawing::Size(90, 56);
+			this->sup_client->Size = System::Drawing::Size(120, 69);
 			this->sup_client->TabIndex = 44;
 			this->sup_client->Text = L"Suppression";
 			this->sup_client->UseVisualStyleBackColor = true;
@@ -242,10 +238,10 @@ namespace ProjetPOO {
 			// sel_client
 			// 
 			this->sel_client->ImeMode = System::Windows::Forms::ImeMode::NoControl;
-			this->sel_client->Location = System::Drawing::Point(462, 138);
-			this->sel_client->Margin = System::Windows::Forms::Padding(2);
+			this->sel_client->Location = System::Drawing::Point(616, 170);
+			this->sel_client->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->sel_client->Name = L"sel_client";
-			this->sel_client->Size = System::Drawing::Size(90, 56);
+			this->sel_client->Size = System::Drawing::Size(120, 69);
 			this->sel_client->TabIndex = 43;
 			this->sel_client->Text = L"Sélection";
 			this->sel_client->UseVisualStyleBackColor = true;
@@ -254,20 +250,20 @@ namespace ProjetPOO {
 			// dataBaseClient
 			// 
 			this->dataBaseClient->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataBaseClient->Location = System::Drawing::Point(9, 9);
-			this->dataBaseClient->Margin = System::Windows::Forms::Padding(2);
+			this->dataBaseClient->Location = System::Drawing::Point(12, 11);
+			this->dataBaseClient->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->dataBaseClient->Name = L"dataBaseClient";
 			this->dataBaseClient->RowHeadersWidth = 51;
 			this->dataBaseClient->RowTemplate->Height = 24;
-			this->dataBaseClient->Size = System::Drawing::Size(398, 321);
+			this->dataBaseClient->Size = System::Drawing::Size(531, 395);
 			this->dataBaseClient->TabIndex = 42;
 			// 
 			// retourMenu
 			// 
-			this->retourMenu->Location = System::Drawing::Point(28, 363);
-			this->retourMenu->Margin = System::Windows::Forms::Padding(2);
+			this->retourMenu->Location = System::Drawing::Point(37, 447);
+			this->retourMenu->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->retourMenu->Name = L"retourMenu";
-			this->retourMenu->Size = System::Drawing::Size(208, 56);
+			this->retourMenu->Size = System::Drawing::Size(277, 69);
 			this->retourMenu->TabIndex = 82;
 			this->retourMenu->Text = L"Retour au menu";
 			this->retourMenu->UseVisualStyleBackColor = true;
@@ -275,10 +271,12 @@ namespace ProjetPOO {
 			// 
 			// MyFormClient
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
-			this->ClientSize = System::Drawing::Size(1073, 474);
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->ClientSize = System::Drawing::Size(1431, 583);
 			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->dateNaissance_Client);
@@ -294,10 +292,11 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sup_client);
 			this->Controls->Add(this->sel_client);
 			this->Controls->Add(this->dataBaseClient);
+			this->DoubleBuffered = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(2);
+			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormClient";
-			this->Text = L"Mish";
+			this->Text = L"Client";
 			this->Load += gcnew System::EventHandler(this, &MyFormClient::MyFormClient_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseClient))->EndInit();
 			this->ResumeLayout(false);

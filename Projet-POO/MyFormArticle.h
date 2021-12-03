@@ -381,6 +381,9 @@ namespace ProjetPOO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ActiveCaption;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1403, 587);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->Marge_Article);
@@ -407,10 +410,11 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sup_Article);
 			this->Controls->Add(this->sel_Article);
 			this->Controls->Add(this->dataBaseArticle);
+			this->DoubleBuffered = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormArticle";
-			this->Text = L"MyFormArticle";
+			this->Text = L"Article";
 			this->Load += gcnew System::EventHandler(this, &MyFormArticle::MyFormArticle_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseArticle))->EndInit();
 			this->ResumeLayout(false);

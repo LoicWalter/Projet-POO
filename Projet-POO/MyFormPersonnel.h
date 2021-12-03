@@ -417,6 +417,8 @@ namespace ProjetPOO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1540, 846);
 			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->label20);
@@ -448,10 +450,11 @@ namespace ProjetPOO {
 			this->Controls->Add(this->sup_personnel);
 			this->Controls->Add(this->sel_personnel);
 			this->Controls->Add(this->dataBasePersonnel);
+			this->DoubleBuffered = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormPersonnel";
-			this->Text = L"MyFormPersonnel";
+			this->Text = L"Personnel";
 			this->Load += gcnew System::EventHandler(this, &MyFormPersonnel::MyFormPersonnel_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBasePersonnel))->EndInit();
 			this->ResumeLayout(false);

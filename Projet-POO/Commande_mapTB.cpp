@@ -12,7 +12,7 @@ namespace NS_Comp_Mappage {
 
 
 	String^ Commande_mapTB::Select(void) {
-		return "SELECT [id_commande], [reference], [date_emission], [date_livraison], [TVA], [prixHT], [prixTTC] FROM [Projet].[dbo].[commande]";
+		return "SELECT [id_commande], [reference], [date_emission], [date_livraison] FROM [Projet].[dbo].[commande]";
 	}
 	String^ Commande_mapTB::Select1(void) {
 		return "SELECT [id_aclient], [nom], [prenom], [date_naissance], [date_premiere] FROM [Projet].[dbo].[client] ";

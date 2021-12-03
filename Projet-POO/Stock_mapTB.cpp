@@ -26,10 +26,10 @@ namespace NS_Comp_Mappage{
 		return "";
 	}
 	String^ Stock_mapTB::Top10(void) {
-		return "";
+		return "SELECT TOP 10 id_commande, reference, prixTTC FROM commande order by prixTTC desc";
 	}
 	String^ Stock_mapTB::Bot10(void) {
-		return "";
+		return "SELECT TOP 10 id_commande, reference, prixTTC FROM commande order by prixTTC";
 	}
 	String^ Stock_mapTB::Val_com(void) {
 		return "SELECT SUM(quantite * prix_HT_) AS ValeurCommerciale FROM article WHERE (disponible = 1) ;";

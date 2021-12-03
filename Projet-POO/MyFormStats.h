@@ -53,6 +53,14 @@ namespace ProjetPOO {
 
 	private: NS_Comp_Svc::Stock_service^ Svc;
 	private: System::Data::DataSet^ Ds;
+	private: NS_Comp_Svc::Stock_service^ oSvc;
+	private: System::Data::DataSet^ oDs;
+	private: NS_Comp_Svc::Stock_service^ ooSvc;
+	private: System::Data::DataSet^ ooDs;
+	private: NS_Comp_Svc::Stock_service^ oooSvc;
+	private: System::Data::DataSet^ oooDs;
+	private: NS_Comp_Svc::Stock_service^ ooooSvc;
+	private: System::Data::DataSet^ ooooDs;
 	private:
 		/// <summary>
 		/// Variable nécessaire au concepteur.
@@ -142,6 +150,7 @@ namespace ProjetPOO {
 			this->button5->TabIndex = 5;
 			this->button5->Text = L"10 meilleures ventes";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Click += gcnew System::EventHandler(this, &MyFormStats::button5_Click);
 			// 
 			// button6
 			// 
@@ -152,6 +161,7 @@ namespace ProjetPOO {
 			this->button6->TabIndex = 6;
 			this->button6->Text = L"10 pires ventes";
 			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Click += gcnew System::EventHandler(this, &MyFormStats::button6_Click);
 			// 
 			// button7
 			// 
@@ -201,6 +211,8 @@ namespace ProjetPOO {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
+			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
 			this->ClientSize = System::Drawing::Size(1045, 741);
 			this->Controls->Add(this->retourMenu);
 			this->Controls->Add(this->button9);
@@ -213,10 +225,11 @@ namespace ProjetPOO {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->dataBaseStats);
+			this->DoubleBuffered = true;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
 			this->Margin = System::Windows::Forms::Padding(3, 2, 3, 2);
 			this->Name = L"MyFormStats";
-			this->Text = L"MyFormStats";
+			this->Text = L"Statistiques";
 			this->Load += gcnew System::EventHandler(this, &MyFormStats::MyFormStats_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataBaseStats))->EndInit();
 			this->ResumeLayout(false);
@@ -226,6 +239,10 @@ namespace ProjetPOO {
 
 private: System::Void MyFormStats_Load(System::Object^ sender, System::EventArgs^ e) {
 	this->Svc = gcnew NS_Comp_Svc::Stock_service();
+	this->oSvc = gcnew NS_Comp_Svc::Stock_service();
+	this->ooSvc = gcnew NS_Comp_Svc::Stock_service();
+	this->oooSvc = gcnew NS_Comp_Svc::Stock_service();
+	this->ooooSvc = gcnew NS_Comp_Svc::Stock_service();
 }
 private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e) {
 	Form^ FormMenuVariation = gcnew MyFormVariation();
@@ -245,15 +262,27 @@ private: System::Void reappro_Click(System::Object^ sender, System::EventArgs^ e
 private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	this->dataBaseStats->Refresh();
-	this->Ds = this->Svc->ValeurCommerciale("Rsl");
-	this->dataBaseStats->DataSource = this->Ds;
+	this->oDs = this->oSvc->ValeurCommerciale("Rsl");
+	this->dataBaseStats->DataSource = this->oDs;
 	this->dataBaseStats->DataMember = "Rsl";
 }
 private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {
 
 	this->dataBaseStats->Refresh();
-	this->Ds = this->Svc->ValeurAchat("Rsl");
-	this->dataBaseStats->DataSource = this->Ds;
+	this->ooDs = this->ooSvc->ValeurAchat("Rsl");
+	this->dataBaseStats->DataSource = this->ooDs;
+	this->dataBaseStats->DataMember = "Rsl";
+}
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->dataBaseStats->Refresh();
+	this->oooDs = this->oooSvc->bot10("Rsl");
+	this->dataBaseStats->DataSource = this->oooDs;
+	this->dataBaseStats->DataMember = "Rsl";
+}
+private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->dataBaseStats->Refresh();
+	this->ooooDs = this->ooooSvc->top10("Rsl");
+	this->dataBaseStats->DataSource = this->ooooDs;
 	this->dataBaseStats->DataMember = "Rsl";
 }
 };

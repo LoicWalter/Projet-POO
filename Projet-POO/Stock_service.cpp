@@ -69,5 +69,10 @@ namespace NS_Comp_Svc {
 		StockMappTB->setTotal(total);
 		return this->Cad->getRows(this->StockMappTB->Variation(), dataTableName);
 	}
-
+	DataSet^ Stock_service::top10(String^ dataTableName) {
+		return this->Cad->getRows(this->StockMappTB->Bot10(), dataTableName);
+	}
+	DataSet^ Stock_service::bot10(String^ dataTableName) {
+		return this->Cad->getRows(this->StockMappTB->Top10(), dataTableName);
+	}
 }
